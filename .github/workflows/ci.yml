@@ -14,23 +14,45 @@ env:
   PYTHONDONTWRITEBYTECODE: "1"
 
 jobs:
-  verify:
-    # Verification first: (1) the committed seal must recompute from the files on disk before
-    # anything runs; (2) the smoke run regenerates every output with a small N into output/smoke/
-    # (never a sealed path), then runs the whole test suite (which asserts every published number
-    # against the sealed outputs) and verifies the seal again. The full run (N = 200,000) is
-    # byte-identical only in the sealed environment recorded in env.json, because the summaries
-    # record the Python/numpy/scipy versions; it is Track 2 of REPRODUCIBILITY.md, not CI.
-    name: seal + smoke run + tests (Python ${{ matrix.python-version }})
+  verify-sealed:
+    # Verification first, in the SEALED environment recorded in env.json (CPython 3.14.7 on macOS arm64, exact
+    # versions from requirements.lock): (1) the committed seal must recompute from the files on disk; (2) the smoke run
+    # regenerates every output with a small N into output/smoke/ (never a sealed path), then runs the whole test suite
+    # (which asserts every published number against the sealed outputs, two of them byte for byte) and verifies the
+    # seal again.
+    name: seal + smoke run + all tests (sealed environment, Python 3.14.7, macOS)
+    runs-on: macos-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14.7"
+      - name: Install the exact sealed environment
+        run: python -m pip install -r requirements.lock
+      - name: Verify the committed provenance seal
+        run: python make_provenance.py --verify
+      - name: Smoke run (outputs -> tests -> seal verification)
+        run: python run_all.py --smoke
+
+  verify-portable:
+    # Same checks on Linux with the version ranges of requirements.txt. Two tests assert byte equality of a
+    # floating-point artefact (the exponent verdict recomputed from its CSV, and the Figure 3 sidecar); outside the
+    # sealed environment the last digits of float sums and vector math differ by platform, so those two are the only
+    # tests left out here (they run in verify-sealed above). Every other published number is still asserted.
+    name: seal + smoke run + tests (Python ${{ matrix.python-version }}, Linux)
     runs-on: ubuntu-latest
     timeout-minutes: 30
     strategy:
       fail-fast: false
       matrix:
-        # 3.12 is the oldest supported version (from 3.12 on the built-in sum() adds floats with
-        # compensated summation; on 3.11 two tests fail, see REPRODUCIBILITY.md); 3.14 is the
-        # version of the sealed run (env.json).
+        # 3.12 is the oldest supported version (from 3.12 on the built-in sum() adds floats with compensated
+        # summation; on 3.11 two tests fail, see REPRODUCIBILITY.md).
         python-version: ["3.12", "3.14"]
+    env:
+      PYTEST_ADDOPTS: >-
+        --deselect tests/test_exponent.py::test_resumo_publicado_recomputa_do_csv
+        --deselect tests/test_figure3.py::test_png_e_sidecar_byte_estaveis
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
