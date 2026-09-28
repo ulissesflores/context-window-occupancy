@@ -4,6 +4,7 @@
   "name": "Context-Window Occupancy vs. Per-Token Separability — companion code, simulations and estimates",
   "description": "Companion package of a technical case study of nuFormer, the transaction foundation model of Braithwaite et al. (2025, arXiv:2507.23267). Closed-form model of a fixed token window (occupancy x per-token separability, with proofs), six pre-registered simulations (displacement replication; literal token-budget test with heterogeneous event cost; four follow-up families on the exponent of d, occupancy against rate weighting, event fusion and quotas), order-of-magnitude estimates of the training and serving infrastructure, a claims ledger and a SHA-256 provenance chain recomputed from disk. Illustrative orders of magnitude; not a replication of nuFormer.",
   "version": "0.1.0",
+  "identifier": "https://doi.org/10.5281/zenodo.23022566",
   "license": [
     "https://spdx.org/licenses/Apache-2.0",
     "https://spdx.org/licenses/CC-BY-4.0"

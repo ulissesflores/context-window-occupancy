@@ -3,6 +3,14 @@ message: "If you use this package, please cite it with the metadata below."
 title: "Context-Window Occupancy vs. Per-Token Separability — companion code, simulations and estimates"
 type: software
 version: "0.1.0"
+doi: "10.5281/zenodo.23022566"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23022566"
+    description: "Concept DOI (all versions; resolves to the latest)"
+  - type: doi
+    value: "10.5281/zenodo.23022567"
+    description: "Version DOI of release 0.1.0"
 repository-code: "https://github.com/ulissesflores/context-window-occupancy"
 date-released: "2026-09-28"
 authors:

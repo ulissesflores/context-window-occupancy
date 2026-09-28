@@ -14,7 +14,7 @@ AUC of any reader of that window.**
 [![Provenance](https://img.shields.io/badge/reproducible-SHA--256_chain-success.svg)](REPRODUCIBILITY.md)
 [![Pre-registered](https://img.shields.io/badge/simulations-pre--registered-informational.svg)](data/prereg/)
 
-`0.1.0` · released 2026-09-28 · [GitHub release](https://github.com/ulissesflores/context-window-occupancy/releases/tag/v0.1.0)
+`0.1.0` · released 2026-09-28 · [GitHub release](https://github.com/ulissesflores/context-window-occupancy/releases/tag/v0.1.0) · DOI [10.5281/zenodo.23022566](https://doi.org/10.5281/zenodo.23022566)
 
 </div>
 
@@ -336,9 +336,9 @@ make_provenance.py       build the seal, or --verify it
 
 ## Citation
 
-Version 0.1.0 was released on 2026-09-28. Cite the release below; when the Zenodo archive of the
-release is available, cite its concept (all-versions) DOI, which always resolves to the latest
-version.
+Version 0.1.0 was released on 2026-09-28 and is archived on Zenodo. Cite the concept (all-versions)
+DOI [10.5281/zenodo.23022566](https://doi.org/10.5281/zenodo.23022566), which always resolves to the latest version; the DOI of
+version 0.1.0 itself is [10.5281/zenodo.23022567](https://doi.org/10.5281/zenodo.23022567).
 
 ```bibtex
 @software{flores2026contextwindow,
@@ -347,8 +347,9 @@ version.
              simulations and estimates},
   year    = {2026},
   version = {0.1.0},
+  doi     = {10.5281/zenodo.23022566},
   url     = {https://github.com/ulissesflores/context-window-occupancy},
-  note    = {Codex Hash Research Laboratory. Release v0.1.0},
+  note    = {Codex Hash Research Laboratory. Release v0.1.0, archived on Zenodo},
 }
 ```
 
