@@ -1,0 +1,490 @@
+{
+  "N": 100000,
+  "adendo_sha256": "d2a9fc5dd023946cf493a4f797c3e3b8d79397a78ad392ef6754ce387f0637da",
+  "avaliar_kat": {
+    "KT_N": {
+      "combos": 12,
+      "estouros": 0,
+      "passou": true
+    },
+    "KT_S": {
+      "celulas": 6,
+      "discordantes": 0,
+      "empates": 0,
+      "passou": true
+    },
+    "passou": true,
+    "por_celula": [
+      {
+        "celula": "EXP-C1",
+        "dif_empirica": 0.03108930429381329,
+        "dif_prevista": 0.03237983432185021,
+        "ep_dif": 0.0009274571384123424,
+        "nivel": {
+          "R": {
+            "delta2_empirico": 2.0918810632301255,
+            "delta2_fluido": 2.106514285714286,
+            "dentro": true,
+            "desvio": -0.0008428732116714244,
+            "fluida": 0.8476209357823592,
+            "media": 0.8467780625706878,
+            "tol": 0.01111754232546121
+          },
+          "RS": {
+            "delta2_empirico": 2.711616561015352,
+            "delta2_fluido": 2.761206016713092,
+            "dentro": true,
+            "desvio": -0.0021334032397083424,
+            "fluida": 0.8800007701042094,
+            "media": 0.8778673668645011,
+            "tol": 0.013224820958337151
+          }
+        },
+        "regime": "saturado",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sinal": "concorda"
+      },
+      {
+        "celula": "EXP-C2",
+        "dif_empirica": -0.024188426748528835,
+        "dif_prevista": -0.023346442260128053,
+        "ep_dif": 0.0011549823532232837,
+        "nivel": {
+          "R": {
+            "delta2_empirico": 1.9699308427499034,
+            "delta2_fluido": 1.9698036363636366,
+            "dentro": true,
+            "desvio": 7.812317601496588e-06,
+            "fluida": 0.8395041924316999,
+            "media": 0.8395120047493014,
+            "tol": 0.01358890697475083
+          },
+          "RS": {
+            "delta2_empirico": 1.6116811934318667,
+            "delta2_fluido": 1.6229501754385964,
+            "dentro": true,
+            "desvio": -0.0008341721707992855,
+            "fluida": 0.8161577501715719,
+            "media": 0.8153235780007726,
+            "tol": 0.013683838245549371
+          }
+        },
+        "regime": "saturado",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "sinal": "concorda"
+      },
+      {
+        "celula": "EXP-C3",
+        "dif_empirica": -0.024717172434377432,
+        "dif_prevista": -0.02483353209212802,
+        "ep_dif": 0.0007687333997975155,
+        "nivel": {
+          "R": {
+            "delta2_empirico": 2.0836146440555927,
+            "delta2_fluido": 2.106514285714286,
+            "dentro": true,
+            "desvio": -0.0013216902192688673,
+            "fluida": 0.8476209357823592,
+            "media": 0.8462992455630903,
+            "tol": 0.01111754232546121
+          },
+          "RS": {
+            "delta2_empirico": 1.6979967031227368,
+            "delta2_fluido": 1.7151001671309194,
+            "dentro": true,
+            "desvio": -0.0012053305615182808,
+            "fluida": 0.8227874036902312,
+            "media": 0.8215820731287129,
+            "tol": 0.013664191145433869
+          }
+        },
+        "regime": "saturado",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "sinal": "concorda"
+      },
+      {
+        "celula": "EXP-C4",
+        "dif_empirica": 0.019911372307843234,
+        "dif_prevista": 0.021265836111987735,
+        "ep_dif": 0.0008242873735484442,
+        "nivel": {
+          "R": {
+            "delta2_empirico": 1.9622829374721078,
+            "delta2_fluido": 1.9698036363636366,
+            "dentro": true,
+            "desvio": -0.00046277159136742796,
+            "fluida": 0.8395041924316999,
+            "media": 0.8390414208403325,
+            "tol": 0.01358890697475083
+          },
+          "RS": {
+            "delta2_empirico": 2.3139439383476397,
+            "delta2_fluido": 2.349181754385965,
+            "dentro": true,
+            "desvio": -0.0018172353955119291,
+            "fluida": 0.8607700285436877,
+            "media": 0.8589527931481757,
+            "tol": 0.013433303605255563
+          }
+        },
+        "regime": "saturado",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sinal": "concorda"
+      },
+      {
+        "celula": "EXP-D1",
+        "dif_empirica": -0.02490546738295052,
+        "dif_prevista": -0.025011814786490616,
+        "ep_dif": 0.0009704044335491741,
+        "nivel": {
+          "R": {
+            "delta2_empirico": 1.9754901825424944,
+            "delta2_fluido": 2.001225142857142,
+            "dentro": true,
+            "desvio": -0.0015658950840837793,
+            "fluida": 0.8414188355521877,
+            "media": 0.8398529404681039,
+            "tol": 0.011155707695678543
+          },
+          "RS": {
+            "delta2_empirico": 1.6066234851305454,
+            "delta2_fluido": 1.6263314285714285,
+            "dentro": true,
+            "desvio": -0.0014595476805436824,
+            "fluida": 0.816407020765697,
+            "media": 0.8149474730851534,
+            "tol": 0.01128521169322435
+          }
+        },
+        "regime": "saturado",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "sinal": "concorda"
+      },
+      {
+        "celula": "EXP-D2",
+        "dif_empirica": 0.027395101840403613,
+        "dif_prevista": 0.026629152659246813,
+        "ep_dif": 0.0010330689839625313,
+        "nivel": {
+          "R": {
+            "delta2_empirico": 1.976302645872543,
+            "delta2_fluido": 2.001225142857142,
+            "dentro": true,
+            "desvio": -0.00151614927125443,
+            "fluida": 0.8414188355521877,
+            "media": 0.8399026862809332,
+            "tol": 0.011155707695678543
+          },
+          "RS": {
+            "delta2_empirico": 2.480691562460467,
+            "delta2_fluido": 2.496321828571429,
+            "dentro": true,
+            "desvio": -0.0007502000900976302,
+            "fluida": 0.8680479882114345,
+            "media": 0.8672977881213368,
+            "tol": 0.010972429432654791
+          }
+        },
+        "regime": "saturado",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sinal": "concorda"
+      }
+    ]
+  },
+  "bloco_usuarios": 10000,
+  "celulas": [
+    "EXP-C1",
+    "EXP-C2",
+    "EXP-C3",
+    "EXP-C4",
+    "EXP-D1",
+    "EXP-D2"
+  ],
+  "diagnostico": {
+    "EXP-C1/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 4.0
+    },
+    "EXP-C1/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 20.308783999999996
+    },
+    "EXP-C2/R": {
+      "frac_saturada_media": 0.999998,
+      "ociosos_medio_saturados": 13.0
+    },
+    "EXP-C2/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 12.64932
+    },
+    "EXP-C3/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 4.0
+    },
+    "EXP-C3/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 20.281522000000002
+    },
+    "EXP-C4/R": {
+      "frac_saturada_media": 0.999994,
+      "ociosos_medio_saturados": 13.0
+    },
+    "EXP-C4/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 12.632864000000001
+    },
+    "EXP-D1/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 4.0
+    },
+    "EXP-D1/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 4.0
+    },
+    "EXP-D2/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 4.0
+    },
+    "EXP-D2/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 4.0
+    }
+  },
+  "grade": "data/exponent_grid.json",
+  "grade_sha256": "5a365aee2307ee2fb568f2221bbdf252ffe7c9e2c389b4082de8c9f928a04dda",
+  "sementes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "tabela_sha256": "4cd78db2bd03b558d522053945e052827d2c529b377f8b3fdd5880cba107556a",
+  "tag": 5,
+  "tolerancias": {
+    "EXP-C1/R": 0.01111754232546121,
+    "EXP-C1/RS": 0.013224820958337151,
+    "EXP-C2/R": 0.01358890697475083,
+    "EXP-C2/RS": 0.013683838245549371,
+    "EXP-C3/R": 0.01111754232546121,
+    "EXP-C3/RS": 0.013664191145433869,
+    "EXP-C4/R": 0.01358890697475083,
+    "EXP-C4/RS": 0.013433303605255563,
+    "EXP-D1/R": 0.011155707695678543,
+    "EXP-D1/RS": 0.01128521169322435,
+    "EXP-D2/R": 0.011155707695678543,
+    "EXP-D2/RS": 0.010972429432654791
+  },
+  "veredito": {
+    "EXN": {
+      "celulas": 6,
+      "estouros": 0,
+      "passou": true
+    },
+    "EXS": {
+      "celulas": 6,
+      "discordantes": 0,
+      "empates": 0,
+      "passou": true
+    },
+    "completo": true,
+    "desfecho": "passa",
+    "intervalo_implicado": {
+      "C": {
+        "p_sobre_q": [
+          1.604,
+          2.498
+        ]
+      },
+      "D": {
+        "p": [
+          1.591,
+          2.51
+        ]
+      }
+    },
+    "leitura_EXS": {},
+    "passou": true,
+    "por_celula": [
+      {
+        "EXN_dentro": true,
+        "EXS": "concorda",
+        "celula": "EXP-C1",
+        "desvio": -0.001290530028036918,
+        "desvio_exato_em_ep": 0.22995325399028618,
+        "desvio_sobre_tolD": 0.24684628182721705,
+        "dif_empirica": 0.03108930429381329,
+        "dif_exata": 0.03130257608072773,
+        "dif_prevista": 0.03237983432185021,
+        "ep_emp": 0.0009274571384123424,
+        "familia": "C",
+        "lado": "baixo",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sinal_teoria": 1,
+        "tolD": 0.0052280715694159804
+      },
+      {
+        "EXN_dentro": true,
+        "EXS": "concorda",
+        "celula": "EXP-C2",
+        "desvio": -0.0008419844884007821,
+        "desvio_exato_em_ep": 0.5662874925891238,
+        "desvio_sobre_tolD": 0.15192571948708503,
+        "dif_empirica": -0.024188426748528835,
+        "dif_exata": -0.023534374687737336,
+        "dif_prevista": -0.023346442260128053,
+        "ep_emp": 0.0011549823532232837,
+        "familia": "C",
+        "lado": "baixo",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "sinal_teoria": -1,
+        "tolD": 0.005542079979896741
+      },
+      {
+        "EXN_dentro": true,
+        "EXS": "concorda",
+        "celula": "EXP-C3",
+        "desvio": 0.00011635965775058654,
+        "desvio_exato_em_ep": 1.2415787974448713,
+        "desvio_sobre_tolD": 0.0212200753932403,
+        "dif_empirica": -0.024717172434377432,
+        "dif_exata": -0.02567161552445374,
+        "dif_prevista": -0.02483353209212802,
+        "ep_emp": 0.0007687333997975155,
+        "familia": "C",
+        "lado": "alto",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "sinal_teoria": -1,
+        "tolD": 0.005483470515267498
+      },
+      {
+        "EXN_dentro": true,
+        "EXS": "concorda",
+        "celula": "EXP-C4",
+        "desvio": -0.0013544638041445012,
+        "desvio_exato_em_ep": 1.8440024582398018,
+        "desvio_sobre_tolD": 0.2528179415291182,
+        "dif_empirica": 0.019911372307843234,
+        "dif_exata": 0.021431360250962594,
+        "dif_prevista": 0.021265836111987735,
+        "ep_emp": 0.0008242873735484442,
+        "familia": "C",
+        "lado": "alto",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sinal_teoria": 1,
+        "tolD": 0.00535746710044509
+      },
+      {
+        "EXN_dentro": true,
+        "EXS": "concorda",
+        "celula": "EXP-D1",
+        "desvio": 0.00010634740354009686,
+        "desvio_exato_em_ep": 0.3810413514345802,
+        "desvio_sobre_tolD": 0.019219270848403313,
+        "dif_empirica": -0.02490546738295052,
+        "dif_exata": -0.024535703166152834,
+        "dif_prevista": -0.025011814786490616,
+        "ep_emp": 0.0009704044335491741,
+        "familia": "D",
+        "lado": "baixo",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "sinal_teoria": -1,
+        "tolD": 0.005533373475973045
+      },
+      {
+        "EXN_dentro": true,
+        "EXS": "concorda",
+        "celula": "EXP-D2",
+        "desvio": 0.0007659491811567998,
+        "desvio_exato_em_ep": 0.021271183228542385,
+        "desvio_sobre_tolD": 0.14411132662412773,
+        "dif_empirica": 0.027395101840403613,
+        "dif_exata": 0.02737312724075802,
+        "dif_prevista": 0.026629152659246813,
+        "ep_emp": 0.0010330689839625313,
+        "familia": "D",
+        "lado": "alto",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sinal_teoria": 1,
+        "tolD": 0.0053149825145566406
+      }
+    ]
+  },
+  "versoes": {
+    "numpy": "2.4.6",
+    "python": "3.14.7",
+    "scipy": "1.17.1"
+  }
+}

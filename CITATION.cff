@@ -1,0 +1,123 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite it with the metadata below."
+title: "Context-Window Occupancy vs. Per-Token Separability — companion code, simulations and estimates"
+type: software
+version: "0.1.0"
+repository-code: "https://github.com/ulissesflores/context-window-occupancy"
+date-released: "2026-09-28"
+authors:
+  - family-names: "Flores"
+    given-names: "Carlos Ulisses"
+    orcid: "https://orcid.org/0000-0002-6034-7765"
+    affiliation: "Codex Hash Research Laboratory, Codex Hash Ltda., Brazil"
+    website: "https://ulissesflores.com"
+license:
+  - Apache-2.0
+  - CC-BY-4.0
+abstract: >-
+  Companion package of a technical case study of nuFormer, the transaction foundation model
+  described by Braithwaite et al. (2025, arXiv:2507.23267), whose input is a fixed window of
+  2,048 tokens. Under a fluid Gaussian model with an optimal reader (assumptions (i)-(v) of
+  docs/THEORY.md), a saturated window carries K times the occupancy-weighted mean of the
+  per-token separability rho_s = d_s^2 / k_s. Hence, with the window already saturated before the
+  new source, adding a source whose per-token separability is below that mean lowers the ceiling
+  of the AUC of any reader of the same window; in the mixed regime the threshold drops to
+  theta times that mean, and without saturation even with the new source any informative source
+  helps. The package ships the closed-form model with proofs, six pre-registered simulations (a
+  displacement replication over 720 cells with 200,000 users per cell and 5 seeds; a literal
+  token-budget test with two event costs, 14 and 55 tokens; and four follow-up families on the
+  exponent of d, occupancy against rate weighting, event fusion and quotas), order-of-magnitude
+  estimates of the training and serving infrastructure, a claims ledger, and a SHA-256
+  provenance chain that is recomputed from disk. Illustrative orders of magnitude; not a replication of nuFormer.
+keywords:
+  - context window
+  - window occupancy
+  - per-token separability
+  - transaction foundation model
+  - nuFormer
+  - tokenization
+  - optimal reader
+  - Neyman-Pearson
+  - fractional knapsack
+  - pre-registration
+  - reproducibility
+  - hash chain provenance
+references:
+  - type: article
+    title: "Your Spending Needs Attention: Modeling Financial Habits with Transformers"
+    authors:
+      - family-names: "Braithwaite"
+        given-names: "D. T."
+      - family-names: "Cavalcanti"
+        given-names: "Misael"
+      - family-names: "McEver"
+        given-names: "R. Austin"
+      - family-names: "Udagawa"
+        given-names: "Hiroto"
+      - family-names: "Silva"
+        given-names: "Daniel"
+      - family-names: "Ramanath"
+        given-names: "Rohan"
+      - family-names: "Meneses"
+        given-names: "Felipe"
+      - family-names: "Yoshida"
+        given-names: "Arissa"
+      - family-names: "Wingert"
+        given-names: "Evan"
+      - family-names: "Ramos"
+        given-names: "Matheus"
+      - family-names: "Zanfelice"
+        given-names: "Brian"
+      - family-names: "Gupta"
+        given-names: "Aman"
+    year: 2025
+    doi: "10.48550/arXiv.2507.23267"
+    url: "https://arxiv.org/abs/2507.23267"
+    notes: "arXiv preprint 2507.23267."
+  - type: article
+    title: "On the problem of the most efficient tests of statistical hypotheses"
+    authors:
+      - family-names: "Neyman"
+        given-names: "J."
+      - family-names: "Pearson"
+        given-names: "E. S."
+    year: 1933
+    journal: "Philosophical Transactions of the Royal Society of London. Series A"
+    volume: 231
+    start: 289
+    end: 337
+    doi: "10.1098/rsta.1933.0009"
+  - type: article
+    title: "Discrete-variable extremum problems"
+    authors:
+      - family-names: "Dantzig"
+        given-names: "George B."
+    year: 1957
+    journal: "Operations Research"
+    volume: 5
+    issue: "2"
+    start: 266
+    end: 288
+    doi: "10.1287/opre.5.2.266"
+  - type: conference-paper
+    title: "Attention is all you need"
+    authors:
+      - family-names: "Vaswani"
+        given-names: "Ashish"
+      - family-names: "Shazeer"
+        given-names: "Noam"
+      - family-names: "Parmar"
+        given-names: "Niki"
+      - family-names: "Uszkoreit"
+        given-names: "Jakob"
+      - family-names: "Jones"
+        given-names: "Llion"
+      - family-names: "Gomez"
+        given-names: "Aidan N."
+      - family-names: "Kaiser"
+        given-names: "Łukasz"
+      - family-names: "Polosukhin"
+        given-names: "Illia"
+    year: 2017
+    collection-title: "Advances in Neural Information Processing Systems 30"
+    url: "https://proceedings.neurips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html"

@@ -1,0 +1,987 @@
+{
+  "estimates": {
+    "E1_razao": 3.9285714285714284,
+    "E1_txn_ctx_compacto": 146.28571428571428,
+    "E1_txn_ctx_texto": 37.236363636363635,
+    "E2_usuarios_por_gpu_s": 92.5925925925926,
+    "E2_utilizacao_a100": 0.46232147145299146,
+    "E2_utilizacao_l4_150": 0.47684065815977966,
+    "E2_utilizacao_l4_300": 0.23842032907988983,
+    "E3_utilizacao_4N_lora": 0.36353276353276354,
+    "E3_utilizacao_6N": 0.5452991452991454,
+    "E4_flops_pretreino": 9.9e+20,
+    "E4_gpu_horas_h100": 695.1466127401416,
+    "E5_bytes_gradiente": 660000000.0,
+    "E5_t_computo_passo_s": 0.328011324570273,
+    "E6_vazao_media_gbps": 0.3640888888888889,
+    "E7_a100_pico_pos_filtro": 0.09986143783384616,
+    "E7_a100_pico_pre_filtro": 13.980601296738461,
+    "E7_fracao_sla_pix": 0.0071329598452747256,
+    "E7_latencia_min_computo_ms": 4.993071891692308
+  },
+  "exponent": {
+    "N": 100000,
+    "cells": {
+      "EXP-C1": {
+        "dev_over_tol": 0.24684628182721705,
+        "empirical": 0.03108930429381329,
+        "family": "C",
+        "predicted": 0.03237983432185021,
+        "se": 0.0009274571384123424,
+        "side": "baixo",
+        "sign": "concorda",
+        "theory_sign": 1,
+        "within": true
+      },
+      "EXP-C2": {
+        "dev_over_tol": 0.15192571948708503,
+        "empirical": -0.024188426748528835,
+        "family": "C",
+        "predicted": -0.023346442260128053,
+        "se": 0.0011549823532232837,
+        "side": "baixo",
+        "sign": "concorda",
+        "theory_sign": -1,
+        "within": true
+      },
+      "EXP-C3": {
+        "dev_over_tol": 0.0212200753932403,
+        "empirical": -0.024717172434377432,
+        "family": "C",
+        "predicted": -0.02483353209212802,
+        "se": 0.0007687333997975155,
+        "side": "alto",
+        "sign": "concorda",
+        "theory_sign": -1,
+        "within": true
+      },
+      "EXP-C4": {
+        "dev_over_tol": 0.2528179415291182,
+        "empirical": 0.019911372307843234,
+        "family": "C",
+        "predicted": 0.021265836111987735,
+        "se": 0.0008242873735484442,
+        "side": "alto",
+        "sign": "concorda",
+        "theory_sign": 1,
+        "within": true
+      },
+      "EXP-D1": {
+        "dev_over_tol": 0.019219270848403313,
+        "empirical": -0.02490546738295052,
+        "family": "D",
+        "predicted": -0.025011814786490616,
+        "se": 0.0009704044335491741,
+        "side": "baixo",
+        "sign": "concorda",
+        "theory_sign": -1,
+        "within": true
+      },
+      "EXP-D2": {
+        "dev_over_tol": 0.14411132662412773,
+        "empirical": 0.027395101840403613,
+        "family": "D",
+        "predicted": 0.026629152659246813,
+        "se": 0.0010330689839625313,
+        "side": "alto",
+        "sign": "concorda",
+        "theory_sign": 1,
+        "within": true
+      }
+    },
+    "complete": true,
+    "exn_cells": 6,
+    "exn_exceedances": 0,
+    "exn_max_dev_over_tol": 0.2528179415291182,
+    "exn_passed": true,
+    "exn_within": 6,
+    "exs_agree": 6,
+    "exs_cells": 6,
+    "exs_discordant": 0,
+    "exs_passed": true,
+    "exs_seed_signs_agree": 30,
+    "exs_seed_signs_total": 30,
+    "exs_ties": 0,
+    "implied_interval": {
+      "C_p_over_q": [
+        1.604,
+        2.498
+      ],
+      "D_p": [
+        1.591,
+        2.51
+      ]
+    },
+    "outcome": "passa",
+    "passed": true,
+    "seeds": 5,
+    "sha256": {
+      "analytic_table": "4cd78db2bd03b558d522053945e052827d2c529b377f8b3fdd5880cba107556a",
+      "grid": "5a365aee2307ee2fb568f2221bbdf252ffe7c9e2c389b4082de8c9f928a04dda",
+      "preregistration": "d2a9fc5dd023946cf493a4f797c3e3b8d79397a78ad392ef6754ce387f0637da"
+    },
+    "tag": 5
+  },
+  "fusion": {
+    "K": 2048,
+    "N": 100000,
+    "cmp_0_abs_difference": 1.1636289978245173e-06,
+    "cmp_0_cell": "CMP6",
+    "cmp_0_contrast": "RF-RS",
+    "cmp_0_passed": true,
+    "cmp_0_tol": 0.0041,
+    "cmp_n_combos": 24,
+    "cmp_n_exceedances": 0,
+    "cmp_n_max_abs_deviation": 0.0026440649638971303,
+    "cmp_n_passed": true,
+    "cmp_n_within": 24,
+    "cmp_s_agree": 28,
+    "cmp_s_contrasts": 28,
+    "cmp_s_discordant": 0,
+    "cmp_s_passed": true,
+    "cmp_s_seed_signs_agree": 140,
+    "cmp_s_seed_signs_total": 140,
+    "cmp_s_ties": 0,
+    "cmp_s_without_significance": 0,
+    "cmp_t_arms": 4,
+    "cmp_t_exceedances": 0,
+    "cmp_t_in_verdict": false,
+    "cmp_t_passed": true,
+    "passed": true,
+    "report_only_agree": 1,
+    "report_only_contrasts": 1,
+    "seeds": 5,
+    "sha256": {
+      "analytic_table": "a4f55d6bbd3233c4edaa56c86652be1e8d43a5c62e9f0ff889361758146bcb2d",
+      "grid": "869127a0cc6aa6e8bbc56840eb6b907ac354d5110521adc87dd69a5869951de6",
+      "preregistration": "e5b6cada9d320ed5880a4749ddaa9f9cc74fc05dad4920107e55515686ee53dc"
+    },
+    "tag": 7,
+    "verdict": "PASSA"
+  },
+  "occupancy": {
+    "N": 100000,
+    "alpha_lower_bound_verdict": 0.515,
+    "alpha_lower_bound_with_threshold": 0.748,
+    "cells": 12,
+    "depth_pairs": 4,
+    "depth_pairs_within": 4,
+    "grid_complete": true,
+    "occ_l_agree": 2,
+    "occ_l_cells": 2,
+    "occ_l_discordant": 0,
+    "occ_l_ties": 0,
+    "occ_n_combos": 20,
+    "occ_n_exceedances": 0,
+    "occ_n_max_abs_deviation": 0.0038660573641098317,
+    "occ_n_passed": true,
+    "occ_n_within": 20,
+    "occ_s_agree": 10,
+    "occ_s_cells": 10,
+    "occ_s_discordant": 0,
+    "occ_s_improves": 5,
+    "occ_s_passed": true,
+    "occ_s_seed_signs_agree": 50,
+    "occ_s_seed_signs_total": 50,
+    "occ_s_ties": 0,
+    "occ_s_worsens": 5,
+    "passed": true,
+    "per_event_rule_opposite_cells": 7,
+    "per_event_rule_refuted": true,
+    "per_event_rule_refuted_cells": 7,
+    "seeds": 5,
+    "sha256": {
+      "analytic_table": "40d922b5f3119c32e9ef3990aea312772074d70f87e2ce72663cea79f1d622a3",
+      "grid": "64ae62f966e22e7de03960a6ca11af70cfa553e3892c0b29d7d15e40a3524b0e",
+      "preregistration": "14061945a837d79c291d7a2f077621472bd6ee13b2a793802464024c6856d241"
+    },
+    "tag": 6
+  },
+  "quotas": {
+    "K": 2048,
+    "N": 100000,
+    "anchors_applicable": true,
+    "anchors_equal": 10,
+    "anchors_passed": true,
+    "anchors_rows": 10,
+    "c5_c_passed": true,
+    "c5_d_comparisons": 2,
+    "c5_d_discordant": 0,
+    "c5_d_passed": true,
+    "c5_d_ties": 0,
+    "c5_g_comparisons": 19,
+    "c5_g_exceedances": 0,
+    "c5_g_passed": true,
+    "c5_g_without_power": 0,
+    "c5_n_exceedances": 0,
+    "c5_n_levels": 30,
+    "c5_n_max_abs_deviation": 0.0014159896140970574,
+    "c5_n_passed": true,
+    "c5_o_comparisons": 13,
+    "c5_o_discordant": 0,
+    "c5_o_passed": true,
+    "c5_o_ties": 0,
+    "comparisons": {
+      "DEC1 REC-RHO": {
+        "criteria": [
+          "C5-D"
+        ],
+        "kind": "estrita",
+        "mean": 0.03432692563653694,
+        "predicted": 0.03646586333852431,
+        "rival": "H-ii",
+        "rival_refuted": true,
+        "se_pair": 0.0007224978032423909,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sign": "concorda",
+        "within_tol": true
+      },
+      "DEC1 RHOidade-REC": {
+        "criteria": [],
+        "kind": "report_only",
+        "mean": 0.0020725728162802825,
+        "predicted": 0.001469743982695615,
+        "rival": null,
+        "rival_refuted": null,
+        "se_pair": 0.00015094831577587635,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sign": null,
+        "within_tol": true
+      },
+      "DEC1 RHOidade-RHO": {
+        "criteria": [
+          "C5-D"
+        ],
+        "kind": "estrita",
+        "mean": 0.036399498452817224,
+        "predicted": 0.03793560732121992,
+        "rival": null,
+        "rival_refuted": null,
+        "se_pair": 0.0006180263670310947,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sign": "concorda",
+        "within_tol": true
+      },
+      "FIX1 FIXc-REC": {
+        "criteria": [
+          "C5-O",
+          "C5-G"
+        ],
+        "kind": "estrita",
+        "mean": 0.010127129798425116,
+        "predicted": 0.01005015035022716,
+        "rival": null,
+        "rival_refuted": null,
+        "se_pair": 0.0003327754436234064,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sign": "concorda",
+        "within_tol": true
+      },
+      "FIX1 REC-FIXf": {
+        "criteria": [
+          "C5-O",
+          "C5-G"
+        ],
+        "kind": "estrita",
+        "mean": 0.01855273078250037,
+        "predicted": 0.019287081794196026,
+        "rival": "H-FIX",
+        "rival_refuted": true,
+        "se_pair": 0.0004899788713023139,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sign": "concorda",
+        "within_tol": true
+      },
+      "FIX1 RHO-FIXc": {
+        "criteria": [
+          "C5-O",
+          "C5-G"
+        ],
+        "kind": "estrita",
+        "mean": 0.015403188430406955,
+        "predicted": 0.015930287135643262,
+        "rival": "H-FIX",
+        "rival_refuted": true,
+        "se_pair": 0.00021901727577324355,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sign": "concorda",
+        "within_tol": true
+      },
+      "FIX1 RHO-REC": {
+        "criteria": [
+          "C5-O",
+          "C5-G"
+        ],
+        "kind": "estrita",
+        "mean": 0.02553031822883207,
+        "predicted": 0.025980437485870422,
+        "rival": "H-REC",
+        "rival_refuted": true,
+        "se_pair": 0.00016215000726337348,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sign": "concorda",
+        "within_tol": true
+      },
+      "KNP1 REC-EVT": {
+        "criteria": [
+          "C5-O",
+          "C5-G"
+        ],
+        "kind": "estrita",
+        "mean": 0.034525911116028096,
+        "predicted": 0.03564684922151973,
+        "rival": "H-EVT",
+        "rival_refuted": true,
+        "se_pair": 0.0008863504338610003,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sign": "concorda",
+        "within_tol": true
+      },
+      "KNP1 RHO-EVT": {
+        "criteria": [
+          "C5-O",
+          "C5-G"
+        ],
+        "kind": "estrita",
+        "mean": 0.08038914139401024,
+        "predicted": 0.07971377910401856,
+        "rival": "H-EVT",
+        "rival_refuted": true,
+        "se_pair": 0.0010905235060764266,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sign": "concorda",
+        "within_tol": true
+      },
+      "KNP1 RHO-REC": {
+        "criteria": [
+          "C5-O",
+          "C5-G"
+        ],
+        "kind": "estrita",
+        "mean": 0.045863230277982135,
+        "predicted": 0.04406692988249883,
+        "rival": "H-REC",
+        "rival_refuted": true,
+        "se_pair": 0.00043280676503756806,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sign": "concorda",
+        "within_tol": true
+      },
+      "KNP1 TAX-REC": {
+        "criteria": [
+          "C5-G"
+        ],
+        "kind": "equivalencia",
+        "mean": 0.00012324492390995977,
+        "predicted": -2.6901372148224745e-05,
+        "rival": "H-EST",
+        "rival_refuted": null,
+        "se_pair": 0.00017472924816143578,
+        "seed_signs": [
+          -1,
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "sign": null,
+        "within_tol": true
+      },
+      "KNP2 REC-EVT": {
+        "criteria": [
+          "C5-O",
+          "C5-G"
+        ],
+        "kind": "estrita",
+        "mean": 0.04410428931522523,
+        "predicted": 0.04364254332710438,
+        "rival": "H-EVT",
+        "rival_refuted": true,
+        "se_pair": 0.0002781998172417618,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sign": "concorda",
+        "within_tol": true
+      },
+      "KNP2 RHO-EVT": {
+        "criteria": [
+          "C5-O",
+          "C5-G"
+        ],
+        "kind": "estrita",
+        "mean": 0.07635664872323925,
+        "predicted": 0.07545986142976979,
+        "rival": "H-EVT",
+        "rival_refuted": true,
+        "se_pair": 0.0005395928075805379,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sign": "concorda",
+        "within_tol": true
+      },
+      "KNP2 RHO-REC": {
+        "criteria": [
+          "C5-O",
+          "C5-G"
+        ],
+        "kind": "estrita",
+        "mean": 0.032252359408014006,
+        "predicted": 0.031817318102665415,
+        "rival": "H-REC",
+        "rival_refuted": true,
+        "se_pair": 0.00042218363748498317,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sign": "concorda",
+        "within_tol": true
+      },
+      "KNP2 TAX-REC": {
+        "criteria": [
+          "C5-G"
+        ],
+        "kind": "equivalencia",
+        "mean": 0.00024242197316735049,
+        "predicted": 0.00020740084243398016,
+        "rival": "H-EST",
+        "rival_refuted": null,
+        "se_pair": 0.0002526511208535729,
+        "seed_signs": [
+          -1,
+          1,
+          -1,
+          1,
+          1
+        ],
+        "sign": null,
+        "within_tol": true
+      },
+      "KNP3 REC-EVT": {
+        "criteria": [
+          "C5-O",
+          "C5-G"
+        ],
+        "kind": "estrita",
+        "mean": 0.007706028353290595,
+        "predicted": 0.0075680744574400105,
+        "rival": "H-EVT",
+        "rival_refuted": true,
+        "se_pair": 0.00019743921023524292,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sign": "concorda",
+        "within_tol": true
+      },
+      "KNP3 RHO-EVT": {
+        "criteria": [
+          "C5-O",
+          "C5-G"
+        ],
+        "kind": "estrita",
+        "mean": 0.03676810121230838,
+        "predicted": 0.03689750169269146,
+        "rival": "H-EVT",
+        "rival_refuted": true,
+        "se_pair": 0.0004289100016859331,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sign": "concorda",
+        "within_tol": true
+      },
+      "KNP3 RHO-REC": {
+        "criteria": [
+          "C5-O",
+          "C5-G"
+        ],
+        "kind": "estrita",
+        "mean": 0.029062072859017785,
+        "predicted": 0.02932942723525145,
+        "rival": "H-REC",
+        "rival_refuted": true,
+        "se_pair": 0.00035977123859526393,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sign": "concorda",
+        "within_tol": true
+      },
+      "NUL1 EVT-REC": {
+        "criteria": [
+          "C5-G"
+        ],
+        "kind": "equivalencia",
+        "mean": 0.0016579672133101519,
+        "predicted": 0.0004001631570741404,
+        "rival": null,
+        "rival_refuted": null,
+        "se_pair": 0.0005807559137178884,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          -1,
+          1
+        ],
+        "sign": null,
+        "within_tol": true
+      },
+      "NUL1 RHO-EVT": {
+        "criteria": [
+          "C5-G"
+        ],
+        "kind": "equivalencia",
+        "mean": 0.0012652291361284318,
+        "predicted": 0.0005335813923611488,
+        "rival": null,
+        "rival_refuted": null,
+        "se_pair": 0.0010036202382566256,
+        "seed_signs": [
+          1,
+          -1,
+          1,
+          1,
+          1
+        ],
+        "sign": null,
+        "within_tol": true
+      },
+      "NUL1 RHO-REC": {
+        "criteria": [
+          "C5-G"
+        ],
+        "kind": "equivalencia",
+        "mean": 0.002923196349438584,
+        "predicted": 0.0009337445494352892,
+        "rival": null,
+        "rival_refuted": null,
+        "se_pair": 0.00048095786675360504,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sign": null,
+        "within_tol": true
+      },
+      "NUL1 TAX-REC": {
+        "criteria": [
+          "C5-G"
+        ],
+        "kind": "equivalencia",
+        "mean": 0.0005006090724083867,
+        "predicted": 0.0004001631570667019,
+        "rival": null,
+        "rival_refuted": null,
+        "se_pair": 0.00012015484881087615,
+        "seed_signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sign": null,
+        "within_tol": true
+      }
+    },
+    "consequence": {
+      "REC": {
+        "mean": -0.045863230277982135,
+        "predicted": -0.044066929778526887,
+        "seed_changes": [
+          -0.04705191016790078,
+          -0.04581968348399457,
+          -0.0448457657712229,
+          -0.046601952541040825,
+          -0.04499683942575161
+        ]
+      },
+      "RHO": {
+        "mean": 0.0,
+        "predicted": 0.0,
+        "seed_changes": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "consequence_rival_refuted": true,
+    "decay_report_only": {
+      "REC": {
+        "fluid": 0.729588929128577,
+        "mean": 0.7279322756236455
+      },
+      "RHO": {
+        "fluid": 0.6931230657900527,
+        "mean": 0.6936053499871087
+      },
+      "RHOidade": {
+        "fluid": 0.7310586731112726,
+        "mean": 0.7300048484399259
+      }
+    },
+    "levels": {
+      "FIX1 EVT": {
+        "exact": 0.869934527065977,
+        "mean": 0.8701660464113354
+      },
+      "FIX1 FIXc": {
+        "exact": 0.8540042399303337,
+        "mean": 0.8547628579809284
+      },
+      "FIX1 FIXf": {
+        "exact": 0.8246670077859105,
+        "mean": 0.826082997400003
+      },
+      "FIX1 REC": {
+        "exact": 0.8439540895801065,
+        "mean": 0.8446357281825033
+      },
+      "FIX1 RHO": {
+        "exact": 0.869934527065977,
+        "mean": 0.8701660464113354
+      },
+      "FIX1 TAX": {
+        "exact": 0.824667007785906,
+        "mean": 0.826082997400003
+      },
+      "KNP1 EVT": {
+        "exact": 0.7676707816143118,
+        "mean": 0.7680510978751769
+      },
+      "KNP1 FIXc": {
+        "exact": 0.8473845606143585,
+        "mean": 0.8484402392691873
+      },
+      "KNP1 FIXf": {
+        "exact": 0.8473845606143585,
+        "mean": 0.8484402392691873
+      },
+      "KNP1 REC": {
+        "exact": 0.8033176308358315,
+        "mean": 0.8025770089912051
+      },
+      "KNP1 RHO": {
+        "exact": 0.8473845607183303,
+        "mean": 0.8484402392691873
+      },
+      "KNP1 TAX": {
+        "exact": 0.8032907294636833,
+        "mean": 0.8027002539151151
+      },
+      "KNP2 EVT": {
+        "exact": 0.8387338484261898,
+        "mean": 0.837874444708673
+      },
+      "KNP2 FIXc": {
+        "exact": 0.9141937098559597,
+        "mean": 0.9142310934319122
+      },
+      "KNP2 FIXf": {
+        "exact": 0.9141937098559597,
+        "mean": 0.9142310934319122
+      },
+      "KNP2 REC": {
+        "exact": 0.8823763917532942,
+        "mean": 0.8819787340238981
+      },
+      "KNP2 RHO": {
+        "exact": 0.9141937098559596,
+        "mean": 0.9142310934319122
+      },
+      "KNP2 TAX": {
+        "exact": 0.8825837925957282,
+        "mean": 0.8822211559970654
+      },
+      "KNP3 EVT": {
+        "exact": 0.8588776913740971,
+        "mean": 0.8592327791371173
+      },
+      "KNP3 FIXc": {
+        "exact": 0.8931567456341195,
+        "mean": 0.8932978024165413
+      },
+      "KNP3 FIXf": {
+        "exact": 0.8931567456341195,
+        "mean": 0.8932978024165413
+      },
+      "KNP3 REC": {
+        "exact": 0.8664457658315371,
+        "mean": 0.8669388074904077
+      },
+      "KNP3 RHO": {
+        "exact": 0.8957751930667885,
+        "mean": 0.8960008803494255
+      },
+      "KNP3 TAX": {
+        "exact": 0.8666605049916711,
+        "mean": 0.8669317770417783
+      },
+      "NUL1 EVT": {
+        "exact": 0.8468509794245332,
+        "mean": 0.8471750101330588
+      },
+      "NUL1 FIXc": {
+        "exact": 0.8473845606143585,
+        "mean": 0.8484402392691873
+      },
+      "NUL1 FIXf": {
+        "exact": 0.8473845606143585,
+        "mean": 0.8484402392691873
+      },
+      "NUL1 REC": {
+        "exact": 0.8464508162674591,
+        "mean": 0.8455170429197485
+      },
+      "NUL1 RHO": {
+        "exact": 0.8473845608168944,
+        "mean": 0.8484402392691873
+      },
+      "NUL1 TAX": {
+        "exact": 0.8468509794245258,
+        "mean": 0.846017651992157
+      }
+    },
+    "outcomes": [
+      "Tudo passa",
+      "C5-D passa (com o acima)"
+    ],
+    "passed": true,
+    "preregistered": true,
+    "seeds": 5,
+    "sha256": {
+      "analytic_table": "a206f1555df554e761b5d9212451ac65ac3bb2082ff765ad7c4b885697569189",
+      "grid": "b0a82de2a4690143996d5bdf196bd91f44e75e9c774c0515b7a9c767ba97a42b",
+      "preregistration": "22fa9ff02b8a280e33e18987a762063700a5c8845f59e0edab6aa095dc8cfa3b"
+    },
+    "tag": 8,
+    "tol_X": 0.00405
+  },
+  "replication": {
+    "N": 200000,
+    "analytic_full_order_cells": 50,
+    "analytic_sign_pattern_cells": 407,
+    "cells": 720,
+    "q1_failed": false,
+    "q1_pairs_tested": 248,
+    "q1_violations": 0,
+    "q2_below_threshold": 149,
+    "q2_comparisons": 2160,
+    "q2_discordant": 0,
+    "q2_failed": false,
+    "q2_tested": 2011,
+    "q2_ties": 0,
+    "q3_agreement_with_analytic": 717,
+    "q3_failed": false,
+    "q3_full_order_cells": 55,
+    "q3_sign_pattern_cells": 410,
+    "seeds": 5,
+    "sha256": {
+      "celulas.csv": "3201f0442551935324595b22a46811058e5fd2eafaa5aafc728ab6f3c16f3865",
+      "resumo.json": "a2848f520f795ce69b5cc657db3344299e69baf2e5902bf5fafc8510f5251579"
+    },
+    "shortfall_pattern_T4_cells": 410
+  },
+  "tables": {
+    "enlaces_allreduce": [
+      {
+        "enlace": "NVLink 3 (A100, intra-no)",
+        "razao_ddp_sobre_computo": "0.013",
+        "t_allreduce_ddp_ms": "4.3",
+        "t_allreduce_fsdp_ms": "6.5"
+      },
+      {
+        "enlace": "NVLink 4 (H100, intra-no)",
+        "razao_ddp_sobre_computo": "0.009",
+        "t_allreduce_ddp_ms": "2.9",
+        "t_allreduce_fsdp_ms": "4.3"
+      },
+      {
+        "enlace": "InfiniBand NDR 400 Gb/s",
+        "razao_ddp_sobre_computo": "0.079",
+        "t_allreduce_ddp_ms": "26.0",
+        "t_allreduce_fsdp_ms": "39.0"
+      },
+      {
+        "enlace": "Ethernet RoCE 200 Gb/s",
+        "razao_ddp_sobre_computo": "0.158",
+        "t_allreduce_ddp_ms": "52.0",
+        "t_allreduce_fsdp_ms": "78.0"
+      },
+      {
+        "enlace": "Ethernet 100 Gb/s",
+        "razao_ddp_sobre_computo": "0.317",
+        "t_allreduce_ddp_ms": "104.0",
+        "t_allreduce_fsdp_ms": "155.9"
+      },
+      {
+        "enlace": "Ethernet 25 Gb/s",
+        "razao_ddp_sobre_computo": "1.268",
+        "t_allreduce_ddp_ms": "415.8",
+        "t_allreduce_fsdp_ms": "623.7"
+      }
+    ],
+    "fanout_cauda": [
+      {
+        "prob_ao_menos_um_acima_do_p99": "0.0100",
+        "servicos": "1"
+      },
+      {
+        "prob_ao_menos_um_acima_do_p99": "0.0490",
+        "servicos": "5"
+      },
+      {
+        "prob_ao_menos_um_acima_do_p99": "0.0956",
+        "servicos": "10"
+      },
+      {
+        "prob_ao_menos_um_acima_do_p99": "0.1821",
+        "servicos": "20"
+      }
+    ]
+  },
+  "token_kat": {
+    "N": 100000,
+    "cells": {
+      "MIX1": {
+        "regime": "misto",
+        "sign": "concorda"
+      },
+      "MIX2": {
+        "regime": "misto",
+        "sign": "concorda"
+      },
+      "N1": {
+        "regime": "nao_saturado",
+        "sign": "concorda"
+      },
+      "S1a": {
+        "regime": "saturado",
+        "sign": "concorda"
+      },
+      "S1b": {
+        "regime": "saturado",
+        "sign": "concorda"
+      },
+      "S2a": {
+        "regime": "saturado",
+        "sign": "concorda"
+      },
+      "S2b": {
+        "regime": "saturado",
+        "sign": "concorda"
+      },
+      "S3": {
+        "regime": "saturado",
+        "sign": "concorda"
+      }
+    },
+    "kt_n_combos": 16,
+    "kt_n_exceedances": 0,
+    "kt_n_max_abs_deviation": 0.0018550223505712227,
+    "kt_n_passed": true,
+    "kt_n_within": 16,
+    "kt_s_agree": 8,
+    "kt_s_cells": 8,
+    "kt_s_discordant": 0,
+    "kt_s_passed": true,
+    "kt_s_seed_signs_agree": 40,
+    "kt_s_seed_signs_total": 40,
+    "kt_s_ties": 0,
+    "passed": true,
+    "seeds": 5
+  }
+}

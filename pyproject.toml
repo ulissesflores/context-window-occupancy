@@ -1,0 +1,38 @@
+[project]
+name = "context-window-occupancy"
+version = "0.1.0"
+description = "Companion code: displacement in a finite context window, a token-budget KAT and order-of-magnitude estimates for a sequence foundation model."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "numpy>=2.4",
+  "scipy>=1.17",
+  "matplotlib>=3.10",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=9.0"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = [".", "code", "tests", "scripts"]
+extend-exclude = ["output", "runs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "D"]
+ignore = ["D203", "D213"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = ["builtins.range"]
+
+[tool.interrogate]
+fail-under = 100
+verbose = 1
+exclude = ["output", "runs", "build", ".venv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

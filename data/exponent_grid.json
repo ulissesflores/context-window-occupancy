@@ -1,0 +1,171 @@
+{
+  "_fonte": "EXP grid: exponent of d in the per-token separability (open limit (a) of the token KAT). Pre-registered in the EXP addendum; single source for the analytic table and for the literal token-budget simulation. Never edit after its sha256 is recorded.",
+  "_custos": "k in tokens per event: 14 = compact transaction encoding; 55 = plain-text transaction; K = 2048 = context length. Same inputs as the token KAT grid.",
+  "_desenho": "Both combos (R and R plus S) saturated. Family C: R has a single source A and S a different cost; the theory improves iff r^2 > kappa (r = d_S/d_A, kappa = k_S/k_A); d_S = d_A * kappa^(1/e) with e = 1.6 (low side) or 2.5 (high side), 3 decimals. Family D: homogeneous cost k = 14, R with a rare strong source and a frequent weak one (rate weights 0.15/0.85, d_B = 0.1 d_A); the theory improves iff d_S > mu_2 (rate-weighted power mean of order 2); d_S = mu_1.6 (low) or mu_2.5 (high), 3 decimals.",
+  "_tag": "tag enters the random stream default_rng([seed, i_cell, i_combo, tag, i_block]); 5 is exclusive to this family (3 = token KAT; 6, 7, 8 = the other three families of the same batch).",
+  "K": 2048,
+  "pi": 0.2,
+  "N": 100000,
+  "bloco_usuarios": 10000,
+  "sementes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "tag": 5,
+  "tol_base_r1": 0.0079,
+  "delta_kat_dif": 0.002,
+  "margem_tolD": 2.5,
+  "margem_tol_nivel": 1.2,
+  "z_minimo_regime": 4.0,
+  "eventos_max_por_usuario": 600,
+  "faixa_troca_baixo": [
+    1.55,
+    1.65
+  ],
+  "faixa_troca_alto": [
+    2.45,
+    2.55
+  ],
+  "vies_max_sobre_tolD": 0.25,
+  "celulas": [
+    {
+      "id": "EXP-C1",
+      "bloco": "saturado",
+      "familia": "C",
+      "lado": "baixo",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 1.2,
+          "d": 0.12,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 1.0,
+          "d": 0.282,
+          "k": 55
+        }
+      }
+    },
+    {
+      "id": "EXP-C2",
+      "bloco": "saturado",
+      "familia": "C",
+      "lado": "baixo",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 0.4,
+          "d": 0.23,
+          "k": 55
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 2.5,
+          "d": 0.098,
+          "k": 14
+        }
+      }
+    },
+    {
+      "id": "EXP-C3",
+      "bloco": "saturado",
+      "familia": "C",
+      "lado": "alto",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 1.2,
+          "d": 0.12,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 1.0,
+          "d": 0.207,
+          "k": 55
+        }
+      }
+    },
+    {
+      "id": "EXP-C4",
+      "bloco": "saturado",
+      "familia": "C",
+      "lado": "alto",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 0.4,
+          "d": 0.23,
+          "k": 55
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 2.5,
+          "d": 0.133,
+          "k": 14
+        }
+      }
+    },
+    {
+      "id": "EXP-D1",
+      "bloco": "saturado",
+      "familia": "D",
+      "lado": "baixo",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 0.18,
+          "d": 0.294,
+          "k": 14
+        },
+        "B": {
+          "lam": 1.02,
+          "d": 0.029,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 1.8,
+          "d": 0.097,
+          "k": 14
+        }
+      }
+    },
+    {
+      "id": "EXP-D2",
+      "bloco": "saturado",
+      "familia": "D",
+      "lado": "alto",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 0.18,
+          "d": 0.294,
+          "k": 14
+        },
+        "B": {
+          "lam": 1.02,
+          "d": 0.029,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 1.8,
+          "d": 0.139,
+          "k": 14
+        }
+      }
+    }
+  ]
+}

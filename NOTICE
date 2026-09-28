@@ -1,0 +1,34 @@
+Context-Window Occupancy vs. Per-Token Separability — companion package
+Copyright 2026 Carlos Ulisses Flores, Codex Hash Research Laboratory.
+
+This repository is dual-licensed:
+
+  * Source code (code/, scripts/, tests/, run_all.py, make_provenance.py,
+    configs/stages.json) — Apache License 2.0.
+    See LICENSE and LICENSES/Apache-2.0.txt.
+    code/provenance_chain.py is vendored from the author's own tooling and is
+    under the same license.
+
+  * Text, figures and data authored here (README.md, REPRODUCIBILITY.md,
+    ROADMAP.md, CHANGELOG.md, docs/, data/, output/, the configuration inputs in
+    configs/) — Creative Commons Attribution 4.0 International (CC BY 4.0).
+    See LICENSES/CC-BY-4.0.txt.
+
+Third-party material — NOT redistributed here:
+
+  The nuFormer preprint (Braithwaite et al., 2025, arXiv:2507.23267) and the
+  Nubank engineering posts that the case study analyses are not included in
+  this package. What the package carries instead is, for verification only:
+  numeric values transcribed with their exact locator
+  (configs/estimates_inputs.json), monthly counts read from the public bar
+  charts of Udagawa (2025) (configs/adoption_counts.csv), and, in the claims
+  ledger (data/claims-ledger.csv), short verbatim passages next to the public
+  URL and the SHA-256 of the capture that was checked. The captures themselves
+  are not distributed. Hardware figures tagged SPEC come from vendor
+  datasheets. All of this remains under the terms of its original publishers;
+  cite the original sources, listed in docs/THEORY.md and in the ledger.
+
+Company, product and model names are used only to identify the systems that
+are discussed. This package is independent work: it is not affiliated with,
+sponsored by or endorsed by any of the companies named in it, and it makes no
+claim about their internal systems beyond what their public documents state.

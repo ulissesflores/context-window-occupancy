@@ -1,0 +1,514 @@
+{
+  "hash_alg": "sha256",
+  "domain_separation": {
+    "leaf": "0x00",
+    "node": "0x01",
+    "link": "0x02"
+  },
+  "stage_order": [
+    "environment",
+    "code",
+    "prereg",
+    "data",
+    "scores",
+    "figures"
+  ],
+  "stages": [
+    {
+      "name": "environment",
+      "kind": "file",
+      "nfiles": 1,
+      "hash": "09c1effcb701df665cf6c932075bb14b713843c54c843100df25ca6657c3e0fd",
+      "leaves": [
+        {
+          "path": "env.json",
+          "sha256": "09c1effcb701df665cf6c932075bb14b713843c54c843100df25ca6657c3e0fd",
+          "size": 960
+        }
+      ]
+    },
+    {
+      "name": "code",
+      "kind": "tree",
+      "nfiles": 43,
+      "hash": "f6290eb0ce959bd984f799772003b26a191b57276faee901f535f0a5f9a7ec65",
+      "leaves": [
+        {
+          "path": "code/case_figures.py",
+          "sha256": "4133bfe3ee4b2ce1da840ed0ddf2aaa409f15f20c47356554ffb0db8d60ec347",
+          "size": 12370
+        },
+        {
+          "path": "code/displacement.py",
+          "sha256": "b630c0f216aef5b60bf968f91bf1f7aad84363791ce4a41246724976c90e1181",
+          "size": 18651
+        },
+        {
+          "path": "code/estimates.py",
+          "sha256": "b9ab6ed584f4e728c390cd5e59528d97320012da495c92ad42a8447bddd906af",
+          "size": 9215
+        },
+        {
+          "path": "code/exponent_analytic_table.py",
+          "sha256": "e9e2d7d7309d65fb34c05a993a6158db82c2a72966abab3f648b4a9894ec8d5f",
+          "size": 28141
+        },
+        {
+          "path": "code/figure3.py",
+          "sha256": "b2fb9206d7e22d8ef9b41a5a3d8f305e8b93b8b7efc0f19e40e380c3e87342e1",
+          "size": 17382
+        },
+        {
+          "path": "code/freeze_env.py",
+          "sha256": "fc8c9b2f4375d50d96faddc4086d410a47a1bda8cc427c5497cf74ec8af14c55",
+          "size": 3939
+        },
+        {
+          "path": "code/fusion.py",
+          "sha256": "d15424da44cf0e6f4aaa910ae1a57337309c9cbb00a54341bfeb507b5e7a73a9",
+          "size": 22876
+        },
+        {
+          "path": "code/fusion_analytic_table.py",
+          "sha256": "6354b8e7cd2159583c2d7322f715da8b571491d8d58865015056bc971233c3ae",
+          "size": 15405
+        },
+        {
+          "path": "code/occupancy_analytic_table.py",
+          "sha256": "bf3a1b8765521996f124a4163e4b3b65f7c122f3b2832e66576f455f040b74c7",
+          "size": 27894
+        },
+        {
+          "path": "code/plot_style.py",
+          "sha256": "65ebed9e9a08f6a27cb312c5b3ca6e4a119336e16f960e7b0f56c8aadf255123",
+          "size": 1015
+        },
+        {
+          "path": "code/provenance_chain.py",
+          "sha256": "96b03b1a00bce9fc107b54959373ce8fd1fda60b7c4cd49eefad15fa767bc31f",
+          "size": 16712
+        },
+        {
+          "path": "code/quotas.py",
+          "sha256": "fb1b7c2987553e67e70f0a35a5e63515ce0acec557536071647dd4db4e0b2359",
+          "size": 27703
+        },
+        {
+          "path": "code/quotas_analytic_table.py",
+          "sha256": "a497ca2819d54b0098d13093c5dc63ff947d2da16fbf6528f2df534145b0fd9c",
+          "size": 26896
+        },
+        {
+          "path": "code/results.py",
+          "sha256": "0cd43b25e97ea3be2267d9c460f7670de0f30fdf428988a67727525d282c6584",
+          "size": 19686
+        },
+        {
+          "path": "code/run_fusion.py",
+          "sha256": "06201e05c50306027006be752640277bbb7ea49ce7927095439a00ad242187a7",
+          "size": 10334
+        },
+        {
+          "path": "code/run_grid.py",
+          "sha256": "1977db516dce49be210c36aad9563a65603c16ccd824a7ba241e9f81727386aa",
+          "size": 10638
+        },
+        {
+          "path": "code/run_quotas.py",
+          "sha256": "77718206804566c56432dccfdf47a99cbb8482a21825bea11e7987e983e7a24b",
+          "size": 10776
+        },
+        {
+          "path": "code/run_replication.py",
+          "sha256": "541cc199b0831fd175460a5c076e251e75f2f19998769cf7eeccd984747092aa",
+          "size": 2930
+        },
+        {
+          "path": "code/run_token_kat.py",
+          "sha256": "645afa290e5b8dd0193d5d5ef5db332cb9b41ea287bf2ef0874d37e7287ade1c",
+          "size": 6859
+        },
+        {
+          "path": "code/token_kat.py",
+          "sha256": "af9908922ff3b3533ad38a5b02076c92212f2441354ce58a53eb439b624d73c9",
+          "size": 9355
+        },
+        {
+          "path": "code/token_kat_analytic_table.py",
+          "sha256": "53ad666ad416a7aeb3966754addb5c71c541844a7d8d7139e4468a1ce42a6575",
+          "size": 9995
+        },
+        {
+          "path": "configs/stages.json",
+          "sha256": "3372b1aa501af71270b608e16667ba6f918d8e4e24e4a7e9c41b004c9235e566",
+          "size": 3898
+        },
+        {
+          "path": "make_provenance.py",
+          "sha256": "dd6ee7f0e8a49c95196b99b5136e5b311381ada39bfc839b9a25bc969d706236",
+          "size": 16058
+        },
+        {
+          "path": "run_all.py",
+          "sha256": "4dcf9389b21190e2e18d957f648bd931e7945cb93edb3997c8f8cf47c41b1741",
+          "size": 8692
+        },
+        {
+          "path": "scripts/make_figures.py",
+          "sha256": "7133347b7ecc463805ef6affd6073ec9d9c471fa1a018a291e05fa5a1d792daf",
+          "size": 4513
+        },
+        {
+          "path": "tests/conftest.py",
+          "sha256": "0f807f7fbfea2f4a1dc414c54f44ef03c35ed1d18180da3ef4599e6376c9a2ed",
+          "size": 417
+        },
+        {
+          "path": "tests/test_case_figures.py",
+          "sha256": "68a4441839b057974ff98e0b829fa58a9c2127526f2b98410a8f384654faa446",
+          "size": 17973
+        },
+        {
+          "path": "tests/test_displacement.py",
+          "sha256": "be3497ba4d3b4615dda5412815d34f685eb6dfc8de05d9ffecd7973067149aad",
+          "size": 19765
+        },
+        {
+          "path": "tests/test_displacement_locks.py",
+          "sha256": "7c666e99aad015ba453bcee6124adc7e216d54bc2d14a415b72d8fcac11c5738",
+          "size": 31631
+        },
+        {
+          "path": "tests/test_displacement_locks2.py",
+          "sha256": "bc088c8413ba6e26dd9b9c151d69b6bf051e030f36458c045fb2848dc9595824",
+          "size": 9286
+        },
+        {
+          "path": "tests/test_estimates.py",
+          "sha256": "1c645146414a1e4a78b47cb4911ebe82b6cdcfa23fa0c0a611f960444dd95815",
+          "size": 3129
+        },
+        {
+          "path": "tests/test_exponent.py",
+          "sha256": "86bcd6bc18387de0ad9e8612c136c22b4a0dabbb3fb847fe534769eef612d925",
+          "size": 22083
+        },
+        {
+          "path": "tests/test_failure_paths.py",
+          "sha256": "e509a6dfe3e145db210b0d3546c698464d4361f16175f1245a84ba8d85279532",
+          "size": 13070
+        },
+        {
+          "path": "tests/test_figure3.py",
+          "sha256": "75c818bc00f5e6db331ebcf6dd838cd0cb7ac0321ec27aa866ffb7c5059b75ef",
+          "size": 16678
+        },
+        {
+          "path": "tests/test_fusion.py",
+          "sha256": "0f77b16f5cb0d8429edb91deada44835691f5beabf5331fee119f985febd6bfa",
+          "size": 22143
+        },
+        {
+          "path": "tests/test_hygiene.py",
+          "sha256": "672185af140a87a59d8ae98440d4467085b5e5f611ae129051f38adef1ca9b7e",
+          "size": 2176
+        },
+        {
+          "path": "tests/test_occupancy.py",
+          "sha256": "333d09d4edacdad1687f4b22f0da0526b597c97a10c256d6789f6acdb4447998",
+          "size": 20636
+        },
+        {
+          "path": "tests/test_paper_numbers.py",
+          "sha256": "391394e5d7fd2fe4ba5c069fc961cba6b0bfaad991140ed4974401d8306b97cb",
+          "size": 13650
+        },
+        {
+          "path": "tests/test_quotas.py",
+          "sha256": "50f8725f66ef932ecffe0934ec2b0ce28250d70f963ea073681eb2eebc6cdfd0",
+          "size": 42605
+        },
+        {
+          "path": "tests/test_run_grid.py",
+          "sha256": "ebc1729a079ada5690f81c81ec48ad55988f62f6b6a624b1efe3557fd9874f5f",
+          "size": 6076
+        },
+        {
+          "path": "tests/test_stages_disjoint.py",
+          "sha256": "f5e8d84b41e53a9785a8c223a70cd2509c7d65f590bbccb27922281e9528ec9c",
+          "size": 3140
+        },
+        {
+          "path": "tests/test_token_kat.py",
+          "sha256": "8050102c8e55d5362b0c143ba4ce46e1ec7c9d128485cfb5d391426c457c4681",
+          "size": 15276
+        },
+        {
+          "path": "tests/test_token_kat_extra.py",
+          "sha256": "b4e0c67d5fc17e1294a003bfb6ac622d26793e2545e1a6dcf2e726fea7fd2010",
+          "size": 6322
+        }
+      ]
+    },
+    {
+      "name": "prereg",
+      "kind": "tree",
+      "nfiles": 25,
+      "hash": "1ba7307cadc4b9aa07da241a7d0067f8cdf02e3c494bd094445468494fcea000",
+      "leaves": [
+        {
+          "path": "configs/adoption_counts.csv",
+          "sha256": "fe7a44ac969cb7bdfd07c56901cb9e22fe56d098fcb62458a654a11dff3ae4bb",
+          "size": 315
+        },
+        {
+          "path": "configs/estimates_inputs.json",
+          "sha256": "c5efaaa835fd5c0277039af0b08fce3acd6923dd164bd9d1cd5b9adbd29a83c5",
+          "size": 6131
+        },
+        {
+          "path": "data/exponent_grid.json",
+          "sha256": "5a365aee2307ee2fb568f2221bbdf252ffe7c9e2c389b4082de8c9f928a04dda",
+          "size": 3795
+        },
+        {
+          "path": "data/fusion_grid.json",
+          "sha256": "869127a0cc6aa6e8bbc56840eb6b907ac354d5110521adc87dd69a5869951de6",
+          "size": 5492
+        },
+        {
+          "path": "data/kat_token_grid.json",
+          "sha256": "2cd4cd1218f0822df03a61e163406cb043014dd99e8ce210e740725a494d0b22",
+          "size": 5051
+        },
+        {
+          "path": "data/occupancy_grid.json",
+          "sha256": "64ae62f966e22e7de03960a6ca11af70cfa553e3892c0b29d7d15e40a3524b0e",
+          "size": 6581
+        },
+        {
+          "path": "data/prereg/01-displacement-replication.md",
+          "sha256": "a2f24f0ec11d50946f67ff095c7e420174876ffa3486a8033d6496e317f11825",
+          "size": 14569
+        },
+        {
+          "path": "data/prereg/02-token-kat-addendum.md",
+          "sha256": "b4549be87c049ce786d7aac2844eca7f9cae8d726b6d2bc6534cbc2cb3db3ebe",
+          "size": 14422
+        },
+        {
+          "path": "data/prereg/03-token-kat-deviations.md",
+          "sha256": "e54bffda251a71098df3141ded69e14668f1261126a6c9f00632110f102a86ec",
+          "size": 5707
+        },
+        {
+          "path": "data/prereg/04-token-kat-deviations-b.md",
+          "sha256": "8a85389cf204a4455122b9f1e766e63a7876688f3ef5753d8735fe25fcf51961",
+          "size": 3276
+        },
+        {
+          "path": "data/prereg/05-exponent-addendum.md",
+          "sha256": "d2a9fc5dd023946cf493a4f797c3e3b8d79397a78ad392ef6754ce387f0637da",
+          "size": 42732
+        },
+        {
+          "path": "data/prereg/06-occupancy-addendum.md",
+          "sha256": "14061945a837d79c291d7a2f077621472bd6ee13b2a793802464024c6856d241",
+          "size": 40218
+        },
+        {
+          "path": "data/prereg/07-fusion-addendum.md",
+          "sha256": "e5b6cada9d320ed5880a4749ddaa9f9cc74fc05dad4920107e55515686ee53dc",
+          "size": 46618
+        },
+        {
+          "path": "data/prereg/08-quotas-addendum.md",
+          "sha256": "22fa9ff02b8a280e33e18987a762063700a5c8845f59e0edab6aa095dc8cfa3b",
+          "size": 48563
+        },
+        {
+          "path": "data/prereg/09-exponent-deviations.md",
+          "sha256": "e858427eb3a3340e29dc32b558e1ddf5acfd37bda5289d691a13521d57648e0b",
+          "size": 7602
+        },
+        {
+          "path": "data/prereg/10-occupancy-deviations.md",
+          "sha256": "047cf2b5b537cb5f142b60f7e332b68bd0fe1fc747e767c3ead89ee3fe2357f6",
+          "size": 8421
+        },
+        {
+          "path": "data/prereg/11-fusion-deviations.md",
+          "sha256": "b8dcec112c9a8e3f044bc2107ac5bf130d51232cc680d259ce7c476e0a5985dc",
+          "size": 7210
+        },
+        {
+          "path": "data/prereg/12-quotas-deviations.md",
+          "sha256": "b1da1f9d92e42143d9eba85eb1ccb0d7b442dc0e0539609a60d3b21bc4baa004",
+          "size": 9599
+        },
+        {
+          "path": "data/prereg/13-token-kat-item5-note.md",
+          "sha256": "45030d0912091d4b3a2d7d51f84e66dafa5ecd1650da157144a9052b3c4ddc0d",
+          "size": 3250
+        },
+        {
+          "path": "data/prereg/exponent_analytic_table.txt",
+          "sha256": "4cd78db2bd03b558d522053945e052827d2c529b377f8b3fdd5880cba107556a",
+          "size": 6181
+        },
+        {
+          "path": "data/prereg/fusion_analytic_table.txt",
+          "sha256": "a4f55d6bbd3233c4edaa56c86652be1e8d43a5c62e9f0ff889361758146bcb2d",
+          "size": 5129
+        },
+        {
+          "path": "data/prereg/kat_token_analytic_table.txt",
+          "sha256": "d08c24752a1527a976b6e12dd57522e42139f08b0309bd8f076b0eb8d0940784",
+          "size": 1907
+        },
+        {
+          "path": "data/prereg/occupancy_analytic_table.txt",
+          "sha256": "40d922b5f3119c32e9ef3990aea312772074d70f87e2ce72663cea79f1d622a3",
+          "size": 4981
+        },
+        {
+          "path": "data/prereg/quotas_analytic_table.txt",
+          "sha256": "a206f1555df554e761b5d9212451ac65ac3bb2082ff765ad7c4b885697569189",
+          "size": 7907
+        },
+        {
+          "path": "data/quotas_grid.json",
+          "sha256": "b0a82de2a4690143996d5bdf196bd91f44e75e9c774c0515b7a9c767ba97a42b",
+          "size": 15585
+        }
+      ]
+    },
+    {
+      "name": "data",
+      "kind": "tree",
+      "nfiles": 6,
+      "hash": "e1a8790480760b39173f9e00b5a55da534bcac647dc838b6334fe57ed9983c85",
+      "leaves": [
+        {
+          "path": "output/exponent/celulas.csv",
+          "sha256": "e0717972a7693c2b6e8494fac7c3ef49ce805301479607c2c1e1ce0077dda91c",
+          "size": 5100
+        },
+        {
+          "path": "output/fusion/celulas.csv",
+          "sha256": "34e6e2fc64cce8b0ffee137d0c67350d7ed30764be735c71d0ef91f44f5e75f8",
+          "size": 11841
+        },
+        {
+          "path": "output/kat_token/celulas.csv",
+          "sha256": "81e7f663c765b99d7a9043415782e193612e47962428889ea7f4bb9a2232764f",
+          "size": 6792
+        },
+        {
+          "path": "output/occupancy/celulas.csv",
+          "sha256": "21e64fe3000751d47d34ab53e15093ad959d583eaf97f28ac09a0d4555cf01d8",
+          "size": 10345
+        },
+        {
+          "path": "output/quotas/celulas.csv",
+          "sha256": "9df2bfaf3be7eaeed32737fa2438715c4c0aba0fe221baa95444d637b05c2356",
+          "size": 15268
+        },
+        {
+          "path": "output/replication/celulas.csv",
+          "sha256": "3201f0442551935324595b22a46811058e5fd2eafaa5aafc728ab6f3c16f3865",
+          "size": 2311293
+        }
+      ]
+    },
+    {
+      "name": "scores",
+      "kind": "tree",
+      "nfiles": 10,
+      "hash": "ba3762616dfc5a1d4ee6766c61a7c4847cbf93bac1e13d7c54d99ea4ac685503",
+      "leaves": [
+        {
+          "path": "output/estimativas.json",
+          "sha256": "24252760914c42f71074fa3583d973999723ef539a1426c369c59976cd14c844",
+          "size": 2345
+        },
+        {
+          "path": "output/exponent/resumo.json",
+          "sha256": "46aeb445d6d5d55e0d3e8e79352e04a6083e8ae2f1a5f37b8fbc6ffd669de372",
+          "size": 13116
+        },
+        {
+          "path": "output/fusion/resumo.json",
+          "sha256": "262a0fc849c9e5a0659e63afe263b9ef11ee78c22b24ec99470ce838ea4fcb6c",
+          "size": 31189
+        },
+        {
+          "path": "output/kat_token/resumo.json",
+          "sha256": "b7147f8ee528271470851e95491ca6fa1729edd254c6e8dee9f290f44840fabd",
+          "size": 11001
+        },
+        {
+          "path": "output/occupancy/resumo.json",
+          "sha256": "fc86a7ba481ccb1d3100ab784f7f0f4964ac1c1e3c5e0fdffc13250bd7883c8a",
+          "size": 35428
+        },
+        {
+          "path": "output/quotas/resumo.json",
+          "sha256": "c9c4421f1f3e9c88cfbd4927b94fc8ba587f4f61fdb377355d294cb59c34ef7e",
+          "size": 39730
+        },
+        {
+          "path": "output/replication/resumo.json",
+          "sha256": "a2848f520f795ce69b5cc657db3344299e69baf2e5902bf5fafc8510f5251579",
+          "size": 149932
+        },
+        {
+          "path": "output/results.json",
+          "sha256": "fe63b0ea55b120393adcc0aaea10a1157afb88b0321fbc8c2f32e6d72c53a251",
+          "size": 24318
+        },
+        {
+          "path": "output/tables/enlaces_allreduce.csv",
+          "sha256": "a9fb2778e32ce99bbef702da1f1d5760a47251ee41df6d4e9bfe8e6898dd4a50",
+          "size": 311
+        },
+        {
+          "path": "output/tables/fanout_cauda.csv",
+          "sha256": "d7a0fd93c57fe6d4121f6e79729f5c88d53521731f31e077daa371762996b446",
+          "size": 82
+        }
+      ]
+    },
+    {
+      "name": "figures",
+      "kind": "tree",
+      "nfiles": 4,
+      "hash": "b08f8462e1c35ec8fea66297b30a0cbf74d5c8ca9f8ac6f1985c1209a01aec7e",
+      "leaves": [
+        {
+          "path": "output/figures/fig1_adoption.png",
+          "sha256": "a27e293c5e59ad99d76ed9b90d4db5f0d3693155b8985447e1256906ec3f4af9",
+          "size": 83920
+        },
+        {
+          "path": "output/figures/fig2_architecture.png",
+          "sha256": "0094939bcbfce00519b4f2be22d91c4ad6e7c9da21a08d40cbb849631e6737b9",
+          "size": 424391
+        },
+        {
+          "path": "output/figures/fig3_replication.png",
+          "sha256": "c00e52aee430c8715c4dbf910c386de0bd342f72ecf73e0a777de1035e7c2353",
+          "size": 302919
+        },
+        {
+          "path": "output/figures/fig3_values.json",
+          "sha256": "76fb125322fac3aaceabb07036052a43aa3f297dcf8d838ea55a405cb40f55ef",
+          "size": 11752
+        }
+      ]
+    }
+  ],
+  "prev_chain_head": "0000000000000000000000000000000000000000000000000000000000000000",
+  "root": "1307f172ad9149f48d2f834f104224a889f83e59ca0108ea37c18cd5e2c3c5e1",
+  "chain_head": "1307f172ad9149f48d2f834f104224a889f83e59ca0108ea37c18cd5e2c3c5e1"
+}

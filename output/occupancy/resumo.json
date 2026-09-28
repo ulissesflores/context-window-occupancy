@@ -1,0 +1,1233 @@
+{
+  "N": 100000,
+  "adendo_sha256": "14061945a837d79c291d7a2f077621472bd6ee13b2a793802464024c6856d241",
+  "avaliar_kat": {
+    "KT_N": {
+      "combos": 24,
+      "estouros": 0,
+      "passou": true
+    },
+    "KT_S": {
+      "celulas": 12,
+      "discordantes": 0,
+      "empates": 0,
+      "passou": true
+    },
+    "passou": true,
+    "por_celula": [
+      {
+        "celula": "OCC01",
+        "dif_empirica": 0.0418838258185934,
+        "dif_prevista": 0.04343571492824072,
+        "ep_dif": 0.0006948897605067101,
+        "nivel": {
+          "R": {
+            "delta2_empirico": 2.04241287921073,
+            "delta2_fluido": 2.03566265060241,
+            "dentro": true,
+            "desvio": 0.0004004843115117396,
+            "fluida": 0.8434830111203668,
+            "media": 0.8438834954318786,
+            "tol": 0.01356517062479883
+          },
+          "RS": {
+            "delta2_empirico": 2.9007803307315227,
+            "delta2_fluido": 2.9296679536679537,
+            "dentro": true,
+            "desvio": -0.0011514047981355802,
+            "fluida": 0.8869187260486076,
+            "media": 0.885767321250472,
+            "tol": 0.01313162004011283
+          }
+        },
+        "regime": "saturado",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sinal": "concorda"
+      },
+      {
+        "celula": "OCC02",
+        "dif_empirica": 0.04283936197878513,
+        "dif_prevista": 0.04343571492824072,
+        "ep_dif": 0.00023105217325245653,
+        "nivel": {
+          "R": {
+            "delta2_empirico": 2.0407193378433526,
+            "delta2_fluido": 2.03566265060241,
+            "dentro": true,
+            "desvio": 0.00030013394729022647,
+            "fluida": 0.8434830111203668,
+            "media": 0.8437831450676571,
+            "tol": 0.01356517062479883
+          },
+          "RS": {
+            "delta2_empirico": 2.9222024461948224,
+            "delta2_fluido": 2.9296679536679537,
+            "dentro": true,
+            "desvio": -0.00029621900216536545,
+            "fluida": 0.8869187260486076,
+            "media": 0.8866225070464422,
+            "tol": 0.01313162004011283
+          }
+        },
+        "regime": "saturado",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sinal": "concorda"
+      },
+      {
+        "celula": "OCC03",
+        "dif_empirica": 0.022445803762037975,
+        "dif_prevista": 0.02358221806383809,
+        "ep_dif": 0.0012220815383571068,
+        "nivel": {
+          "R": {
+            "delta2_empirico": 2.0534309302344713,
+            "delta2_fluido": 2.03566265060241,
+            "dentro": true,
+            "desvio": 0.0010513084596182054,
+            "fluida": 0.8434830111203668,
+            "media": 0.844534319579985,
+            "tol": 0.01356517062479883
+          },
+          "RS": {
+            "delta2_empirico": 2.4741061663876085,
+            "delta2_fluido": 2.4758685446009383,
+            "dentro": true,
+            "desvio": -8.510584218190953e-05,
+            "fluida": 0.8670652291842049,
+            "media": 0.866980123342023,
+            "tol": 0.013372735954998279
+          }
+        },
+        "regime": "saturado",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sinal": "concorda"
+      },
+      {
+        "celula": "OCC04",
+        "dif_empirica": 0.02263231401909671,
+        "dif_prevista": 0.02358221806383809,
+        "ep_dif": 0.0010284538238669095,
+        "nivel": {
+          "R": {
+            "delta2_empirico": 2.0485903043105274,
+            "delta2_fluido": 2.03566265060241,
+            "dentro": true,
+            "desvio": 0.000765814354202532,
+            "fluida": 0.8434830111203668,
+            "media": 0.8442488254745694,
+            "tol": 0.01356517062479883
+          },
+          "RS": {
+            "delta2_empirico": 2.472058166172535,
+            "delta2_fluido": 2.4758685446009383,
+            "dentro": true,
+            "desvio": -0.00018408969053884672,
+            "fluida": 0.8670652291842049,
+            "media": 0.8668811394936661,
+            "tol": 0.013372735954998279
+          }
+        },
+        "regime": "saturado",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sinal": "concorda"
+      },
+      {
+        "celula": "OCC05",
+        "dif_empirica": -0.04852421039645405,
+        "dif_prevista": -0.04657515328043549,
+        "ep_dif": 0.0010519830858788527,
+        "nivel": {
+          "R": {
+            "delta2_empirico": 2.280762853406013,
+            "delta2_fluido": 2.3173765765765766,
+            "dentro": true,
+            "desvio": -0.0019170002480912718,
+            "fluida": 0.8591311279626699,
+            "media": 0.8572141277145786,
+            "tol": 0.013447922627583866
+          },
+          "RS": {
+            "delta2_empirico": 1.5245329446391878,
+            "delta2_fluido": 1.5747961579509073,
+            "dentro": true,
+            "desvio": -0.0038660573641098317,
+            "fluida": 0.8125559746822344,
+            "media": 0.8086899173181246,
+            "tol": 0.013692236667887579
+          }
+        },
+        "regime": "saturado",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "sinal": "concorda"
+      },
+      {
+        "celula": "OCC06",
+        "dif_empirica": -0.045720970459839805,
+        "dif_prevista": -0.04657515328043549,
+        "ep_dif": 0.0007806715741068688,
+        "nivel": {
+          "R": {
+            "delta2_empirico": 2.2730168678717004,
+            "delta2_fluido": 2.3173765765765766,
+            "dentro": true,
+            "desvio": -0.002326789827919784,
+            "fluida": 0.8591311279626699,
+            "media": 0.8568043381347501,
+            "tol": 0.013447922627583866
+          },
+          "RS": {
+            "delta2_empirico": 1.555479711979396,
+            "delta2_fluido": 1.5747961579509073,
+            "dentro": true,
+            "desvio": -0.0014726070073241004,
+            "fluida": 0.8125559746822344,
+            "media": 0.8110833676749103,
+            "tol": 0.013692236667887579
+          }
+        },
+        "regime": "saturado",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "sinal": "concorda"
+      },
+      {
+        "celula": "OCC07",
+        "dif_empirica": -0.022605380630444705,
+        "dif_prevista": -0.021944748496584676,
+        "ep_dif": 0.0009783336816773767,
+        "nivel": {
+          "R": {
+            "delta2_empirico": 2.285549795209508,
+            "delta2_fluido": 2.3173765765765766,
+            "dentro": true,
+            "desvio": -0.0016644981572120354,
+            "fluida": 0.8591311279626699,
+            "media": 0.8574666298054578,
+            "tol": 0.013447922627583866
+          },
+          "RS": {
+            "delta2_empirico": 1.8956189687407117,
+            "delta2_fluido": 1.9324198019801986,
+            "dentro": true,
+            "desvio": -0.002325130291072064,
+            "fluida": 0.8371863794660852,
+            "media": 0.8348612491750131,
+            "tol": 0.01360166474791368
+          }
+        },
+        "regime": "saturado",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "sinal": "concorda"
+      },
+      {
+        "celula": "OCC08",
+        "dif_empirica": -0.021718586930750905,
+        "dif_prevista": -0.021944748496584676,
+        "ep_dif": 0.0008755850019727534,
+        "nivel": {
+          "R": {
+            "delta2_empirico": 2.288657120406482,
+            "delta2_fluido": 2.3173765765765766,
+            "dentro": true,
+            "desvio": -0.0015008956985668176,
+            "fluida": 0.8591311279626699,
+            "media": 0.8576302322641031,
+            "tol": 0.013447922627583866
+          },
+          "RS": {
+            "delta2_empirico": 1.91215833732233,
+            "delta2_fluido": 1.9324198019801986,
+            "dentro": true,
+            "desvio": -0.0012747341327330464,
+            "fluida": 0.8371863794660852,
+            "media": 0.8359116453333522,
+            "tol": 0.01360166474791368
+          }
+        },
+        "regime": "saturado",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "sinal": "concorda"
+      },
+      {
+        "celula": "OCC09",
+        "dif_empirica": 0.021462116666948083,
+        "dif_prevista": 0.022612675227399293,
+        "ep_dif": 0.0008633087012620698,
+        "nivel": {
+          "R": {
+            "delta2_empirico": 2.0339243247606684,
+            "delta2_fluido": 2.032744018058691,
+            "dentro": true,
+            "desvio": 7.02245754690134e-05,
+            "fluida": 0.8433094363706057,
+            "media": 0.8433796609460747,
+            "tol": 0.01356625530937032
+          },
+          "RS": {
+            "delta2_empirico": 2.4302809861773405,
+            "delta2_fluido": 2.452313355780023,
+            "dentro": true,
+            "desvio": -0.0010803339849821958,
+            "fluida": 0.865922111598005,
+            "media": 0.8648417776130228,
+            "tol": 0.013384265401064997
+          }
+        },
+        "regime": "saturado",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sinal": "concorda"
+      },
+      {
+        "celula": "OCC10",
+        "dif_empirica": -0.03896303897360376,
+        "dif_prevista": -0.038763399731588044,
+        "ep_dif": 0.0008192759002683792,
+        "nivel": {
+          "R": {
+            "delta2_empirico": 2.211028280167325,
+            "delta2_fluido": 2.2560361173814902,
+            "dentro": true,
+            "desvio": -0.0024303360865283175,
+            "fluida": 0.8559007571657348,
+            "media": 0.8534704210792065,
+            "tol": 0.013475392711281833
+          },
+          "RS": {
+            "delta2_empirico": 1.6007234895726419,
+            "delta2_fluido": 1.6362749675745785,
+            "dentro": true,
+            "desvio": -0.002629975328544032,
+            "fluida": 0.8171373574341467,
+            "media": 0.8145073821056027,
+            "tol": 0.013681280639784233
+          }
+        },
+        "regime": "saturado",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "sinal": "concorda"
+      },
+      {
+        "celula": "OCC11",
+        "dif_empirica": 0.02621512522153746,
+        "dif_prevista": 0.026456929742670443,
+        "ep_dif": 0.0008301129818264233,
+        "nivel": {
+          "R": {
+            "delta2_empirico": 2.017124815887186,
+            "delta2_fluido": 2.03566265060241,
+            "dentro": true,
+            "desvio": -0.0011067551426838795,
+            "fluida": 0.8434830111203668,
+            "media": 0.842376255977683,
+            "tol": 0.01356517062479883
+          },
+          "RS": {
+            "delta2_empirico": 2.507712425707032,
+            "delta2_fluido": 2.5362351554828155,
+            "dentro": true,
+            "desvio": -0.0013485596638168618,
+            "fluida": 0.8699399408630373,
+            "media": 0.8685913811992204,
+            "tol": 0.0133426702663316
+          }
+        },
+        "regime": "saturado",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sinal": "concorda"
+      },
+      {
+        "celula": "OCC12",
+        "dif_empirica": -0.020773789331187675,
+        "dif_prevista": -0.022069538064754313,
+        "ep_dif": 0.0009755588812597759,
+        "nivel": {
+          "R": {
+            "delta2_empirico": 1.6331200419990843,
+            "delta2_fluido": 1.6776431137724548,
+            "dentro": true,
+            "desvio": -0.0032269173343515423,
+            "fluida": 0.8201329881247283,
+            "media": 0.8169060707903768,
+            "tol": 0.013672720923190657
+          },
+          "RS": {
+            "delta2_empirico": 1.3707882780295548,
+            "delta2_fluido": 1.3935284639220893,
+            "dentro": true,
+            "desvio": -0.001931168600784905,
+            "fluida": 0.798063450059974,
+            "media": 0.7961322814591891,
+            "tol": 0.013710738611798938
+          }
+        },
+        "regime": "saturado",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "sinal": "concorda"
+      }
+    ]
+  },
+  "bloco_usuarios": 10000,
+  "celulas": [
+    "OCC01",
+    "OCC02",
+    "OCC03",
+    "OCC04",
+    "OCC05",
+    "OCC06",
+    "OCC07",
+    "OCC08",
+    "OCC09",
+    "OCC10",
+    "OCC11",
+    "OCC12"
+  ],
+  "diagnostico": {
+    "OCC01/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 18.141424
+    },
+    "OCC01/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 27.424038000000003
+    },
+    "OCC02/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 18.160683999999996
+    },
+    "OCC02/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 27.460242
+    },
+    "OCC03/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 18.172596
+    },
+    "OCC03/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 14.88082
+    },
+    "OCC04/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 18.147618
+    },
+    "OCC04/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 14.912812000000002
+    },
+    "OCC05/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 18.355220000000003
+    },
+    "OCC05/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 26.779476
+    },
+    "OCC06/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 18.35743
+    },
+    "OCC06/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 26.794626
+    },
+    "OCC07/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 18.3682
+    },
+    "OCC07/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 11.342546000000002
+    },
+    "OCC08/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 18.379664000000002
+    },
+    "OCC08/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 11.32234
+    },
+    "OCC09/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 19.712495999999998
+    },
+    "OCC09/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 10.752576000000001
+    },
+    "OCC10/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 19.696214
+    },
+    "OCC10/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 29.510742
+    },
+    "OCC11/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 18.100038
+    },
+    "OCC11/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 31.034637999999994
+    },
+    "OCC12/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 10.907504000000001
+    },
+    "OCC12/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 27.958264000000003
+    }
+  },
+  "grade": "data/occupancy_grid.json",
+  "grade_sha256": "64ae62f966e22e7de03960a6ca11af70cfa553e3892c0b29d7d15e40a3524b0e",
+  "sementes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "tabela_sha256": "40d922b5f3119c32e9ef3990aea312772074d70f87e2ce72663cea79f1d622a3",
+  "tag": 6,
+  "tolerancias": {
+    "OCC01/R": 0.01356517062479883,
+    "OCC01/RS": 0.01313162004011283,
+    "OCC02/R": 0.01356517062479883,
+    "OCC02/RS": 0.01313162004011283,
+    "OCC03/R": 0.01356517062479883,
+    "OCC03/RS": 0.013372735954998279,
+    "OCC04/R": 0.01356517062479883,
+    "OCC04/RS": 0.013372735954998279,
+    "OCC05/R": 0.013447922627583866,
+    "OCC05/RS": 0.013692236667887579,
+    "OCC06/R": 0.013447922627583866,
+    "OCC06/RS": 0.013692236667887579,
+    "OCC07/R": 0.013447922627583866,
+    "OCC07/RS": 0.01360166474791368,
+    "OCC08/R": 0.013447922627583866,
+    "OCC08/RS": 0.01360166474791368,
+    "OCC09/R": 0.01356625530937032,
+    "OCC09/RS": 0.013384265401064997,
+    "OCC10/R": 0.013475392711281833,
+    "OCC10/RS": 0.013681280639784233,
+    "OCC11/R": 0.01356517062479883,
+    "OCC11/RS": 0.0133426702663316,
+    "OCC12/R": 0.013672720923190657,
+    "OCC12/RS": 0.013710738611798938
+  },
+  "veredito": {
+    "avaliar_kat_limiar": {
+      "KT_N": {
+        "combos": 4,
+        "estouros": 0,
+        "passou": true
+      },
+      "KT_S": {
+        "celulas": 2,
+        "discordantes": 0,
+        "empates": 0,
+        "passou": true
+      },
+      "passou": true,
+      "por_celula": [
+        {
+          "celula": "OCC11",
+          "dif_empirica": 0.02621512522153746,
+          "dif_prevista": 0.026456929742670443,
+          "ep_dif": 0.0008301129818264233,
+          "nivel": {
+            "R": {
+              "delta2_empirico": 2.017124815887186,
+              "delta2_fluido": 2.03566265060241,
+              "dentro": true,
+              "desvio": -0.0011067551426838795,
+              "fluida": 0.8434830111203668,
+              "media": 0.842376255977683,
+              "tol": 0.01356517062479883
+            },
+            "RS": {
+              "delta2_empirico": 2.507712425707032,
+              "delta2_fluido": 2.5362351554828155,
+              "dentro": true,
+              "desvio": -0.0013485596638168618,
+              "fluida": 0.8699399408630373,
+              "media": 0.8685913811992204,
+              "tol": 0.0133426702663316
+            }
+          },
+          "regime": "saturado",
+          "sinais_por_semente": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "sinal": "concorda"
+        },
+        {
+          "celula": "OCC12",
+          "dif_empirica": -0.020773789331187675,
+          "dif_prevista": -0.022069538064754313,
+          "ep_dif": 0.0009755588812597759,
+          "nivel": {
+            "R": {
+              "delta2_empirico": 1.6331200419990843,
+              "delta2_fluido": 1.6776431137724548,
+              "dentro": true,
+              "desvio": -0.0032269173343515423,
+              "fluida": 0.8201329881247283,
+              "media": 0.8169060707903768,
+              "tol": 0.013672720923190657
+            },
+            "RS": {
+              "delta2_empirico": 1.3707882780295548,
+              "delta2_fluido": 1.3935284639220893,
+              "dentro": true,
+              "desvio": -0.001931168600784905,
+              "fluida": 0.798063450059974,
+              "media": 0.7961322814591891,
+              "tol": 0.013710738611798938
+            }
+          },
+          "regime": "saturado",
+          "sinais_por_semente": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "sinal": "concorda"
+        }
+      ]
+    },
+    "avaliar_kat_principal": {
+      "KT_N": {
+        "combos": 20,
+        "estouros": 0,
+        "passou": true
+      },
+      "KT_S": {
+        "celulas": 10,
+        "discordantes": 0,
+        "empates": 0,
+        "passou": true
+      },
+      "passou": true,
+      "por_celula": [
+        {
+          "celula": "OCC01",
+          "dif_empirica": 0.0418838258185934,
+          "dif_prevista": 0.04343571492824072,
+          "ep_dif": 0.0006948897605067101,
+          "nivel": {
+            "R": {
+              "delta2_empirico": 2.04241287921073,
+              "delta2_fluido": 2.03566265060241,
+              "dentro": true,
+              "desvio": 0.0004004843115117396,
+              "fluida": 0.8434830111203668,
+              "media": 0.8438834954318786,
+              "tol": 0.01356517062479883
+            },
+            "RS": {
+              "delta2_empirico": 2.9007803307315227,
+              "delta2_fluido": 2.9296679536679537,
+              "dentro": true,
+              "desvio": -0.0011514047981355802,
+              "fluida": 0.8869187260486076,
+              "media": 0.885767321250472,
+              "tol": 0.01313162004011283
+            }
+          },
+          "regime": "saturado",
+          "sinais_por_semente": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "sinal": "concorda"
+        },
+        {
+          "celula": "OCC02",
+          "dif_empirica": 0.04283936197878513,
+          "dif_prevista": 0.04343571492824072,
+          "ep_dif": 0.00023105217325245653,
+          "nivel": {
+            "R": {
+              "delta2_empirico": 2.0407193378433526,
+              "delta2_fluido": 2.03566265060241,
+              "dentro": true,
+              "desvio": 0.00030013394729022647,
+              "fluida": 0.8434830111203668,
+              "media": 0.8437831450676571,
+              "tol": 0.01356517062479883
+            },
+            "RS": {
+              "delta2_empirico": 2.9222024461948224,
+              "delta2_fluido": 2.9296679536679537,
+              "dentro": true,
+              "desvio": -0.00029621900216536545,
+              "fluida": 0.8869187260486076,
+              "media": 0.8866225070464422,
+              "tol": 0.01313162004011283
+            }
+          },
+          "regime": "saturado",
+          "sinais_por_semente": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "sinal": "concorda"
+        },
+        {
+          "celula": "OCC03",
+          "dif_empirica": 0.022445803762037975,
+          "dif_prevista": 0.02358221806383809,
+          "ep_dif": 0.0012220815383571068,
+          "nivel": {
+            "R": {
+              "delta2_empirico": 2.0534309302344713,
+              "delta2_fluido": 2.03566265060241,
+              "dentro": true,
+              "desvio": 0.0010513084596182054,
+              "fluida": 0.8434830111203668,
+              "media": 0.844534319579985,
+              "tol": 0.01356517062479883
+            },
+            "RS": {
+              "delta2_empirico": 2.4741061663876085,
+              "delta2_fluido": 2.4758685446009383,
+              "dentro": true,
+              "desvio": -8.510584218190953e-05,
+              "fluida": 0.8670652291842049,
+              "media": 0.866980123342023,
+              "tol": 0.013372735954998279
+            }
+          },
+          "regime": "saturado",
+          "sinais_por_semente": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "sinal": "concorda"
+        },
+        {
+          "celula": "OCC04",
+          "dif_empirica": 0.02263231401909671,
+          "dif_prevista": 0.02358221806383809,
+          "ep_dif": 0.0010284538238669095,
+          "nivel": {
+            "R": {
+              "delta2_empirico": 2.0485903043105274,
+              "delta2_fluido": 2.03566265060241,
+              "dentro": true,
+              "desvio": 0.000765814354202532,
+              "fluida": 0.8434830111203668,
+              "media": 0.8442488254745694,
+              "tol": 0.01356517062479883
+            },
+            "RS": {
+              "delta2_empirico": 2.472058166172535,
+              "delta2_fluido": 2.4758685446009383,
+              "dentro": true,
+              "desvio": -0.00018408969053884672,
+              "fluida": 0.8670652291842049,
+              "media": 0.8668811394936661,
+              "tol": 0.013372735954998279
+            }
+          },
+          "regime": "saturado",
+          "sinais_por_semente": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "sinal": "concorda"
+        },
+        {
+          "celula": "OCC05",
+          "dif_empirica": -0.04852421039645405,
+          "dif_prevista": -0.04657515328043549,
+          "ep_dif": 0.0010519830858788527,
+          "nivel": {
+            "R": {
+              "delta2_empirico": 2.280762853406013,
+              "delta2_fluido": 2.3173765765765766,
+              "dentro": true,
+              "desvio": -0.0019170002480912718,
+              "fluida": 0.8591311279626699,
+              "media": 0.8572141277145786,
+              "tol": 0.013447922627583866
+            },
+            "RS": {
+              "delta2_empirico": 1.5245329446391878,
+              "delta2_fluido": 1.5747961579509073,
+              "dentro": true,
+              "desvio": -0.0038660573641098317,
+              "fluida": 0.8125559746822344,
+              "media": 0.8086899173181246,
+              "tol": 0.013692236667887579
+            }
+          },
+          "regime": "saturado",
+          "sinais_por_semente": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "sinal": "concorda"
+        },
+        {
+          "celula": "OCC06",
+          "dif_empirica": -0.045720970459839805,
+          "dif_prevista": -0.04657515328043549,
+          "ep_dif": 0.0007806715741068688,
+          "nivel": {
+            "R": {
+              "delta2_empirico": 2.2730168678717004,
+              "delta2_fluido": 2.3173765765765766,
+              "dentro": true,
+              "desvio": -0.002326789827919784,
+              "fluida": 0.8591311279626699,
+              "media": 0.8568043381347501,
+              "tol": 0.013447922627583866
+            },
+            "RS": {
+              "delta2_empirico": 1.555479711979396,
+              "delta2_fluido": 1.5747961579509073,
+              "dentro": true,
+              "desvio": -0.0014726070073241004,
+              "fluida": 0.8125559746822344,
+              "media": 0.8110833676749103,
+              "tol": 0.013692236667887579
+            }
+          },
+          "regime": "saturado",
+          "sinais_por_semente": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "sinal": "concorda"
+        },
+        {
+          "celula": "OCC07",
+          "dif_empirica": -0.022605380630444705,
+          "dif_prevista": -0.021944748496584676,
+          "ep_dif": 0.0009783336816773767,
+          "nivel": {
+            "R": {
+              "delta2_empirico": 2.285549795209508,
+              "delta2_fluido": 2.3173765765765766,
+              "dentro": true,
+              "desvio": -0.0016644981572120354,
+              "fluida": 0.8591311279626699,
+              "media": 0.8574666298054578,
+              "tol": 0.013447922627583866
+            },
+            "RS": {
+              "delta2_empirico": 1.8956189687407117,
+              "delta2_fluido": 1.9324198019801986,
+              "dentro": true,
+              "desvio": -0.002325130291072064,
+              "fluida": 0.8371863794660852,
+              "media": 0.8348612491750131,
+              "tol": 0.01360166474791368
+            }
+          },
+          "regime": "saturado",
+          "sinais_por_semente": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "sinal": "concorda"
+        },
+        {
+          "celula": "OCC08",
+          "dif_empirica": -0.021718586930750905,
+          "dif_prevista": -0.021944748496584676,
+          "ep_dif": 0.0008755850019727534,
+          "nivel": {
+            "R": {
+              "delta2_empirico": 2.288657120406482,
+              "delta2_fluido": 2.3173765765765766,
+              "dentro": true,
+              "desvio": -0.0015008956985668176,
+              "fluida": 0.8591311279626699,
+              "media": 0.8576302322641031,
+              "tol": 0.013447922627583866
+            },
+            "RS": {
+              "delta2_empirico": 1.91215833732233,
+              "delta2_fluido": 1.9324198019801986,
+              "dentro": true,
+              "desvio": -0.0012747341327330464,
+              "fluida": 0.8371863794660852,
+              "media": 0.8359116453333522,
+              "tol": 0.01360166474791368
+            }
+          },
+          "regime": "saturado",
+          "sinais_por_semente": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "sinal": "concorda"
+        },
+        {
+          "celula": "OCC09",
+          "dif_empirica": 0.021462116666948083,
+          "dif_prevista": 0.022612675227399293,
+          "ep_dif": 0.0008633087012620698,
+          "nivel": {
+            "R": {
+              "delta2_empirico": 2.0339243247606684,
+              "delta2_fluido": 2.032744018058691,
+              "dentro": true,
+              "desvio": 7.02245754690134e-05,
+              "fluida": 0.8433094363706057,
+              "media": 0.8433796609460747,
+              "tol": 0.01356625530937032
+            },
+            "RS": {
+              "delta2_empirico": 2.4302809861773405,
+              "delta2_fluido": 2.452313355780023,
+              "dentro": true,
+              "desvio": -0.0010803339849821958,
+              "fluida": 0.865922111598005,
+              "media": 0.8648417776130228,
+              "tol": 0.013384265401064997
+            }
+          },
+          "regime": "saturado",
+          "sinais_por_semente": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "sinal": "concorda"
+        },
+        {
+          "celula": "OCC10",
+          "dif_empirica": -0.03896303897360376,
+          "dif_prevista": -0.038763399731588044,
+          "ep_dif": 0.0008192759002683792,
+          "nivel": {
+            "R": {
+              "delta2_empirico": 2.211028280167325,
+              "delta2_fluido": 2.2560361173814902,
+              "dentro": true,
+              "desvio": -0.0024303360865283175,
+              "fluida": 0.8559007571657348,
+              "media": 0.8534704210792065,
+              "tol": 0.013475392711281833
+            },
+            "RS": {
+              "delta2_empirico": 1.6007234895726419,
+              "delta2_fluido": 1.6362749675745785,
+              "dentro": true,
+              "desvio": -0.002629975328544032,
+              "fluida": 0.8171373574341467,
+              "media": 0.8145073821056027,
+              "tol": 0.013681280639784233
+            }
+          },
+          "regime": "saturado",
+          "sinais_por_semente": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "sinal": "concorda"
+        }
+      ]
+    },
+    "criterios": {
+      "OCC_N": {
+        "combos": 20,
+        "estouros": [],
+        "passou": true,
+        "regra": "level: |mean(AUC) - fluid AUC| <= tol of the combination (frozen token KAT tolerance) in the 20 combinations of the main family"
+      },
+      "OCC_S": {
+        "celulas": [
+          "OCC01",
+          "OCC02",
+          "OCC03",
+          "OCC04",
+          "OCC05",
+          "OCC06",
+          "OCC07",
+          "OCC08",
+          "OCC09",
+          "OCC10"
+        ],
+        "concorda": [
+          "OCC01",
+          "OCC02",
+          "OCC03",
+          "OCC04",
+          "OCC05",
+          "OCC06",
+          "OCC07",
+          "OCC08",
+          "OCC09",
+          "OCC10"
+        ],
+        "discorda": [],
+        "empate": [],
+        "passou": true,
+        "regra": "main family (core + three sources): tie if |predicted dAUC| < 3 SE_emp; disagree if the empirical sign differs; passes with 10/10 agree"
+      }
+    },
+    "familia": "OCC",
+    "fora_do_veredito": {
+      "OCC_L": {
+        "celulas": [
+          "OCC11",
+          "OCC12"
+        ],
+        "concorda": [
+          "OCC11",
+          "OCC12"
+        ],
+        "discorda": [],
+        "empate": [],
+        "regra": "threshold sub-block: same sign rule, reported apart, outside the verdict"
+      }
+    },
+    "grade_completa": true,
+    "leitura": "event-rate weighting refuted in the 10 cells; sign and level checked",
+    "passou": true,
+    "relatorio": {
+      "alfa_minimo": {
+        "alfa_por_celula": {
+          "OCC01": 0.31304428203328427,
+          "OCC02": 0.31304428203328427,
+          "OCC03": 0.34388039722422914,
+          "OCC04": 0.34388039722422914,
+          "OCC05": 0.2041190530465724,
+          "OCC06": 0.2041190530465724,
+          "OCC07": 0.3176355731737821,
+          "OCC08": 0.3176355731737821,
+          "OCC09": 0.5156373891484927,
+          "OCC10": 0.29881452298584266,
+          "OCC11": 0.6889365843822539,
+          "OCC12": 0.7488959618651636
+        },
+        "com_occ_l": 0.7488959618651636,
+        "familia_principal": 0.5156373891484927
+      },
+      "invariancia_em_T": [
+        {
+          "dentro": true,
+          "diferenca": 0.0009555361601917278,
+          "limite": 0.0021968868824306376,
+          "par": "OCC01/OCC02"
+        },
+        {
+          "dentro": true,
+          "diferenca": 0.00018651025705873625,
+          "limite": 0.004791743418420656,
+          "par": "OCC03/OCC04"
+        },
+        {
+          "dentro": true,
+          "diferenca": 0.0028032399366142435,
+          "limite": 0.003930018915519773,
+          "par": "OCC05/OCC06"
+        },
+        {
+          "dentro": true,
+          "diferenca": 0.0008867936996937997,
+          "limite": 0.003938790803718361,
+          "par": "OCC07/OCC08"
+        }
+      ],
+      "regra_por_evento": {
+        "celulas_opostas": [
+          "OCC03",
+          "OCC04",
+          "OCC05",
+          "OCC06",
+          "OCC09",
+          "OCC10",
+          "OCC12"
+        ],
+        "refutada": true,
+        "refutada_em": [
+          "OCC03",
+          "OCC04",
+          "OCC05",
+          "OCC06",
+          "OCC09",
+          "OCC10",
+          "OCC12"
+        ]
+      },
+      "vies_observado_vs_previsto": {
+        "OCC01": {
+          "observado": -0.0015518891096473197,
+          "previsto": -0.0003769974877323185
+        },
+        "OCC02": {
+          "observado": -0.0005963529494555919,
+          "previsto": -0.0003769974877323185
+        },
+        "OCC03": {
+          "observado": -0.001136414301800115,
+          "previsto": 0.00016072851441104247
+        },
+        "OCC04": {
+          "observado": -0.0009499040447413787,
+          "previsto": 0.00016072851441104247
+        },
+        "OCC05": {
+          "observado": -0.00194905711601856,
+          "previsto": 0.00046527373943953845
+        },
+        "OCC06": {
+          "observado": 0.0008541828205956836,
+          "previsto": 0.00046527373943953845
+        },
+        "OCC07": {
+          "observado": -0.0006606321338600285,
+          "previsto": 0.00036011217430120986
+        },
+        "OCC08": {
+          "observado": 0.00022616156583377123,
+          "previsto": 0.00036011217430120986
+        },
+        "OCC09": {
+          "observado": -0.0011505585604512092,
+          "previsto": 0.00025364921352254524
+        },
+        "OCC10": {
+          "observado": -0.00019963924201571448,
+          "previsto": 0.0005884557419678425
+        },
+        "OCC11": {
+          "observado": -0.00024180452113298223,
+          "previsto": -0.00030724902366545956
+        },
+        "OCC12": {
+          "observado": 0.0012957487335666373,
+          "previsto": 0.0010993513136648135
+        }
+      }
+    },
+    "testes_unidade": {
+      "arquivo": "tests/test_occupancy.py",
+      "ids": [
+        "OCCT1",
+        "OCCT2",
+        "OCCT3"
+      ],
+      "nota": "precondition of the verdict, checked by pytest before the run",
+      "verificados_neste_run": false
+    }
+  },
+  "versoes": {
+    "numpy": "2.4.6",
+    "python": "3.14.7",
+    "scipy": "1.17.1"
+  }
+}

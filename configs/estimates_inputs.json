@@ -1,0 +1,50 @@
+{
+  "_doc": "Every input of the estimates. kind=FACT is copied from a primary source (key + locator); kind=SPEC is a vendor datasheet value; kind=ASSUMPTION is the author's stated assumption, never presented as a fact. Values are SI units unless the name says otherwise.",
+  "fonte_nuformer": "Braithwaite et al., arXiv:2507.23267v2 (2026)",
+  "fonte_case": "Udagawa, Building Foundation Models into Nubank's AI Platform (2025-06-11)",
+  "fonte_mlops": "Nubank Editorial, Practices to scale Machine Learning operations (2025-04-07)",
+
+  "params_modelo":            {"value": 330e6,  "kind": "FACT", "src": "nuformer", "loc": "§3.3 and §4.2.1: '330M-parameter transformer'"},
+  "n_camadas":                {"value": 24,     "kind": "FACT", "src": "nuformer", "loc": "§4.2.1: '24 attention layers, each with 16 attention heads'"},
+  "d_modelo":                 {"value": 1024,   "kind": "FACT", "src": "nuformer", "loc": "§4.2.1: 'the 330M model has a 1024 length embedding'"},
+  "contexto_tokens":          {"value": 2048,   "kind": "FACT", "src": "nuformer", "loc": "§4.2: 'Both have a context length of 2048'"},
+  "tokens_por_txn_compacto":  {"value": 14,     "kind": "FACT", "src": "nuformer", "loc": "Appendix A: 'each transaction consumes 14 tokens on average'"},
+  "tokens_por_txn_texto":     {"value": 55,     "kind": "FACT", "src": "nuformer", "loc": "§1: 'requires approximately 55 tokens per transaction'"},
+  "txn_por_ctx_texto_fonte":  {"value": 37,     "kind": "FACT", "src": "nuformer", "loc": "§1: 'limiting a 2048-context model to roughly 37 transactions'"},
+  "tokens_pretreino":         {"value": 500e9,  "kind": "FACT", "src": "nuformer", "loc": "Abstract: 'trained on ~500 billion tokens'"},
+  "usuarios_inferencia":      {"value": 100e6,  "kind": "FACT", "src": "nuformer", "loc": "§4.3: 'Processing 100M+ users' (lower bound: '+')"},
+  "horas_inferencia":         {"value": 5,      "kind": "FACT", "src": "nuformer", "loc": "§4.3: 'typically requires approximately 5 hours on 60 A100 GPUs'"},
+  "gpus_inferencia_a100":     {"value": 60,     "kind": "FACT", "src": "nuformer", "loc": "§4.3"},
+  "nos_inferencia_l4_min":    {"value": 150,    "kind": "FACT", "src": "nuformer", "loc": "§4.3: '(or 150-300 L4 nodes)'"},
+  "nos_inferencia_l4_max":    {"value": 300,    "kind": "FACT", "src": "nuformer", "loc": "§4.3"},
+  "linhas_finetune":          {"value": 203e6,  "kind": "FACT", "src": "nuformer", "loc": "§4.1: '203M training rows'"},
+  "dias_finetune":            {"value": 7,      "kind": "FACT", "src": "nuformer", "loc": "Appendix C: 'a single 203M training run requires 7 days on 8 A100s'"},
+  "gpus_finetune_a100":       {"value": 8,      "kind": "FACT", "src": "nuformer", "loc": "Appendix C"},
+  "batch_finetune":           {"value": 2048,   "kind": "FACT", "src": "nuformer", "loc": "Appendix C, Table 6: 'Batch size 2048'"},
+  "sla_pix_ms":               {"value": 700,    "kind": "FACT", "src": "mlops",    "loc": "Testing and shadow mode: 'SLAs (e.g., 700ms for PIX transactions)'"},
+  "eventos_pre_filtro_tps":   {"value": 2800,   "kind": "FACT", "src": "mlops",    "loc": "Pre-Policy Filtering: 'from 2,800 per second to just 20 per second'"},
+  "eventos_pos_filtro_tps":   {"value": 20,     "kind": "FACT", "src": "mlops",    "loc": "Pre-Policy Filtering"},
+
+  "a100_bf16_denso_flops":    {"value": 312e12, "kind": "SPEC", "src": "nvidia_a100", "loc": "A100 datasheet: BF16 Tensor Core 312 TFLOPS (624 with sparsity)"},
+  "a100_hbm_bytes_s":         {"value": 2039e9, "kind": "SPEC", "src": "nvidia_a100", "loc": "A100 80GB SXM: 2,039 GB/s"},
+  "l4_bf16_denso_flops":      {"value": 121e12, "kind": "SPEC", "src": "nvidia_l4",   "loc": "L4 datasheet: BF16 Tensor Core 242 TFLOPS with sparsity -> 121 dense"},
+  "h100_bf16_denso_flops":    {"value": 989e12, "kind": "SPEC", "src": "nvidia_h100", "loc": "H100 SXM: BF16 Tensor Core 1,979 TFLOPS with sparsity -> 989 dense"},
+
+  "_enlaces_doc": "Per-direction bandwidth available to ONE GPU for the collective, bytes/s. NVLink figures in datasheets are bidirectional totals; halved here.",
+  "enlaces": {
+    "NVLink 3 (A100, intra-no)":        {"value": 300e9,   "kind": "SPEC", "src": "nvidia_a100", "loc": "600 GB/s bidirectional -> 300 GB/s per direction"},
+    "NVLink 4 (H100, intra-no)":        {"value": 450e9,   "kind": "SPEC", "src": "nvidia_h100", "loc": "900 GB/s bidirectional -> 450 GB/s per direction"},
+    "InfiniBand NDR 400 Gb/s":          {"value": 50e9,    "kind": "SPEC", "src": "nvidia_quantum2", "loc": "400 Gb/s per port = 50 GB/s"},
+    "Ethernet RoCE 200 Gb/s":           {"value": 25e9,    "kind": "ASSUMPTION", "src": "autor", "loc": "common cloud NIC tier; line rate only"},
+    "Ethernet 100 Gb/s":                {"value": 12.5e9,  "kind": "ASSUMPTION", "src": "autor", "loc": "line rate only"},
+    "Ethernet 25 Gb/s":                 {"value": 3.125e9, "kind": "ASSUMPTION", "src": "autor", "loc": "line rate only"}
+  },
+
+  "bytes_gradiente":          {"value": 2,      "kind": "ASSUMPTION", "src": "autor", "loc": "BF16 gradients (mixed precision); FP32 would double every communication figure"},
+  "gpus_pretreino":           {"value": 64,     "kind": "ASSUMPTION", "src": "autor", "loc": "8 nodes x 8 GPUs; not disclosed by the sources"},
+  "mfu_pretreino":            {"value": 0.40,   "kind": "ASSUMPTION", "src": "autor", "loc": "model FLOPs utilization typical of well-tuned dense training; not disclosed"},
+  "batch_pretreino_seq":      {"value": 2048,   "kind": "ASSUMPTION", "src": "autor", "loc": "same global batch as the published fine-tuning config; not disclosed for pre-training"},
+  "bytes_por_token_id":       {"value": 4,      "kind": "ASSUMPTION", "src": "autor", "loc": "int32 token ids (upper bound; uint16 would halve)"},
+  "servicos_fanout":          {"value": [1, 5, 10, 20], "kind": "ASSUMPTION", "src": "autor", "loc": "illustrative fan-out of feature services per decision"},
+  "p_lento_por_servico":      {"value": 0.01,   "kind": "ASSUMPTION", "src": "autor", "loc": "each dependency exceeds its own p99 with probability 1% (definition of p99), independence assumed"}
+}

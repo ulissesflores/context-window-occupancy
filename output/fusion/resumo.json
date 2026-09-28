@@ -1,0 +1,1145 @@
+{
+  "K": 2048,
+  "N": 100000,
+  "avaliar_fusao": {
+    "CMP_0": {
+      "celula": "CMP6",
+      "contraste": "RF-RS",
+      "dif_empirica": 1.1636289978245173e-06,
+      "passou": true,
+      "tol_0": 0.0041
+    },
+    "CMP_N": {
+      "combos": 24,
+      "estouros": 0,
+      "passou": true
+    },
+    "CMP_S": {
+      "concordam": 28,
+      "contrastes": 28,
+      "discordantes": 0,
+      "empates": 0,
+      "passou": true,
+      "sem_significancia": 0
+    },
+    "CMP_T": {
+      "bracos": 4,
+      "estouros": 0,
+      "no_veredito": false,
+      "passou": true
+    },
+    "passou": true,
+    "por_braco": [
+      {
+        "braco": "R",
+        "celula": "CMP1",
+        "delta2_empirico": 2.11250810124971,
+        "delta2_fluido": 2.106514285714286,
+        "dentro": true,
+        "desvio": 0.00034351087273765124,
+        "disc_bloco": 0.0,
+        "fluida": 0.8476209357823592,
+        "media": 0.8479644466550968,
+        "regime": "sat",
+        "tol": 0.01111754232546121
+      },
+      {
+        "braco": "RS",
+        "celula": "CMP1",
+        "delta2_empirico": 1.2380922805739591,
+        "delta2_fluido": 1.2504555891238671,
+        "dentro": true,
+        "desvio": -0.001145377166651751,
+        "disc_bloco": 0.0,
+        "fluida": 0.7854443935922579,
+        "media": 0.7842990164256062,
+        "regime": "sat",
+        "tol": 0.01370822379521328
+      },
+      {
+        "abaixo_do_teto": true,
+        "braco": "RF",
+        "celula": "CMP1",
+        "delta2_empirico": 3.304630679142417,
+        "delta2_fluido": 3.317842084168337,
+        "dentro": true,
+        "desvio": -0.00044751409295151756,
+        "disc_bloco": 0.0007478261196544008,
+        "fluida": 0.9011254672169309,
+        "media": 0.9006779531239794,
+        "regime": "sat",
+        "teto": 0.9038686193843296,
+        "tol": 0.013653353460912052
+      },
+      {
+        "braco": "RP",
+        "celula": "CMP1",
+        "delta2_empirico": 1.5152300779462886,
+        "delta2_fluido": 1.5386677354709422,
+        "dentro": true,
+        "desvio": -0.0018263587889615351,
+        "disc_bloco": 0.0008031501974368963,
+        "fluida": 0.8097883977107644,
+        "media": 0.8079620389218028,
+        "regime": "sat",
+        "tol": 0.014500784541634297
+      },
+      {
+        "braco": "R",
+        "celula": "CMP2",
+        "delta2_empirico": 2.101235578876245,
+        "delta2_fluido": 2.106514285714286,
+        "dentro": true,
+        "desvio": -0.0003033594404815432,
+        "disc_bloco": 0.0,
+        "fluida": 0.8476209357823592,
+        "media": 0.8473175763418777,
+        "regime": "sat",
+        "tol": 0.01111754232546121
+      },
+      {
+        "braco": "RS",
+        "celula": "CMP2",
+        "delta2_empirico": 1.7928985145583272,
+        "delta2_fluido": 1.797942857142857,
+        "dentro": true,
+        "desvio": -0.0003389623092779903,
+        "disc_bloco": 0.0,
+        "fluida": 0.8284711706394075,
+        "media": 0.8281322083301295,
+        "regime": "sat",
+        "tol": 0.011227408829716807
+      },
+      {
+        "abaixo_do_teto": true,
+        "braco": "RF",
+        "celula": "CMP2",
+        "delta2_empirico": 2.6201256864228095,
+        "delta2_fluido": 2.636590507364976,
+        "dentro": true,
+        "desvio": -0.0007425244662662145,
+        "disc_bloco": 0.0006217806278148094,
+        "fluida": 0.8745508856808206,
+        "media": 0.8738083612145544,
+        "regime": "sat",
+        "teto": 0.8773821535167831,
+        "tol": 0.013912936674631048
+      },
+      {
+        "braco": "RP",
+        "celula": "CMP2",
+        "delta2_empirico": 1.3133417357737385,
+        "delta2_fluido": 1.3431829787234042,
+        "dentro": true,
+        "desvio": -0.002620213535874494,
+        "disc_bloco": 0.0017333873756432048,
+        "fluida": 0.7937513544310788,
+        "media": 0.7911311408952043,
+        "regime": "sat",
+        "tol": 0.015445136561252138
+      },
+      {
+        "braco": "R",
+        "celula": "CMP3",
+        "delta2_empirico": 2.109910390351703,
+        "delta2_fluido": 2.106514285714286,
+        "dentro": true,
+        "desvio": 0.00019475687014502974,
+        "disc_bloco": 0.0,
+        "fluida": 0.8476209357823592,
+        "media": 0.8478156926525042,
+        "regime": "sat",
+        "tol": 0.01111754232546121
+      },
+      {
+        "braco": "RS",
+        "celula": "CMP3",
+        "delta2_empirico": 1.1128066435469928,
+        "delta2_fluido": 1.1190857142857145,
+        "dentro": true,
+        "desvio": -0.0006342743377628635,
+        "disc_bloco": 0.0,
+        "fluida": 0.7727777544938562,
+        "media": 0.7721434801560934,
+        "regime": "sat",
+        "tol": 0.011431582729685702
+      },
+      {
+        "abaixo_do_teto": true,
+        "braco": "RF",
+        "celula": "CMP3",
+        "delta2_empirico": 1.6229582501247026,
+        "delta2_fluido": 1.6410815057283146,
+        "dentro": true,
+        "desvio": -0.0013305990670762213,
+        "disc_bloco": 0.0008875608023474294,
+        "fluida": 0.817488945075791,
+        "media": 0.8161583460087147,
+        "regime": "sat",
+        "teto": 0.8209373671948518,
+        "tol": 0.014567894654216913
+      },
+      {
+        "braco": "RP",
+        "celula": "CMP3",
+        "delta2_empirico": 1.211023159463777,
+        "delta2_fluido": 1.2187443535188218,
+        "dentro": true,
+        "desvio": -0.000729253776722949,
+        "disc_bloco": 0.0021832577976254007,
+        "fluida": 0.7824878526787481,
+        "media": 0.7817585989020251,
+        "regime": "sat",
+        "tol": 0.015888545734038806
+      },
+      {
+        "braco": "R",
+        "celula": "CMP4",
+        "delta2_empirico": 1.9520960219828016,
+        "delta2_fluido": 1.9698036363636366,
+        "dentro": true,
+        "desvio": -0.0010924124701361393,
+        "disc_bloco": 0.0,
+        "fluida": 0.8395041924316999,
+        "media": 0.8384117799615638,
+        "regime": "sat",
+        "tol": 0.01358890697475083
+      },
+      {
+        "braco": "RS",
+        "celula": "CMP4",
+        "delta2_empirico": 2.8220013549579894,
+        "delta2_fluido": 2.836718139534884,
+        "dentro": true,
+        "desvio": -0.0006083325387633565,
+        "disc_bloco": 0.0,
+        "fluida": 0.8831631594805602,
+        "media": 0.8825548269417969,
+        "regime": "sat",
+        "tol": 0.013183501988499803
+      },
+      {
+        "abaixo_do_teto": true,
+        "braco": "RF",
+        "celula": "CMP4",
+        "delta2_empirico": 4.482139085048937,
+        "delta2_fluido": 4.476289174311927,
+        "dentro": true,
+        "desvio": 0.00012722984580815222,
+        "disc_bloco": 0.0007261073625817364,
+        "fluida": 0.9326787718813012,
+        "media": 0.9328060017271094,
+        "regime": "sat",
+        "teto": 0.9350830415826128,
+        "tol": 0.012921548305804642
+      },
+      {
+        "braco": "RP",
+        "celula": "CMP4",
+        "delta2_empirico": 2.308879711273885,
+        "delta2_fluido": 2.311797431192661,
+        "dentro": true,
+        "desvio": -0.0001519599293406948,
+        "disc_bloco": 0.0002368343803736087,
+        "fluida": 0.8588411312467359,
+        "media": 0.8586891713173952,
+        "regime": "sat",
+        "tol": 0.013687295545859138
+      },
+      {
+        "braco": "R",
+        "celula": "CMP5",
+        "delta2_empirico": 1.9812244252929982,
+        "delta2_fluido": 2.025,
+        "dentro": true,
+        "desvio": -0.0026440649638971303,
+        "disc_bloco": 0.0,
+        "fluida": 0.842847669763073,
+        "media": 0.8402036047991759,
+        "regime": "nao",
+        "tol": 0.010320126138539831
+      },
+      {
+        "braco": "RS",
+        "celula": "CMP5",
+        "delta2_empirico": 1.6653612083844553,
+        "delta2_fluido": 1.6641462857142857,
+        "dentro": true,
+        "desvio": 8.759723121454233e-05,
+        "disc_bloco": 0.0,
+        "fluida": 0.8191631288022884,
+        "media": 0.8192507260335029,
+        "regime": "sat",
+        "tol": 0.011272733508013656
+      },
+      {
+        "braco": "RF",
+        "celula": "CMP5",
+        "delta2_empirico": 6.3736109804079915,
+        "delta2_fluido": 6.399,
+        "dentro": true,
+        "desvio": -0.0002870802065536582,
+        "disc_bloco": 0.0,
+        "fluida": 0.9631696065788918,
+        "media": 0.9628825263723382,
+        "regime": "nao",
+        "tol": 0.009162833867828013
+      },
+      {
+        "braco": "RP",
+        "celula": "CMP5",
+        "delta2_empirico": 2.7319232910349207,
+        "delta2_fluido": 2.754,
+        "dentro": true,
+        "desvio": -0.0009470621820852898,
+        "disc_bloco": 0.00014409374563431309,
+        "fluida": 0.8796935909364496,
+        "media": 0.8787465287543643,
+        "regime": "nao",
+        "tol": 0.010215136342909551
+      },
+      {
+        "braco": "R",
+        "celula": "CMP6",
+        "delta2_empirico": 1.692776422054925,
+        "delta2_fluido": 1.6875,
+        "dentro": true,
+        "desvio": 0.00037517967483247094,
+        "disc_bloco": 0.0,
+        "fluida": 0.8208367666255598,
+        "media": 0.8212119463003923,
+        "regime": "nao",
+        "tol": 0.010443526220016732
+      },
+      {
+        "braco": "RS",
+        "celula": "CMP6",
+        "delta2_empirico": 2.869116815638065,
+        "delta2_fluido": 2.9025,
+        "dentro": true,
+        "desvio": -0.00134722844185875,
+        "disc_bloco": 0.0,
+        "fluida": 0.8858362573425587,
+        "media": 0.8844890289006999,
+        "regime": "nao",
+        "tol": 0.010023339865423423
+      },
+      {
+        "braco": "RF",
+        "celula": "CMP6",
+        "delta2_empirico": 2.8691454466446236,
+        "delta2_fluido": 2.9025,
+        "dentro": true,
+        "desvio": -0.0013460648128609254,
+        "disc_bloco": 0.0,
+        "fluida": 0.8858362573425587,
+        "media": 0.8844901925296977,
+        "regime": "nao",
+        "tol": 0.010023339865423423
+      },
+      {
+        "braco": "RP",
+        "celula": "CMP6",
+        "delta2_empirico": 2.013049507827962,
+        "delta2_fluido": 1.99125,
+        "dentro": true,
+        "desvio": 0.0013173041332481539,
+        "disc_bloco": 0.002050589910650764,
+        "fluida": 0.8408142747016139,
+        "media": 0.842131578834862,
+        "regime": "nao",
+        "tol": 0.012382837013281451
+      }
+    ],
+    "por_contraste": [
+      {
+        "celula": "CMP1",
+        "contraste": "RS-R",
+        "dif_empirica": -0.06366543022949067,
+        "dif_prevista": -0.06217654219010127,
+        "ep_dif": 0.0007637458745008851,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "celula": "CMP1",
+        "contraste": "RF-R",
+        "dif_empirica": 0.05271350646888251,
+        "dif_prevista": 0.05350453143457168,
+        "ep_dif": 0.0005585439275280354,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP1",
+        "contraste": "RP-R",
+        "dif_empirica": -0.040002407733294,
+        "dif_prevista": -0.03783253807159481,
+        "ep_dif": 0.0008453379801527863,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "celula": "CMP1",
+        "contraste": "RF-RS",
+        "dif_empirica": 0.11637893669837318,
+        "dif_prevista": 0.11568107362467295,
+        "ep_dif": 0.0008215970919805276,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP1",
+        "contraste": "RP-RS",
+        "dif_empirica": 0.023663022496196673,
+        "dif_prevista": 0.024344004118506457,
+        "ep_dif": 0.001038097665569675,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP2",
+        "contraste": "RS-R",
+        "dif_empirica": -0.019185368011748194,
+        "dif_prevista": -0.019149765142951747,
+        "ep_dif": 0.0011773882083267752,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "celula": "CMP2",
+        "contraste": "RF-R",
+        "dif_empirica": 0.026490784872676754,
+        "dif_prevista": 0.026929949898461425,
+        "ep_dif": 0.0011905296035354888,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP2",
+        "contraste": "RP-R",
+        "dif_empirica": -0.056186435446673344,
+        "dif_prevista": -0.05386958135128039,
+        "ep_dif": 0.001004360186886365,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "celula": "CMP2",
+        "contraste": "RF-RS",
+        "dif_empirica": 0.04567615288442495,
+        "dif_prevista": 0.04607971504141317,
+        "ep_dif": 0.0011304246891516909,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP2",
+        "contraste": "RP-RS",
+        "dif_empirica": -0.03700106743492515,
+        "dif_prevista": -0.03471981620832865,
+        "ep_dif": 0.0009323296766443419,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "celula": "CMP3",
+        "contraste": "RS-R",
+        "dif_empirica": -0.07567221249641087,
+        "dif_prevista": -0.07484318128850298,
+        "ep_dif": 0.0008050663113285517,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "celula": "CMP3",
+        "contraste": "RF-R",
+        "dif_empirica": -0.0316573466437895,
+        "dif_prevista": -0.030131990706568246,
+        "ep_dif": 0.0009619024119347972,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "celula": "CMP3",
+        "contraste": "RP-R",
+        "dif_empirica": -0.06605709375047908,
+        "dif_prevista": -0.0651330831036111,
+        "ep_dif": 0.0010132718829628181,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "celula": "CMP3",
+        "contraste": "RF-RS",
+        "dif_empirica": 0.044014865852621377,
+        "dif_prevista": 0.044711190581934734,
+        "ep_dif": 0.0006072944624005887,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP3",
+        "contraste": "RP-RS",
+        "dif_empirica": 0.009615118745931794,
+        "dif_prevista": 0.00971009818489188,
+        "ep_dif": 0.0006857625119379556,
+        "estado": "concorda",
+        "papel": "só reportado",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP4",
+        "contraste": "RS-R",
+        "dif_empirica": 0.04414304698023308,
+        "dif_prevista": 0.0436589670488603,
+        "ep_dif": 0.0008853283272704623,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP4",
+        "contraste": "RF-R",
+        "dif_empirica": 0.09439422176554557,
+        "dif_prevista": 0.09317457944960128,
+        "ep_dif": 0.0008799768764928974,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP4",
+        "contraste": "RP-R",
+        "dif_empirica": 0.020277391355831398,
+        "dif_prevista": 0.019336938815035953,
+        "ep_dif": 0.0012296835810538945,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP4",
+        "contraste": "RF-RS",
+        "dif_empirica": 0.05025117478531249,
+        "dif_prevista": 0.04951561240074098,
+        "ep_dif": 0.0006367615748587325,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP4",
+        "contraste": "RP-RS",
+        "dif_empirica": -0.023865655624401683,
+        "dif_prevista": -0.024322028233824344,
+        "ep_dif": 0.0010692182703114959,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "celula": "CMP5",
+        "contraste": "RS-R",
+        "dif_empirica": -0.020952878765672978,
+        "dif_prevista": -0.02368454096078465,
+        "ep_dif": 0.0008099399621386178,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "celula": "CMP5",
+        "contraste": "RF-R",
+        "dif_empirica": 0.12267892157316229,
+        "dif_prevista": 0.12032193681581882,
+        "ep_dif": 0.0007438119386300947,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP5",
+        "contraste": "RP-R",
+        "dif_empirica": 0.038542923955188435,
+        "dif_prevista": 0.036845921173376595,
+        "ep_dif": 0.0008862611574343997,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP5",
+        "contraste": "RF-RS",
+        "dif_empirica": 0.14363180033883527,
+        "dif_prevista": 0.14400647777660347,
+        "ep_dif": 0.00045773844480446503,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP5",
+        "contraste": "RP-RS",
+        "dif_empirica": 0.05949580272086141,
+        "dif_prevista": 0.060530462134161245,
+        "ep_dif": 0.0006646255509535518,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP6",
+        "contraste": "RS-R",
+        "dif_empirica": 0.06327708260030762,
+        "dif_prevista": 0.06499949071699884,
+        "ep_dif": 0.0008601054453120569,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP6",
+        "contraste": "RF-R",
+        "dif_empirica": 0.06327824622930545,
+        "dif_prevista": 0.06499949071699884,
+        "ep_dif": 0.0008599989502325534,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP6",
+        "contraste": "RP-R",
+        "dif_empirica": 0.020919632534469712,
+        "dif_prevista": 0.01997750807605403,
+        "ep_dif": 0.0009262405949312974,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP6",
+        "contraste": "RF-RS",
+        "dif_empirica": 1.1636289978245173e-06,
+        "dif_prevista": 0.0,
+        "ep_dif": 0.0009826780536676017,
+        "estado": "dentro",
+        "papel": "critério (nulo)",
+        "sinais_por_semente": [
+          -1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "celula": "CMP6",
+        "contraste": "RP-RS",
+        "dif_empirica": -0.04235745006583791,
+        "dif_prevista": -0.04502198264094481,
+        "ep_dif": 0.0010411434110906795,
+        "estado": "concorda",
+        "papel": "critério",
+        "sinais_por_semente": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      }
+    ],
+    "testes_de_unidade": "FU1-FU5 (tests/test_fusion.py) are also required by the criterion; they are run by pytest, not by this evaluator",
+    "veredito": "PASSA"
+  },
+  "bloco_usuarios": 10000,
+  "definicoes": {
+    "blocos_visiveis_fluido": "(lam_S / m) * h, h = min(T, K / W) of the fused arm",
+    "blocos_visiveis_medio": "visible blocks per user (RF and RP share the window)",
+    "frac_bloco_incompleto_visivel": "fraction of users whose incomplete block is visible",
+    "frac_saturada": "fraction of users whose history costs more than K tokens; for RF and RP the history is R + blocks (after fusion)",
+    "ociosos_medio_saturados": "mean of K minus the visible tokens over the saturated users of the arm"
+  },
+  "diagnostico": {
+    "CMP1/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 4.0
+    },
+    "CMP1/RF": {
+      "blocos_visiveis_fluido": 20.521042084168336,
+      "blocos_visiveis_medio": 20.379811999999998,
+      "frac_bloco_incompleto_visivel_media": 0.0,
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 21.533136
+    },
+    "CMP1/RP": {
+      "blocos_visiveis_fluido": 20.521042084168336,
+      "blocos_visiveis_medio": 20.379811999999998,
+      "frac_bloco_incompleto_visivel_media": 0.0,
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 21.533136
+    },
+    "CMP1/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 23.973594
+    },
+    "CMP2/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 4.0
+    },
+    "CMP2/RF": {
+      "blocos_visiveis_fluido": 16.759410801963995,
+      "blocos_visiveis_medio": 16.78864,
+      "frac_bloco_incompleto_visivel_media": 0.0,
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 16.333084
+    },
+    "CMP2/RP": {
+      "blocos_visiveis_fluido": 16.759410801963995,
+      "blocos_visiveis_medio": 16.78864,
+      "frac_bloco_incompleto_visivel_media": 0.0,
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 16.333084
+    },
+    "CMP2/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 4.0
+    },
+    "CMP3/R": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 4.0
+    },
+    "CMP3/RF": {
+      "blocos_visiveis_fluido": 16.759410801963995,
+      "blocos_visiveis_medio": 16.789707999999997,
+      "frac_bloco_incompleto_visivel_media": 0.0,
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 16.342916
+    },
+    "CMP3/RP": {
+      "blocos_visiveis_fluido": 16.759410801963995,
+      "blocos_visiveis_medio": 16.789707999999997,
+      "frac_bloco_incompleto_visivel_media": 0.0,
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 16.342916
+    },
+    "CMP3/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 4.0
+    },
+    "CMP4/R": {
+      "frac_saturada_media": 0.999998,
+      "ociosos_medio_saturados": 13.0
+    },
+    "CMP4/RF": {
+      "blocos_visiveis_fluido": 28.18348623853211,
+      "blocos_visiveis_medio": 28.701891999999997,
+      "frac_bloco_incompleto_visivel_media": 0.0,
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 22.515102
+    },
+    "CMP4/RP": {
+      "blocos_visiveis_fluido": 28.18348623853211,
+      "blocos_visiveis_medio": 28.701891999999997,
+      "frac_bloco_incompleto_visivel_media": 0.0,
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 22.515102
+    },
+    "CMP4/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 19.114534
+    },
+    "CMP5/R": {
+      "frac_saturada_media": 0.0,
+      "ociosos_medio_saturados": 0.0
+    },
+    "CMP5/RF": {
+      "blocos_visiveis_fluido": 90.0,
+      "blocos_visiveis_medio": 90.42093600000001,
+      "frac_bloco_incompleto_visivel_media": 0.8332879999999999,
+      "frac_saturada_media": 2.0000000000000003e-06,
+      "ociosos_medio_saturados": 0.8
+    },
+    "CMP5/RP": {
+      "blocos_visiveis_fluido": 90.0,
+      "blocos_visiveis_medio": 90.42093600000001,
+      "frac_bloco_incompleto_visivel_media": 0.8332879999999999,
+      "frac_saturada_media": 2.0000000000000003e-06,
+      "ociosos_medio_saturados": 0.8
+    },
+    "CMP5/RS": {
+      "frac_saturada_media": 1.0,
+      "ociosos_medio_saturados": 4.0
+    },
+    "CMP6/R": {
+      "frac_saturada_media": 0.0,
+      "ociosos_medio_saturados": 0.0
+    },
+    "CMP6/RF": {
+      "blocos_visiveis_fluido": 3.375,
+      "blocos_visiveis_medio": 3.750372,
+      "frac_bloco_incompleto_visivel_media": 0.750176,
+      "frac_saturada_media": 0.0,
+      "ociosos_medio_saturados": 0.0
+    },
+    "CMP6/RP": {
+      "blocos_visiveis_fluido": 3.375,
+      "blocos_visiveis_medio": 3.750372,
+      "frac_bloco_incompleto_visivel_media": 0.750176,
+      "frac_saturada_media": 0.0,
+      "ociosos_medio_saturados": 0.0
+    },
+    "CMP6/RS": {
+      "frac_saturada_media": 6.400000000000001e-05,
+      "ociosos_medio_saturados": 22.098333333333333
+    }
+  },
+  "fluxo": "numpy.random.default_rng([semente, i_celula, i_fluxo, tag, i_bloco]); i_fluxo 0 = arm R alone; i_fluxo 1 = one draw of R ∪ S shared by RS, RF and RP",
+  "grade_sha256": "869127a0cc6aa6e8bbc56840eb6b907ac354d5110521adc87dd69a5869951de6",
+  "preregistro_sha256": "e5b6cada9d320ed5880a4749ddaa9f9cc74fc05dad4920107e55515686ee53dc",
+  "sementes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "tabela_sha256": "a4f55d6bbd3233c4edaa56c86652be1e8d43a5c62e9f0ff889361758146bcb2d",
+  "tag": 7,
+  "tolerancias": {
+    "CMP1/R": {
+      "disc_bloco": 0.0,
+      "ep_media": 0.0007970200590140118,
+      "tol": 0.01111754232546121,
+      "tol_sem_disc": 0.01111754232546121
+    },
+    "CMP1/RF": {
+      "disc_bloco": 0.0007478261196544008,
+      "ep_media": 0.0006651086825814297,
+      "tol": 0.013653353460912052,
+      "tol_sem_disc": 0.01290552734125765
+    },
+    "CMP1/RP": {
+      "disc_bloco": 0.0008031501974368963,
+      "ep_media": 0.0008664636628391722,
+      "tol": 0.014500784541634297,
+      "tol_sem_disc": 0.013697634344197402
+    },
+    "CMP1/RS": {
+      "disc_bloco": 0.0,
+      "ep_media": 0.000903208078141967,
+      "tol": 0.01370822379521328,
+      "tol_sem_disc": 0.01370822379521328
+    },
+    "CMP2/R": {
+      "disc_bloco": 0.0,
+      "ep_media": 0.0007970200590140118,
+      "tol": 0.01111754232546121,
+      "tol_sem_disc": 0.01111754232546121
+    },
+    "CMP2/RF": {
+      "disc_bloco": 0.0006217806278148094,
+      "ep_media": 0.0007364957360492043,
+      "tol": 0.013912936674631048,
+      "tol_sem_disc": 0.013291156046816239
+    },
+    "CMP2/RP": {
+      "disc_bloco": 0.0017333873756432048,
+      "ep_media": 0.0008913021817385874,
+      "tol": 0.015445136561252138,
+      "tol_sem_disc": 0.013711749185608933
+    },
+    "CMP2/RS": {
+      "disc_bloco": 0.0,
+      "ep_media": 0.000834207197115573,
+      "tol": 0.011227408829716807,
+      "tol_sem_disc": 0.011227408829716807
+    },
+    "CMP3/R": {
+      "disc_bloco": 0.0,
+      "ep_media": 0.0007970200590140118,
+      "tol": 0.01111754232546121,
+      "tol_sem_disc": 0.01111754232546121
+    },
+    "CMP3/RF": {
+      "disc_bloco": 0.0008875608023474294,
+      "ep_media": 0.0008536204389044605,
+      "tol": 0.014567894654216913,
+      "tol_sem_disc": 0.013680333851869484
+    },
+    "CMP3/RP": {
+      "disc_bloco": 0.0021832577976254007,
+      "ep_media": 0.0009072941734297285,
+      "tol": 0.015888545734038806,
+      "tol_sem_disc": 0.013705287936413407
+    },
+    "CMP3/RS": {
+      "disc_bloco": 0.0,
+      "ep_media": 0.0009201721896415545,
+      "tol": 0.011431582729685702,
+      "tol_sem_disc": 0.011431582729685702
+    },
+    "CMP4/R": {
+      "disc_bloco": 0.0,
+      "ep_media": 0.0008133251341325833,
+      "tol": 0.01358890697475083,
+      "tol_sem_disc": 0.01358890697475083
+    },
+    "CMP4/RF": {
+      "disc_bloco": 0.0007261073625817364,
+      "ep_media": 0.0005593874462432884,
+      "tol": 0.012921548305804642,
+      "tol_sem_disc": 0.012195440943222906
+    },
+    "CMP4/RP": {
+      "disc_bloco": 0.0002368343803736087,
+      "ep_media": 0.0007730656253091679,
+      "tol": 0.013687295545859138,
+      "tol_sem_disc": 0.013450461165485528
+    },
+    "CMP4/RS": {
+      "disc_bloco": 0.0,
+      "ep_media": 0.000714781405172328,
+      "tol": 0.013183501988499803,
+      "tol_sem_disc": 0.013183501988499803
+    },
+    "CMP5/R": {
+      "disc_bloco": 0.0,
+      "ep_media": 0.00080670871284661,
+      "tol": 0.010320126138539831,
+      "tol_sem_disc": 0.010320126138539831
+    },
+    "CMP5/RF": {
+      "disc_bloco": 0.0,
+      "ep_media": 0.0004209446226093377,
+      "tol": 0.009162833867828013,
+      "tol_sem_disc": 0.009162833867828013
+    },
+    "CMP5/RP": {
+      "disc_bloco": 0.00014409374563431309,
+      "ep_media": 0.0007236808657584125,
+      "tol": 0.010215136342909551,
+      "tol_sem_disc": 0.010071042597275238
+    },
+    "CMP5/RS": {
+      "disc_bloco": 0.0,
+      "ep_media": 0.0008507458043289382,
+      "tol": 0.011272733508013656,
+      "tol_sem_disc": 0.011272733508013656
+    },
+    "CMP6/R": {
+      "disc_bloco": 0.0,
+      "ep_media": 0.0008478420733389107,
+      "tol": 0.010443526220016732,
+      "tol_sem_disc": 0.010443526220016732
+    },
+    "CMP6/RF": {
+      "disc_bloco": 0.0,
+      "ep_media": 0.0007077799551411405,
+      "tol": 0.010023339865423423,
+      "tol_sem_disc": 0.010023339865423423
+    },
+    "CMP6/RP": {
+      "disc_bloco": 0.002050589910650764,
+      "ep_media": 0.000810749034210229,
+      "tol": 0.012382837013281451,
+      "tol_sem_disc": 0.010332247102630688
+    },
+    "CMP6/RS": {
+      "disc_bloco": 0.0,
+      "ep_media": 0.0007077799551411405,
+      "tol": 0.010023339865423423,
+      "tol_sem_disc": 0.010023339865423423
+    }
+  },
+  "veredito": "PASSA",
+  "versoes": {
+    "numpy": "2.4.6",
+    "python": "3.14.7",
+    "scipy": "1.17.1"
+  }
+}

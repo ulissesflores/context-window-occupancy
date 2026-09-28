@@ -1,0 +1,54 @@
+grade sha256 869127a0cc6aa6e8bbc56840eb6b907ac354d5110521adc87dd69a5869951de6 · K = 2048 · N = 100000 · sementes = 5 · tag = 7 · tol_base_r1 = 0.0079 · tol_0 = 0.0041
+| célula | T | m | k_S -> k′ | regime R · RS · RF · RP | z (R · RS · RF) | eventos/usuário | ρ_S | ρ_S·m·k_S/k′ (RF) | ρ_S·k_S/k′ (RP) | ρ̄ | θ (RS) | AUC fluida R · RS · RF · RP | tol R · RS · RF · RP |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| CMP1 | 180 | 4 | 55 -> 55 | sat · sat · sat · sat | +4.74 · +17.07 · +9.48 | 486 | 0.000525 | 0.002102 | 0.000525 | 0.001029 | — | 0.8476 · 0.7854 · 0.9011 · 0.8098 | 0.0111 · 0.0137 · 0.0137 · 0.0145 |
+| CMP2 | 180 | 8 | 14 -> 55 | sat · sat · sat · sat | +4.74 · +17.90 · +8.23 | 576 | 0.000787 | 0.001604 | 0.000200 | 0.001029 | — | 0.8476 · 0.8285 · 0.8746 · 0.7938 | 0.0111 · 0.0112 · 0.0139 · 0.0154 |
+| CMP3 | 180 | 8 | 14 -> 55 | sat · sat · sat · sat | +4.74 · +17.90 · +8.23 | 576 | 0.000257 | 0.000524 | 0.000065 | 0.001029 | — | 0.8476 · 0.7728 · 0.8175 · 0.7825 | 0.0111 · 0.0114 · 0.0146 · 0.0159 |
+| CMP4 | 180 | 4 | 14 -> 14 | sat · sat · sat · sat | +4.10 · +10.94 · +5.95 | 342 | 0.001829 | 0.007314 | 0.001829 | 0.000962 | — | 0.8395 · 0.8832 · 0.9327 · 0.8588 | 0.0136 · 0.0132 · 0.0129 · 0.0137 |
+| CMP5 | 90 | 6 | 14 -> 14 | nao · sat · nao · nao | -26.10 · +17.55 · -3.15 | 562 | 0.000579 | 0.003471 | 0.000579 | 0.006429 | 0.1186 | 0.8428 · 0.8192 · 0.9632 · 0.8797 | 0.0103 · 0.0113 · 0.0092 · 0.0102 |
+| CMP6 | 90 | 4 | 55 -> 55 | nao · nao · nao · nao | -22.96 · -4.32 · -11.76 | 40 | 0.001636 | 0.006545 | 0.001636 | 0.004464 | — | 0.8208 · 0.8858 · 0.8858 · 0.8408 | 0.0104 · 0.0100 · 0.0100 · 0.0124 |
+
+| célula | contraste | ΔAUC previsto | sinal | rival (previsão) | papel | \|Δ\|/tol | \|Δ\|/EP |
+|---|---|---|---|---|---|---|---|
+| CMP1 | RS − R | -0.0622 | piora | — | critério | 4.54 | 52 |
+| CMP1 | RF − R | +0.0535 | melhora | H_tok -0.0378 | critério | 3.92 | 52 |
+| CMP1 | RP − R | -0.0378 | piora | H_ideal +0.0535 | critério | 2.61 | 32 |
+| CMP1 | RF − RS | +0.1157 | melhora | H_dia +0.0000 | critério | 8.44 | 103 |
+| CMP1 | RP − RS | +0.0243 | melhora | — | critério | 1.68 | 19 |
+| CMP2 | RS − R | -0.0191 | piora | — | critério | 1.71 | 17 |
+| CMP2 | RF − R | +0.0269 | melhora | H_tok -0.0539 | critério | 1.94 | 25 |
+| CMP2 | RP − R | -0.0539 | piora | — | critério | 3.49 | 45 |
+| CMP2 | RF − RS | +0.0461 | melhora | H_tok -0.0347 | critério | 3.31 | 41 |
+| CMP2 | RP − RS | -0.0347 | piora | H_ideal +0.0461 | critério | 2.25 | 28 |
+| CMP3 | RS − R | -0.0748 | piora | — | critério | 6.55 | 61 |
+| CMP3 | RF − R | -0.0301 | piora | H_m +0.0191 | critério | 2.07 | 26 |
+| CMP3 | RP − R | -0.0651 | piora | — | critério | 4.10 | 54 |
+| CMP3 | RF − RS | +0.0447 | melhora | H_dia +0.0000 | critério | 3.07 | 36 |
+| CMP3 | RP − RS | +0.0097 | melhora | — | só reportado | 0.61 | 8 |
+| CMP4 | RS − R | +0.0437 | melhora | — | critério | 3.21 | 40 |
+| CMP4 | RF − R | +0.0932 | melhora | — | critério | 6.86 | 94 |
+| CMP4 | RP − R | +0.0193 | melhora | — | critério | 1.41 | 17 |
+| CMP4 | RF − RS | +0.0495 | melhora | H_tok -0.0243 | critério | 3.76 | 55 |
+| CMP4 | RP − RS | -0.0243 | piora | H_ideal +0.0495 | critério | 1.78 | 23 |
+| CMP5 | RS − R | -0.0237 | piora | H_mono (sinal): melhora | critério | 2.10 | 20 |
+| CMP5 | RF − R | +0.1203 | melhora | H_c1 (sinal): piora | critério | 11.66 | 132 |
+| CMP5 | RP − R | +0.0368 | melhora | — | critério | 3.57 | 34 |
+| CMP5 | RF − RS | +0.1440 | melhora | — | critério | 12.77 | 152 |
+| CMP5 | RP − RS | +0.0605 | melhora | — | critério | 5.37 | 54 |
+| CMP6 | RS − R | +0.0650 | melhora | — | critério | 6.22 | 59 |
+| CMP6 | RF − R | +0.0650 | melhora | — | critério | 6.22 | 59 |
+| CMP6 | RP − R | +0.0200 | melhora | — | critério | 1.61 | 17 |
+| CMP6 | RF − RS | +0.0000 | **nulo** | H_P1 +0.0409 · H_tok -0.0450 | critério (nulo) | — | — |
+| CMP6 | RP − RS | -0.0450 | piora | H_P1 +0.0231 | critério | 3.64 | 42 |
+
+| célula | regime RF · RP | disc_bloco RF | disc_bloco RP | disc_bloco/tol RF | disc_bloco/tol RP |
+|---|---|---|---|---|---|
+| CMP1 | sat · sat | 0.0007 | 0.0008 | 5.5% | 5.5% |
+| CMP2 | sat · sat | 0.0006 | 0.0017 | 4.5% | 11.2% |
+| CMP3 | sat · sat | 0.0009 | 0.0022 | 6.1% | 13.7% |
+| CMP4 | sat · sat | 0.0007 | 0.0002 | 5.6% | 1.7% |
+| CMP5 | nao · nao | 0.0000 | 0.0001 | 0.0% | 1.4% |
+| CMP6 | nao · nao | 0.0000 | 0.0021 | 0.0% | 16.6% |
+disc_bloco máximo em valor: 0.0022 (CMP3/RP; 13.7% da tol do braço) · máximo em fração da tol: CMP6/RP (0.0021; 16.6%)
+
+CRITÉRIOS DE DESENHO: todos passaram (tag exclusiva, tol_0 da grade, regime declarado por braço, |z| ≥ z_min do lado declarado, eventos ≤ máximo, forma fechada = corolário do regime, contraste discriminante no critério, rival com sinal oposto ou zero, nulo exato com rivais ≥ margem·tol_0) · contrastes assinados no critério = 28 · nulo = 1

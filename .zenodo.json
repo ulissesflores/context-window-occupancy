@@ -1,0 +1,44 @@
+{
+  "title": "Context-Window Occupancy vs. Per-Token Separability — companion code, simulations and estimates",
+  "description": "Companion package of a technical case study of nuFormer, the transaction foundation model of Braithwaite et al. (2025, arXiv:2507.23267), whose input is a fixed window of 2,048 tokens. Under a fluid Gaussian model with an optimal reader (assumptions (i)-(v) of docs/THEORY.md), with the window already saturated before the new source, adding a source whose per-token separability rho_s = d_s^2 / k_s is below the occupancy-weighted mean lowers the ceiling of the AUC of any reader of the same window. Ships the closed-form model with proofs, six pre-registered simulations (displacement replication over 720 cells, 200,000 users per cell, 5 seeds; literal token-budget test with event costs of 14 and 55 tokens; four follow-up families on the exponent of d, occupancy against rate weighting, event fusion and quotas), order-of-magnitude infrastructure estimates, a claims ledger and a SHA-256 provenance chain (run_all.py, make_provenance.py --verify). Code under Apache-2.0; text, figures and data under CC BY 4.0. Illustrative orders of magnitude; not a replication of nuFormer.",
+  "creators": [
+    {
+      "name": "Flores, Carlos Ulisses",
+      "affiliation": "Codex Hash Research Laboratory, Codex Hash Ltda., Brazil",
+      "orcid": "0000-0002-6034-7765"
+    }
+  ],
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "Apache-2.0",
+  "keywords": [
+    "context window",
+    "window occupancy",
+    "per-token separability",
+    "transaction foundation model",
+    "nuFormer",
+    "tokenization",
+    "optimal reader",
+    "Neyman-Pearson",
+    "fractional knapsack",
+    "pre-registration",
+    "reproducibility",
+    "hash chain provenance"
+  ],
+  "language": "eng",
+  "version": "0.1.0",
+  "related_identifiers": [
+    {
+      "relation": "references",
+      "identifier": "10.48550/arXiv.2507.23267",
+      "scheme": "doi",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://github.com/ulissesflores/context-window-occupancy",
+      "scheme": "url"
+    }
+  ],
+  "notes": "DUAL LICENSE: code Apache-2.0; text, figures and data CC BY 4.0 (see NOTICE). Third-party sources are not redistributed. Author profiles: ORCID https://orcid.org/0000-0002-6034-7765 · Lattes http://lattes.cnpq.br/6905246706890561 · https://ulissesflores.com"
+}

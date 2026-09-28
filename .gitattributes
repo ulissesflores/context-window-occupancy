@@ -1,0 +1,3 @@
+# Store every file byte for byte: the provenance seal hashes the LF files and the CRLF CSV outputs
+# as they are. A "*.csv -text" rule alone would still let core.autocrlf=true rewrite the LF files.
+* -text

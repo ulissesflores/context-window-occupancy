@@ -1,0 +1,84 @@
+grade sha256 b0a82de2a4690143996d5bdf196bd91f44e75e9c774c0515b7a9c767ba97a42b · K = 2048 · N = 100000 · sementes = 5 · tag = 8 · tol_X = 0.00405
+Fluxos: default_rng([semente, i_celula, i_combo, tag, i_bloco])
+- KNP1: [semente, 0, 1, 3, i_bloco] · âncora = S1a R∪S do KAT (AUC da REC por semente = linhas seladas)
+- KNP2: [semente, 3, 1, 3, i_bloco] · âncora = S2b R∪S do KAT (AUC da REC por semente = linhas seladas)
+- KNP3: [semente, 2, 0, 8, i_bloco]
+- FIX1: [semente, 3, 0, 8, i_bloco]
+- NUL1: [semente, 0, 1, 3, i_bloco] · mesmo fluxo de KNP1
+- DEC1: [semente, 0, 1, 3, i_bloco] · mesmo fluxo de KNP1
+
+## Células (previsão exata sob contagens Poisson; eventos inteiros; orçamento de K tokens)
+| célula | bloco | T | z | eventos/usuário | h | λ_A·T | λ_A·h | ρ_A | ρ_C | d_A² | d_C² | REC | RHO | EVT | TAX | FIXf | FIXc | cotas FIXf · FIXc · TAX |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| KNP1 | dentro | 180 | 10.57 | 306 | 46.23 | 216.00 | 55.48 | 0.001029 | 0.000525 | 0.014400 | 0.028900 | 0.80332 | 0.84738 | 0.76767 | 0.80329 | 0.84738 | 0.84738 | [146, 0] · [146, 0] · [55, 23] |
+| KNP2 | dentro | 180 | 10.94 | 342 | 47.63 | 72.00 | 19.05 | 0.000962 | 0.001829 | 0.052900 | 0.025600 | 0.88238 | 0.91419 | 0.83873 | 0.88258 | 0.91419 | 0.91419 | [0, 146] · [0, 146] · [19, 71] |
+| KNP3 | dentro | 180 | 11.25 | 216 | 35.43 | 36.00 | 7.09 | 0.002857 | 0.001136 | 0.040000 | 0.062500 | 0.86645 | 0.89578 | 0.85888 | 0.86666 | 0.89316 | 0.89316 | [36, 28] · [36, 28] · [7, 35] |
+| FIX1 | dentro | 90 | 4.33 | 209 | 63.05 | 1.80 | 1.26 | 0.071429 | 0.000457 | 1.000000 | 0.006400 | 0.84395 | 0.86993 | 0.86993 | 0.82467 | 0.82467 | 0.85400 | [1, 145] · [2, 144] · [1, 145] |
+| NUL1 | equivalencia | 180 | 10.57 | 306 | 46.23 | 216.00 | 55.48 | 0.001029 | 0.001029 | 0.014400 | 0.056571 | 0.84645 | 0.84738 | 0.84685 | 0.84685 | 0.84738 | 0.84738 | [146, 0] · [146, 0] · [55, 23] |
+| DEC1 (fluida, τ = 60) | fronteira | 180 | 10.57 | 306 | 46.23 | — | — | 0.001029 | 0.000525 | 0.014400 | 0.028900 | 0.72959 | 0.69312 (ρ nominal) | — | — | — | — | RHOidade 0.73106 |
+
+## Forma fluida (referência; a previsão usada é a exata)
+| célula | REC | RHO | EVT |
+|---|---|---|---|
+| KNP1 | 0.80412 | 0.84762 | 0.76838 |
+| KNP2 | 0.88316 | 0.91440 | 0.83950 |
+| KNP3 | 0.86813 | 0.89685 | 0.85964 |
+| FIX1 | 0.85228 | 0.87844 | 0.87844 |
+| NUL1 | 0.84762 | 0.84762 | 0.84762 |
+
+## Comparações declaradas (tol_X fixo; razão = previsto/tol; EP plan. = Hanley–McNeil NÃO pareado)
+| célula | comparação | tipo | previsto (exata) | previsto (fluida) | tol | razão | EP plan. | rival | rival prevê | refuta o rival | critérios |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| KNP1 | RHO − REC | estrita | +0.04407 | +0.04351 | 0.00405 | +10.88 | 0.00119 | H-REC | <=0 | C5-O | C5-O, C5-G |
+| KNP1 | REC − EVT | estrita | +0.03565 | +0.03573 | 0.00405 | +8.80 | 0.00128 | H-EVT | <0 | C5-O | C5-O, C5-G |
+| KNP1 | RHO − EVT | estrita | +0.07971 | +0.07924 | 0.00405 | +19.68 | 0.00122 | H-EVT | <=0 | C5-O | C5-O, C5-G |
+| KNP1 | TAX − REC | equivalencia | -0.00003 | — | 0.00405 | — | 0.00124 | H-EST | >0 | — | C5-G |
+| KNP2 | RHO − REC | estrita | +0.03182 | +0.03124 | 0.00405 | +7.86 | 0.00095 | H-REC | <=0 | C5-O | C5-O, C5-G |
+| KNP2 | REC − EVT | estrita | +0.04364 | +0.04366 | 0.00405 | +10.78 | 0.00109 | H-EVT | <0 | C5-O | C5-O, C5-G |
+| KNP2 | RHO − EVT | estrita | +0.07546 | +0.07490 | 0.00405 | +18.63 | 0.00103 | H-EVT | <=0 | C5-O | C5-O, C5-G |
+| KNP2 | TAX − REC | equivalencia | +0.00021 | — | 0.00405 | — | 0.00101 | H-EST | >0 | — | C5-G |
+| KNP3 | RHO − REC | estrita | +0.02933 | +0.02873 | 0.00405 | +7.24 | 0.00102 | H-REC | <=0 | C5-O | C5-O, C5-G |
+| KNP3 | REC − EVT | estrita | +0.00757 | +0.00848 | 0.00405 | +1.87 | 0.00108 | H-EVT | <0 | C5-O | C5-O, C5-G |
+| KNP3 | RHO − EVT | estrita | +0.03690 | +0.03721 | 0.00405 | +9.11 | 0.00103 | H-EVT | <=0 | C5-O | C5-O, C5-G |
+| FIX1 | RHO − FIXc | estrita | +0.01593 | — | 0.00405 | +3.93 | 0.00108 | H-FIX | ~0 | C5-G | C5-O, C5-G |
+| FIX1 | FIXc − REC | estrita | +0.01005 | — | 0.00405 | +2.48 | 0.00112 | — | — | — | C5-O, C5-G |
+| FIX1 | REC − FIXf | estrita | +0.01929 | — | 0.00405 | +4.76 | 0.00116 | H-FIX | <0 | C5-O | C5-O, C5-G |
+| FIX1 | RHO − REC | estrita | +0.02598 | +0.02616 | 0.00405 | +6.41 | 0.00110 | H-REC | <=0 | C5-O | C5-O, C5-G |
+| NUL1 | RHO − REC | equivalencia | +0.00093 | +0.00000 | 0.00405 | — | 0.00113 | — | — | — | C5-G |
+| NUL1 | EVT − REC | equivalencia | +0.00040 | +0.00000 | 0.00405 | — | 0.00113 | — | — | — | C5-G |
+| NUL1 | TAX − REC | equivalencia | +0.00040 | — | 0.00405 | — | 0.00113 | — | — | — | C5-G |
+| NUL1 | RHO − EVT | equivalencia | +0.00053 | +0.00000 | 0.00405 | — | 0.00113 | — | — | — | C5-G |
+| DEC1 | REC − RHO | estrita | +0.03647 | — | 0.01467 | +2.49 | 0.00139 | H-ii | <0 | C5-D | C5-D |
+| DEC1 | RHOidade − RHO | estrita | +0.03794 | — | 0.01467 | +2.59 | 0.00139 | — | — | — | C5-D |
+| DEC1 | RHOidade − REC | report_only | +0.00147 | — | 0.01467 | — | 0.00137 | — | — | — | — |
+
+DEC1: τ = 60 dias (meia-vida de d = 41.6 dias) · tol_F = tol_base_r1 + disc + tol_X = 0.0079 + 0.0027 + 0.00405 = 0.01467 (nível e RHOidade − REC: report-only) · idades ótimas A, C = 58.7, 38.6 dias · h = 46.23 dias · rival H-(ii) prevê RHO − REC = +0.0435 (ganho fluido sem decaimento)
+
+## Consequência (KNP1; R = {A}, a mesma história de R ∪ S sem os eventos de C)
+z(R) = 4.74 (a janela já satura antes da fonte nova) · janela de A = 146 eventos · AUC(R) REC = RHO = 0.84738
+ΔAUC_RHO(R -> R ∪ S) = +0.00000 (equivalência; rival H-CONS prevê < 0) · ΔAUC_REC(R -> R ∪ S) = -0.04407 (estrita; razão -10.88) · tol_X = 0.00405 · EP plan. = 0.00113 · 0.00119
+P(N_A < 146) = 1.80e-07 para N_A ~ Poisson(216)
+
+## Varredura do FIX1 (cota fixa q_A da fonte rara; C recebe ⌊(K − q_A·k_A)/k_C⌋; sem realocação) · REC = 0.84395 · RHO = 0.86993
+| q_A | cotas | FIX | FIX − REC | RHO − FIX |
+|---|---|---|---|---|
+| 0 | [0, 146] | 0.75286 | -0.0911 | +0.11707 |
+| 1 | [1, 145] | 0.82467 | -0.0193 | +0.04527 |
+| 2 | [2, 144] | 0.85400 | +0.0101 | +0.01593 |
+| 3 | [3, 143] | 0.86468 | +0.0207 | +0.00525 |
+| 4 | [4, 142] | 0.86788 | +0.0239 | +0.00205 |
+| 5 | [5, 141] | 0.86853 | +0.0246 | +0.00140 |
+| 6 | [6, 140] | 0.86844 | +0.0245 | +0.00149 |
+
+## Varredura do DEC1 (τ em dias; forma fluida; fontes do KNP1) · AUC exata do KNP1 sem decaimento: RHO − REC = +0.0441
+| τ | Δ² REC | Δ² RHO nominal | Δ² RHOidade | AUC REC | AUC RHO nominal | AUC RHOidade | REC − RHO | RHOidade − REC | idades ótimas A, C |
+|---|---|---|---|---|---|---|---|---|---|
+| 30 | 0.4541 | 0.2591 | 0.4553 | 0.6831 | 0.6406 | 0.6834 | +0.0426 | +0.00022 | 52.5, 42.4 |
+| 45 | 0.6224 | 0.3871 | 0.6273 | 0.7115 | 0.6700 | 0.7123 | +0.0415 | +0.00075 | 55.6, 40.5 |
+| 60 | 0.7480 | 0.5095 | 0.7590 | 0.7296 | 0.6931 | 0.7311 | +0.0365 | +0.00147 | 58.7, 38.6 |
+| 90 | 0.9167 | 0.7258 | 0.9441 | 0.7508 | 0.7266 | 0.7540 | +0.0243 | +0.00317 | 65.0, 34.8 |
+| 120 | 1.0228 | 0.9009 | 1.0700 | 0.7627 | 0.7489 | 0.7677 | +0.0138 | +0.00501 | 71.2, 30.9 |
+| 180 | 1.1471 | 1.1538 | 1.2387 | 0.7756 | 0.7762 | 0.7844 | -0.0007 | +0.00877 | 83.8, 23.3 |
+| ∞ (sem decaimento) | 1.4669 | 2.1065 | 2.1065 | 0.8041 | 0.8476 | 0.8476 | -0.0435 | +0.04351 | — |
+
+CRITÉRIOS DE DESENHO: todos passaram (tag 8 exclusivo e fora de {3, 5, 6, 7}; tol_X = 3·ep_dif_kat_max; fluxos declarados = fluxos selados do KAT nas âncoras; células saturadas a z ≥ z_min; eventos ≤ máximo; |previsto| ≥ 1,2·tol em toda comparação estrita; rival nomeado com sinal oposto; equivalências dentro de tol_X; Consequência com R já saturada)

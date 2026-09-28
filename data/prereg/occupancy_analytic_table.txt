@@ -1,0 +1,30 @@
+grade sha256 64ae62f966e22e7de03960a6ca11af70cfa553e3892c0b29d7d15e40a3524b0e · K = 2048 · N = 100000 · sementes = 5 · tol_base_r1 = 0.0079 · tag = 6 · z_minimo_regime = 4.0 · margem_minima_sobre_tol = 1.5
+| célula | subbloco | direção | T | z(R) | z(R∪S) | eventos/usuário | ρ_S | ρ̄ ocupação | ρ̄ taxa | t | α* | AUC(R) | AUC(R∪S) | ΔAUC previsto | tol | ΔAUC/tol | ΔAUC/EP_HM | viés dif. previsto | ocupação | taxa |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| OCC01 | nucleo | sobe | 90 | 4.30 | 12.51 | 279 | 0.001636 | 0.000994 | 0.001920 | 0.69 | 0.31 | 0.8435 | 0.8869 | +0.0434 | 0.0136 | 3.20 | 40.6 | -0.0004 | melhora | piora |
+| OCC02 | nucleo | sobe | 180 | 9.78 | 19.58 | 558 | 0.001636 | 0.000994 | 0.001920 | 0.69 | 0.31 | 0.8435 | 0.8869 | +0.0434 | 0.0136 | 3.20 | 40.6 | -0.0004 | melhora | piora |
+| OCC03 | nucleo | sobe | 90 | 4.30 | 8.68 | 279 | 0.001607 | 0.000994 | 0.001920 | 0.66 | 0.34 | 0.8435 | 0.8671 | +0.0236 | 0.0136 | 1.74 | 21.4 | +0.0002 | melhora | piora |
+| OCC04 | nucleo | sobe | 180 | 9.78 | 15.67 | 558 | 0.001607 | 0.000994 | 0.001920 | 0.66 | 0.34 | 0.8435 | 0.8671 | +0.0236 | 0.0136 | 1.74 | 21.4 | +0.0002 | melhora | piora |
+| OCC05 | nucleo | desce | 165 | 4.56 | 15.24 | 380 | 0.000656 | 0.001132 | 0.000563 | 0.84 | 0.20 | 0.8591 | 0.8126 | -0.0466 | 0.0137 | 3.40 | 40.2 | +0.0005 | piora | melhora |
+| OCC06 | nucleo | desce | 250 | 8.02 | 19.73 | 575 | 0.000656 | 0.001132 | 0.000563 | 0.84 | 0.20 | 0.8591 | 0.8126 | -0.0466 | 0.0137 | 3.40 | 40.2 | +0.0005 | piora | melhora |
+| OCC07 | nucleo | desce | 165 | 4.56 | 11.28 | 380 | 0.000714 | 0.001132 | 0.000563 | 0.73 | 0.32 | 0.8591 | 0.8372 | -0.0219 | 0.0136 | 1.61 | 19.5 | +0.0004 | piora | melhora |
+| OCC08 | nucleo | desce | 250 | 8.02 | 15.97 | 575 | 0.000714 | 0.001132 | 0.000563 | 0.73 | 0.32 | 0.8591 | 0.8372 | -0.0219 | 0.0136 | 1.61 | 19.5 | +0.0004 | piora | melhora |
+| OCC09 | tres_fontes | sobe | 120 | 7.14 | 16.19 | 588 | 0.001400 | 0.000993 | 0.001808 | 0.50 | 0.52 | 0.8433 | 0.8659 | +0.0226 | 0.0136 | 1.67 | 20.5 | +0.0003 | melhora | piora |
+| OCC10 | tres_fontes | desce | 220 | 6.44 | 20.34 | 561 | 0.000727 | 0.001102 | 0.000582 | 0.72 | 0.30 | 0.8559 | 0.8171 | -0.0388 | 0.0137 | 2.83 | 33.5 | +0.0006 | piora | melhora |
+| OCC11 | limiar | sobe | 90 | 4.30 | 21.06 | 567 | 0.001277 | 0.000994 | 0.001920 | 0.31 | 0.69 | 0.8435 | 0.8699 | +0.0265 | 0.0136 | 1.95 | 24.1 | -0.0003 | melhora | piora |
+| OCC12 | limiar | desce | 110 | 5.12 | 20.27 | 583 | 0.000656 | 0.000819 | 0.000319 | 0.33 | 0.75 | 0.8201 | 0.7981 | -0.0221 | 0.0137 | 1.61 | 18.0 | +0.0011 | piora | melhora |
+conferência S3 (grade do KAT, mesma rotina): z(R) = 2.87 · ρ_S = 0.001325 · ρ̄ = 0.000545 (ocupação) / 0.001641 (taxa) · ΔAUC = +0.0869 · tol = 0.0137 · t = 0.71 · α* = 0.21 · critérios do KAT: passa · critérios desta grade: reprova (z(R) = 2.87 < 4.0)
+diagnósticos de desenho (fora do critério):
+- α* máximo: 0.52 (OCC09) nas 10 do veredito; 0.75 (OCC12) com OCC-L; S3 sozinha 0.21
+- duas classes (k = 14 e 55): ρ̄_taxa − ρ̄_ocup = (w − φ)·(ρ_barata − ρ_cara); w − φ máximo = 0.3293 em λ_barata/λ_cara = √(55/14) = 1.98
+- viés de Jensen da diferença: máximo |·| = 0.0011 (OCC12); contra o sinal da teoria em 9/12; menor |ΔAUC|/|viés| = 20.1
+- nível, pior caso somado (1.5·|Jensen| + |ocioso com k_max tokens|)/tol do combo: 46% (OCC12/R); ocioso máximo |·| = 0.00325
+- diferença, |ΔAUC previsto| / (1.5·|viés dif.| + max(|ocioso R|, |ocioso R∪S|)): mínimo 5.8 nas 10 do veredito (OCC07, OCC08); OCC-L: OCC11 7.1; OCC12 4.5
+- células com k_S = 55 (ociosos maiores em R∪S): 'sobe' OCC01, OCC02, OCC11; 'desce' OCC05, OCC06, OCC10, OCC12
+- fonte com E[n] < 3 na janela de R∪S: OCC10 (B 2.66; D 1.77), OCC12 (B 1.81)
+- regra 'por evento' (ignora k) prevê o oposto da ocupação em 7/12: OCC03, OCC04, OCC05, OCC06, OCC09, OCC10, OCC12
+- poder (EP verdadeiro = 1.3·EP_HM; limite da união nas 12; 4 g.l. por combo): P(algum empate) ≤ 1.4e-17; P(algum sinal trocado por ruído) ≤ 7e-44; menor ΔAUC/EP_HM = 18.0; menor ΔAUC/tol = 1.61
+- tempo: 12 células × 2 combos × 5 sementes = 120 simulações; eventos gerados 4.123e+09 contra 1.476e+09 do KAT (razão 2.79) -> ~212 s com 8 processos (KAT = 76 s; estimativa linear, não medição)
+- memória: máximo 588 eventos/usuário (OCC09) contra 562 no KAT (+4.5%); teto 600
+- pares de profundidade com previsão fluida idêntica: OCC01/OCC02, OCC03/OCC04, OCC05/OCC06, OCC07/OCC08
+CRITÉRIOS DE DESENHO: todos passaram (tag = 6 fora de [3, 5, 7, 8], sem 'tag_r3'; regime saturado a z ≥ 4.0; eventos ≤ 600; forma fechada = Corolário 1; margem ≥ 1.5·tol; taxa oposta nas 12; |ΔAUC| ≥ 10 × 0.00191; direção coerente com a ordem de ρ; α* bissecção = forma fechada (< 1e-6); 8 configurações (R, S); 4 pares de profundidade; S3 reprovada sob z ≥ 4.0)

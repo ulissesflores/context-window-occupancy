@@ -1,0 +1,7 @@
+enlace,t_allreduce_ddp_ms,t_allreduce_fsdp_ms,razao_ddp_sobre_computo
+"NVLink 3 (A100, intra-no)",4.3,6.5,0.013
+"NVLink 4 (H100, intra-no)",2.9,4.3,0.009
+InfiniBand NDR 400 Gb/s,26.0,39.0,0.079
+Ethernet RoCE 200 Gb/s,52.0,78.0,0.158
+Ethernet 100 Gb/s,104.0,155.9,0.317
+Ethernet 25 Gb/s,415.8,623.7,1.268

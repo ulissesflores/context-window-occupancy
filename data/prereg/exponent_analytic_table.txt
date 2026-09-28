@@ -1,0 +1,53 @@
+grade sha256 5a365aee2307ee2fb568f2221bbdf252ffe7c9e2c389b4082de8c9f928a04dda · K = 2048 · N = 100000 · sementes = 5 · tag = 5 · tol_base_r1 = 0.0079 · delta_kat_dif = 0.002
+Tabela 1 — previsões por célula (forma fechada fluida; exato = enumeração da janela saturada; sem sorteio)
+| célula | família | lado | T | z(R) | z(R∪S) | eventos/usuário | φ′_S | ρ_S | ρ̄ (ocupação) | AUC(R) | AUC(R∪S) | ΔAUC fluido | ΔAUC exato | viés (exato − fluido) | EP_Δ | tolΔ | ΔAUC/tolΔ | tol nível KAT | ΔAUC/tol nível |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| EXP-C1 | C | baixo | 180 | 4.74 | 14.20 | 396 | 0.766 | 0.001446 | 0.001029 | 0.8476 | 0.8800 | +0.0324 | +0.0313 | -0.00108 | 0.00108 | 0.0052 | 6.19 | 0.0132 | 2.45 |
+| EXP-C2 | C | baixo | 180 | 4.10 | 14.85 | 522 | 0.614 | 0.000686 | 0.000962 | 0.8395 | 0.8162 | -0.0233 | -0.0235 | -0.00019 | 0.00118 | 0.0055 | 4.21 | 0.0137 | 1.71 |
+| EXP-C3 | C | alto | 180 | 4.74 | 14.20 | 396 | 0.766 | 0.000779 | 0.001029 | 0.8476 | 0.8228 | -0.0248 | -0.0257 | -0.00084 | 0.00116 | 0.0055 | 4.53 | 0.0137 | 1.82 |
+| EXP-C4 | C | alto | 180 | 4.10 | 14.85 | 522 | 0.614 | 0.001264 | 0.000962 | 0.8395 | 0.8608 | +0.0213 | +0.0214 | +0.00017 | 0.00112 | 0.0054 | 3.97 | 0.0136 | 1.56 |
+| EXP-D1 | D | baixo | 180 | 4.74 | 16.94 | 540 | 0.600 | 0.000672 | 0.000977 | 0.8414 | 0.8164 | -0.0250 | -0.0245 | +0.00048 | 0.00118 | 0.0055 | 4.52 | 0.0113 | 2.22 |
+| EXP-D2 | D | alto | 180 | 4.74 | 16.94 | 540 | 0.600 | 0.001380 | 0.000977 | 0.8414 | 0.8680 | +0.0266 | +0.0274 | +0.00074 | 0.00110 | 0.0053 | 5.01 | 0.0112 | 2.39 |
+Tabela 2 — sinais previstos de ΔAUC: teoria (d²/k), regras rivais H(p, q) e leitores lineares
+| célula | teoria (d²/k) | d/k | d³/k | d/√k | d²/k² | leitor sem peso | leitor peso d² |
+|---|---|---|---|---|---|---|---|
+| EXP-C1 | melhora | piora | melhora | melhora | piora | melhora | melhora |
+| EXP-C2 | piora | melhora | piora | piora | melhora | piora | piora |
+| EXP-C3 | piora | piora | melhora | piora | piora | piora | piora |
+| EXP-C4 | melhora | melhora | piora | melhora | melhora | melhora | melhora |
+| EXP-D1 | piora | melhora | piora | melhora | piora | melhora | piora |
+| EXP-D2 | melhora | melhora | piora | melhora | melhora | melhora | melhora |
+Tabela 3 — limiar da teoria e ponto de troca de sinal da regra rival H(p, 1) (na família C, a razão p/q)
+| célula | família | limiar da teoria | troca (grade de passo 0,0005) | troca (raiz exata) |
+|---|---|---|---|---|
+| EXP-C1 | C | r = 2.350 > √κ = 1.982 (κ = 3.9286; ln κ/ln r = 1.6014): melhora | 1.6015 | 1.601418 |
+| EXP-C2 | C | r = 0.426 < √κ = 0.505 (κ = 0.2545; ln κ/ln r = 1.6039): piora | 1.6040 | 1.603865 |
+| EXP-C3 | C | r = 1.725 < √κ = 1.982 (κ = 3.9286; ln κ/ln r = 2.5096): piora | 2.5100 | 2.509552 |
+| EXP-C4 | C | r = 0.578 > √κ = 0.505 (κ = 0.2545; ln κ/ln r = 2.4981): melhora | 2.4985 | 2.498084 |
+| EXP-D1 | D | d_S = 0.097 < μ_2 = 0.1170: piora | 1.5910 | 1.590956 |
+| EXP-D2 | D | d_S = 0.139 > μ_2 = 0.1170: melhora | 2.5105 | 2.510121 |
+EXP-D1: pesos de taxa em R = (0.15; 0.85) · μ_1 = 0.0688 · μ_1,6 = 0.0975 · μ_2 = 0.1170 · μ_2,5 = 0.1386 · μ_3 = 0.1565
+EXP-D2: pesos de taxa em R = (0.15; 0.85) · μ_1 = 0.0688 · μ_1,6 = 0.0975 · μ_2 = 0.1170 · μ_2,5 = 0.1386 · μ_3 = 0.1565
+Tabela 4 — mutantes de leitor: ΔAUC fluido que o leitor mutante produziria × teoria (onde morre)
+| leitor | célula | ΔAUC teoria | ΔAUC mutante | desvio absoluto | tolΔ | desvio/tolΔ | desfecho previsto |
+|---|---|---|---|---|---|---|---|
+| sem peso | EXP-C1 | +0.0324 | +0.0133 | 0.0190 | 0.0052 | 3.64 | morre por nível da diferença (EXN) |
+| sem peso | EXP-C2 | -0.0233 | -0.0403 | 0.0170 | 0.0055 | 3.06 | morre por nível da diferença (EXN) |
+| sem peso | EXP-C3 | -0.0248 | -0.0334 | 0.0085 | 0.0055 | 1.56 | morre por nível da diferença (EXN) |
+| sem peso | EXP-C4 | +0.0213 | +0.0151 | 0.0061 | 0.0054 | 1.14 | morre por nível da diferença (EXN) |
+| sem peso | EXP-D1 | -0.0250 | +0.0465 | 0.0715 | 0.0055 | 12.92 | morre por sinal (EXS) |
+| sem peso | EXP-D2 | +0.0266 | +0.1068 | 0.0802 | 0.0053 | 15.09 | morre por nível da diferença (EXN) |
+| peso d² | EXP-C1 | +0.0324 | +0.0255 | 0.0069 | 0.0052 | 1.32 | morre por nível da diferença (EXN) |
+| peso d² | EXP-C2 | -0.0233 | -0.0420 | 0.0186 | 0.0055 | 3.36 | morre por nível da diferença (EXN) |
+| peso d² | EXP-C3 | -0.0248 | -0.0303 | 0.0055 | 0.0055 | 1.00 | morre por nível da diferença (EXN) |
+| peso d² | EXP-C4 | +0.0213 | +0.0124 | 0.0088 | 0.0054 | 1.65 | morre por nível da diferença (EXN) |
+| peso d² | EXP-D1 | -0.0250 | -0.0496 | 0.0246 | 0.0055 | 4.45 | morre por nível da diferença (EXN) |
+| peso d² | EXP-D2 | +0.0266 | +0.0140 | 0.0127 | 0.0053 | 2.38 | morre por nível da diferença (EXN) |
+| peso √d | EXP-C1 | +0.0324 | +0.0284 | 0.0040 | 0.0052 | 0.77 | sobrevive |
+| peso √d | EXP-C2 | -0.0233 | -0.0284 | 0.0050 | 0.0055 | 0.90 | sobrevive |
+| peso √d | EXP-C3 | -0.0248 | -0.0269 | 0.0020 | 0.0055 | 0.37 | sobrevive |
+| peso √d | EXP-C4 | +0.0213 | +0.0195 | 0.0018 | 0.0054 | 0.33 | sobrevive |
+| peso √d | EXP-D1 | -0.0250 | -0.0158 | 0.0092 | 0.0055 | 1.66 | morre por nível da diferença (EXN) |
+| peso √d | EXP-D2 | +0.0266 | +0.0412 | 0.0145 | 0.0053 | 2.73 | morre por nível da diferença (EXN) |
+eventos gerados (6 células × 2 combos × 5 sementes = 60 simulações): 1.962e+09; razão ao run do KAT (1.476e+09 eventos, 76 s com 8 processos) = 1.329 -> ~101 s (escala linear; estimativa, não medição)
+CRITÉRIOS DE DESENHO: todos passaram (tag = 5, sem tag_r3; R e R∪S saturadas a z ≥ 4.0; eventos ≤ 600; |ΔAUC fluido| ≥ 2.5·tolΔ e ≥ 1.2·tol de nível; forma fechada = Corolário 1 = limiar da família; d/k oposto no lado baixo e d³/k no alto; troca em [1.55, 1.65] (baixo) e [2.45, 2.55] (alto); |viés| ≤ 0.25·tolΔ; família C com R de fonte única e k_S ≠ k_A; família D com k = 14 e duas fontes em R; 3 melhora e 3 piora; d/√k oposto só em D1; d²/k² oposto só em C1 e C2; mutantes de leitor onde a Tabela 4 diz)

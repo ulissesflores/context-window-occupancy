@@ -1,0 +1,12 @@
+grade sha256 2cd4cd1218f0822df03a61e163406cb043014dd99e8ce210e740725a494d0b22 · K = 2048 · N = 100000 · sementes = 5 · tol_base_r1 = 0.0079
+| célula | regime | T | z(R) | z(R∪S) | eventos/usuário | ρ_S | ρ̄ (ocupação) | ρ̄ (taxa) | θ | AUC(R) | AUC(R∪S) | ΔAUC previsto | tol | ΔAUC/tol | forma fechada | regra ingênua |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| S1a | saturado | 180 | 4.74 | 10.57 | 306 | 0.000525 | 0.001029 | 0.001029 | — | 0.8476 | 0.8041 | -0.0435 | 0.0137 | 3.17 | piora | evento: melhora |
+| S1b | saturado | 180 | 4.74 | 17.07 | 486 | 0.000525 | 0.001029 | 0.001029 | — | 0.8476 | 0.7854 | -0.0622 | 0.0137 | 4.54 | piora | evento: melhora |
+| S2a | saturado | 180 | 4.10 | 6.54 | 162 | 0.001829 | 0.000962 | 0.000962 | — | 0.8395 | 0.8633 | +0.0237 | 0.0136 | 1.75 | melhora | evento: piora |
+| S2b | saturado | 180 | 4.10 | 10.94 | 342 | 0.001829 | 0.000962 | 0.000962 | — | 0.8395 | 0.8832 | +0.0437 | 0.0136 | 3.21 | melhora | evento: piora |
+| S3 | saturado | 90 | 2.87 | 13.13 | 252 | 0.001325 | 0.000545 | 0.001641 | — | 0.7724 | 0.8594 | +0.0869 | 0.0137 | 6.35 | melhora | taxa: piora |
+| MIX1 | misto | 90 | -26.10 | 3.02 | 76 | 0.000727 | 0.006429 | 0.006429 | 0.0641 | 0.8428 | 0.8733 | +0.0305 | 0.0133 | 2.29 | melhora | cor1_fora_da_saturacao: piora |
+| MIX2 | misto | 90 | -26.10 | 21.85 | 562 | 0.000727 | 0.006429 | 0.006429 | 0.1448 | 0.8428 | 0.8153 | -0.0275 | 0.0137 | 2.01 | piora | monotonia: melhora |
+| N1 | nao_saturado | 90 | -22.96 | -2.78 | 45 | 0.000727 | 0.004464 | 0.004464 | — | 0.8208 | 0.8637 | +0.0429 | 0.0104 | 4.11 | melhora | cor1_fora_da_saturacao: piora |
+CRITÉRIOS DE DESENHO: todos passaram (regime a z ≥ z_min, eventos ≤ máximo, forma fechada = corolário, margem ≥ 1,2·tol, regra ingênua oposta; S1/S2 com sinal constante em λ_S; MIX1/MIX2 com sinal invertido)

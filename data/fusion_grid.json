@@ -1,0 +1,223 @@
+{
+  "_fonte": "Pre-registered grid of the event-fusion addendum (Corollary 4(b), family CMP). Single source read by the analytic table (code/fusion_analytic_table.py) and by the literal token-budget simulation (code/run_fusion.py). Frozen: never edit after its sha256 is recorded; any change goes to a new dated deviation file.",
+  "_custos": "k in tokens per event, reused from the token-budget test (illustrative): 14 = compact transaction, 55 = plain-text transaction; K = 2048 = context length of the case model. The cost k_fund of a fused event does NOT come from the case: reusing 14 or 55 is an illustrative choice.",
+  "_bracos": "Arms per cell: R = current mix only; RS = new source S raw; RF = S fused without loss in blocks of m events (rate lam/m, separation sqrt(m)*d, cost k_fund); RP = control with d NOT preserved, each block keeps only the x of its most recent member (rate lam/m, separation d, cost k_fund).",
+  "_fluxo": "Random stream: numpy.random.default_rng([seed, i_cell, i_stream, tag, i_block]); i_cell = 0-based position in celulas; i_stream 0 = arm R, 1 = one draw shared by RS, RF and RP (fusion is a post-draw transform); blocks of bloco_usuarios users. tag 7 is exclusive to this family (tag 3 = token-budget test; 5, 6 and 8 = the other three families).",
+  "_tol_0": "Null tolerance of the CMP6 RF - RS contrast: ceil(3 * ep_dif_max_kat * 1e4) / 1e4, where ep_dif_max_kat is the largest ep_dif in the sealed token-budget summary (cell S1a).",
+  "_discrimina": "Pairs [contrast, rival]: tok = a fused event is worth ONE event (the RP model); ideal = loss does not matter (the RF model); dia = per-day separability lam*d^2 decides (zero); m = factor m ignoring k_fund; cor1_sem_saturacao = Corollary 1 with the fused rho, saturation unchecked (sign); monotonia = a source with d > 0 never hurts (sign); p1 = Proposition 1 (h = K/W), saturation unchecked; nulo = null contrast.",
+  "_pisos": "Design floors, checked by the analytic table before any simulation: every arm at |z| >= z_minimo_regime on its declared side; at most eventos_max_por_usuario generated events per user; a contrast enters the criterion only if |dAUC| >= margem_minima_sobre_tol * tol and >= 3 * EP.",
+  "K": 2048,
+  "pi": 0.2,
+  "N": 100000,
+  "bloco_usuarios": 10000,
+  "sementes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "tag": 7,
+  "tol_base_r1": 0.0079,
+  "ep_dif_max_kat": 0.0013467414651065952,
+  "tol_0": 0.0041,
+  "margem_minima_sobre_tol": 1.2,
+  "z_minimo_regime": 2.5,
+  "eventos_max_por_usuario": 600,
+  "celulas": [
+    {
+      "id": "CMP1",
+      "bloco": "saturado",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 1.2,
+          "d": 0.12,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 1.5,
+          "d": 0.17,
+          "k": 55
+        }
+      },
+      "m": 4,
+      "k_fund": 55,
+      "discrimina": [
+        [
+          "RF-R",
+          "tok"
+        ],
+        [
+          "RP-R",
+          "ideal"
+        ],
+        [
+          "RF-RS",
+          "dia"
+        ]
+      ]
+    },
+    {
+      "id": "CMP2",
+      "bloco": "saturado",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 1.2,
+          "d": 0.12,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 2.0,
+          "d": 0.105,
+          "k": 14
+        }
+      },
+      "m": 8,
+      "k_fund": 55,
+      "discrimina": [
+        [
+          "RF-R",
+          "tok"
+        ],
+        [
+          "RP-RS",
+          "ideal"
+        ],
+        [
+          "RF-RS",
+          "tok"
+        ]
+      ]
+    },
+    {
+      "id": "CMP3",
+      "bloco": "saturado",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 1.2,
+          "d": 0.12,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 2.0,
+          "d": 0.06,
+          "k": 14
+        }
+      },
+      "m": 8,
+      "k_fund": 55,
+      "discrimina": [
+        [
+          "RF-R",
+          "m"
+        ],
+        [
+          "RF-RS",
+          "dia"
+        ]
+      ]
+    },
+    {
+      "id": "CMP4",
+      "bloco": "saturado",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 0.4,
+          "d": 0.23,
+          "k": 55
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 1.5,
+          "d": 0.16,
+          "k": 14
+        }
+      },
+      "m": 4,
+      "k_fund": 14,
+      "discrimina": [
+        [
+          "RP-RS",
+          "ideal"
+        ],
+        [
+          "RF-RS",
+          "tok"
+        ]
+      ]
+    },
+    {
+      "id": "CMP5",
+      "bloco": "misto_para_nao_saturado",
+      "T": 90,
+      "R": {
+        "A": {
+          "lam": 0.25,
+          "d": 0.3,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 6.0,
+          "d": 0.09,
+          "k": 14
+        }
+      },
+      "m": 6,
+      "k_fund": 14,
+      "discrimina": [
+        [
+          "RF-R",
+          "cor1_sem_saturacao"
+        ],
+        [
+          "RS-R",
+          "monotonia"
+        ]
+      ]
+    },
+    {
+      "id": "CMP6",
+      "bloco": "nao_saturado",
+      "T": 90,
+      "R": {
+        "A": {
+          "lam": 0.3,
+          "d": 0.25,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 0.15,
+          "d": 0.3,
+          "k": 55
+        }
+      },
+      "m": 4,
+      "k_fund": 55,
+      "discrimina": [
+        [
+          "RF-RS",
+          "nulo"
+        ],
+        [
+          "RP-RS",
+          "p1"
+        ]
+      ]
+    }
+  ]
+}

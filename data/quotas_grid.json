@@ -1,0 +1,594 @@
+{
+  "_fonte": "Grid of the quota family (Corollary 5): cells, policies, random streams, declared comparisons and decision constants, frozen before any simulation code of the family exists. Single source for the analytic table (closed form and exact prediction, no sampling) and for the literal simulation. Never edit after its sha256 is recorded; a deviation goes to a new dated file.",
+  "_esquema": "Data keys follow the token-KAT grid schema (Portuguese tokens): each cell has R = {A} and S = {C}; the history read by every policy is R union S in the order A, C; R alone is the current mix of the Consequence sub-test. Free text is English.",
+  "_politicas": {
+    "REC": "recency cut: largest suffix of the most recent events with total cost <= K; the event that would overflow drops together with all older ones (same rule as the sealed token window)",
+    "RHO": "adaptive quotas by rho_s = d_s^2/k_s, descending (ties: grid order); n_s = min(N_s, floor(rest/k_s)) most recent events of the source; rest -= n_s*k_s; continue with the next source (Dantzig greedy on the realized counts)",
+    "FIXf": "fixed quotas, floor: q_s = greedy by rho over the EXPECTED counts, q_s = min(floor(lam_s*T), floor(rest/k_s)); n_s = min(N_s, q_s); leftover NOT reallocated",
+    "FIXc": "fixed quotas, ceiling: as FIXf with ceil(lam_s*T)",
+    "TAX": "rate-proportional fixed quota: q_s = floor(lam_s*K/W), W = sum_r lam_r*k_r; n_s = min(N_s, q_s); equivalence control (in the fluid form, a saturated recency window already allocates lam_s*K/W)",
+    "EVT": "per-event rule: as RHO, ordered by d_s^2 descending (ignores the cost k)",
+    "RHOidade": "decay cell only: per-event priority d_i^2/k_s with d_i = d_s*exp(-a_i/tau), a_i = T - t_i; scan in descending priority, include the event if it fits, otherwise skip it"
+  },
+  "_rivais": {
+    "H-REC": "recency is already optimal / any full window ties (predicts RHO - REC <= 0)",
+    "H-EVT": "prioritize the source most informative per event (predicts EVT >= RHO and EVT >= REC)",
+    "H-FIX": "a fixed quota taken from the fluid solution implements the optimum (predicts FIXf ~ FIXc ~ RHO > REC)",
+    "H-EST": "stratifying by source helps by itself (predicts TAX > REC, no magnitude declared)",
+    "H-ii": "the corollary holds under age decay (predicts RHO > REC in the decay cell)",
+    "H-CONS": "no channel removes the damage of the new source (predicts delta RHO(R -> R union S) < 0)"
+  },
+  "_fluxos": "Random stream of a cell = numpy default_rng([seed, i_celula, i_combo, tag, i_block]) with the three middle integers declared per cell under 'fluxo' (never derived from list position). KNP1 reads the sealed KAT stream of cell S1a, combo R union S; KNP2 that of S2b, combo R union S (tag 3, declared anchors: the REC AUC per seed must equal the sealed 'auc' rows of that cell and combo, repr equality, or the run aborts before any criterion). NUL1 and DEC1 reuse the KNP1 stream on purpose (same counts, times and standardized normal noise; only the mean of x changes). KNP3 and FIX1 use tag 8, exclusive to this family. One history per (cell, seed), read by every policy (pairing).",
+  "_valores": "NUL1: d of source C = 0.12*sqrt(55/14), stored at full float precision so that rho_A = rho_C holds to the last digit. DEC1: sources of KNP1, age decay d_i = d_s*exp(-a_i/tau), tau in days; tau = null in the sweep means no decay (closed forms without decay). ep_dif_kat_max = the largest unpaired ep_dif of the sealed KAT summary (cell S1a, 0.0013467...), rounded to 5 decimals.",
+  "_criterios_desenho": "Checked by the analytic-table script before any simulation: every cell saturated at z >= z_minimo_regime; at most eventos_max_por_usuario expected events per user; |predicted| >= margem_minima_sobre_tol * tol on every strict comparison (tol = tol_X; in the decay cell tol_F = tol_base_r1 + integer-event bias + tol_X); a named rival with a sign predicts the opposite sign; the '~0' rival is refuted by size (C5-G); every equivalence predicted inside tol_X; tol_X = 3 * ep_dif_kat_max, fixed, never recomputed from data.",
+  "K": 2048,
+  "pi": 0.2,
+  "N": 100000,
+  "bloco_usuarios": 10000,
+  "sementes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "tag": 8,
+  "tags_reservados": {
+    "KAT": 3,
+    "EXP": 5,
+    "OCC": 6,
+    "CMP": 7
+  },
+  "tol_base_r1": 0.0079,
+  "ep_dif_kat_max": 0.00135,
+  "tol_X": 0.00405,
+  "margem_minima_sobre_tol": 1.2,
+  "z_minimo_regime": 2.5,
+  "eventos_max_por_usuario": 600,
+  "politicas": [
+    "REC",
+    "RHO",
+    "EVT",
+    "TAX",
+    "FIXf",
+    "FIXc"
+  ],
+  "celulas": [
+    {
+      "id": "KNP1",
+      "bloco": "dentro",
+      "papel": "discriminante",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 1.2,
+          "d": 0.12,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 0.5,
+          "d": 0.17,
+          "k": 55
+        }
+      },
+      "fluxo": {
+        "i_celula": 0,
+        "i_combo": 1,
+        "tag": 3
+      },
+      "ancora": {
+        "celula_kat": "S1a",
+        "combo_kat": "RS",
+        "auc_rec_por_semente": [
+          0.8011109275687086,
+          0.8013735035676965,
+          0.8034060967389719,
+          0.803637877619022,
+          0.8033566394616265
+        ]
+      },
+      "discrimina": "rho_A > rho_C but d_C^2 > d_A^2: H-EVT predicts EVT > REC; the theory, RHO > REC > EVT; hosts the Consequence sub-test",
+      "comparacoes": [
+        {
+          "par": [
+            "RHO",
+            "REC"
+          ],
+          "tipo": "estrita",
+          "criterios": [
+            "C5-O",
+            "C5-G"
+          ],
+          "rival": "H-REC",
+          "rival_preve": "<=0",
+          "refuta_rival": "C5-O"
+        },
+        {
+          "par": [
+            "REC",
+            "EVT"
+          ],
+          "tipo": "estrita",
+          "criterios": [
+            "C5-O",
+            "C5-G"
+          ],
+          "rival": "H-EVT",
+          "rival_preve": "<0",
+          "refuta_rival": "C5-O"
+        },
+        {
+          "par": [
+            "RHO",
+            "EVT"
+          ],
+          "tipo": "estrita",
+          "criterios": [
+            "C5-O",
+            "C5-G"
+          ],
+          "rival": "H-EVT",
+          "rival_preve": "<=0",
+          "refuta_rival": "C5-O"
+        },
+        {
+          "par": [
+            "TAX",
+            "REC"
+          ],
+          "tipo": "equivalencia",
+          "criterios": [
+            "C5-G"
+          ],
+          "rival": "H-EST",
+          "rival_preve": ">0",
+          "refuta_rival": null
+        }
+      ]
+    },
+    {
+      "id": "KNP2",
+      "bloco": "dentro",
+      "papel": "discriminante",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 0.4,
+          "d": 0.23,
+          "k": 55
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 1.5,
+          "d": 0.16,
+          "k": 14
+        }
+      },
+      "fluxo": {
+        "i_celula": 3,
+        "i_combo": 1,
+        "tag": 3
+      },
+      "ancora": {
+        "celula_kat": "S2b",
+        "combo_kat": "RS",
+        "auc_rec_por_semente": [
+          0.8815576561089443,
+          0.880261843817808,
+          0.8825051777122616,
+          0.8829188003895213,
+          0.8826501920909554
+        ]
+      },
+      "discrimina": "mirror of KNP1: text source strong per event versus compact source strong per token",
+      "comparacoes": [
+        {
+          "par": [
+            "RHO",
+            "REC"
+          ],
+          "tipo": "estrita",
+          "criterios": [
+            "C5-O",
+            "C5-G"
+          ],
+          "rival": "H-REC",
+          "rival_preve": "<=0",
+          "refuta_rival": "C5-O"
+        },
+        {
+          "par": [
+            "REC",
+            "EVT"
+          ],
+          "tipo": "estrita",
+          "criterios": [
+            "C5-O",
+            "C5-G"
+          ],
+          "rival": "H-EVT",
+          "rival_preve": "<0",
+          "refuta_rival": "C5-O"
+        },
+        {
+          "par": [
+            "RHO",
+            "EVT"
+          ],
+          "tipo": "estrita",
+          "criterios": [
+            "C5-O",
+            "C5-G"
+          ],
+          "rival": "H-EVT",
+          "rival_preve": "<=0",
+          "refuta_rival": "C5-O"
+        },
+        {
+          "par": [
+            "TAX",
+            "REC"
+          ],
+          "tipo": "equivalencia",
+          "criterios": [
+            "C5-G"
+          ],
+          "rival": "H-EST",
+          "rival_preve": ">0",
+          "refuta_rival": null
+        }
+      ]
+    },
+    {
+      "id": "KNP3",
+      "bloco": "dentro",
+      "papel": "discriminante",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 0.2,
+          "d": 0.2,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 1.0,
+          "d": 0.25,
+          "k": 55
+        }
+      },
+      "fluxo": {
+        "i_celula": 2,
+        "i_combo": 0,
+        "tag": 8
+      },
+      "discrimina": "interior optimum (the ceiling of A binds): H-EVT predicts EVT >= RHO; the theory, RHO > REC > EVT",
+      "comparacoes": [
+        {
+          "par": [
+            "RHO",
+            "REC"
+          ],
+          "tipo": "estrita",
+          "criterios": [
+            "C5-O",
+            "C5-G"
+          ],
+          "rival": "H-REC",
+          "rival_preve": "<=0",
+          "refuta_rival": "C5-O"
+        },
+        {
+          "par": [
+            "REC",
+            "EVT"
+          ],
+          "tipo": "estrita",
+          "criterios": [
+            "C5-O",
+            "C5-G"
+          ],
+          "rival": "H-EVT",
+          "rival_preve": "<0",
+          "refuta_rival": "C5-O"
+        },
+        {
+          "par": [
+            "RHO",
+            "EVT"
+          ],
+          "tipo": "estrita",
+          "criterios": [
+            "C5-O",
+            "C5-G"
+          ],
+          "rival": "H-EVT",
+          "rival_preve": "<=0",
+          "refuta_rival": "C5-O"
+        }
+      ]
+    },
+    {
+      "id": "FIX1",
+      "bloco": "dentro",
+      "papel": "discriminante",
+      "T": 90,
+      "R": {
+        "A": {
+          "lam": 0.02,
+          "d": 1.0,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 2.3,
+          "d": 0.08,
+          "k": 14
+        }
+      },
+      "fluxo": {
+        "i_celula": 3,
+        "i_combo": 0,
+        "tag": 8
+      },
+      "discrimina": "rare and strong source (lam_A*T = 1.8): H-FIX predicts FIXf ~ RHO > REC; the theory, RHO > FIXc > REC > FIXf",
+      "comparacoes": [
+        {
+          "par": [
+            "RHO",
+            "FIXc"
+          ],
+          "tipo": "estrita",
+          "criterios": [
+            "C5-O",
+            "C5-G"
+          ],
+          "rival": "H-FIX",
+          "rival_preve": "~0",
+          "refuta_rival": "C5-G"
+        },
+        {
+          "par": [
+            "FIXc",
+            "REC"
+          ],
+          "tipo": "estrita",
+          "criterios": [
+            "C5-O",
+            "C5-G"
+          ],
+          "rival": null,
+          "rival_preve": null,
+          "refuta_rival": null
+        },
+        {
+          "par": [
+            "REC",
+            "FIXf"
+          ],
+          "tipo": "estrita",
+          "criterios": [
+            "C5-O",
+            "C5-G"
+          ],
+          "rival": "H-FIX",
+          "rival_preve": "<0",
+          "refuta_rival": "C5-O"
+        },
+        {
+          "par": [
+            "RHO",
+            "REC"
+          ],
+          "tipo": "estrita",
+          "criterios": [
+            "C5-O",
+            "C5-G"
+          ],
+          "rival": "H-REC",
+          "rival_preve": "<=0",
+          "refuta_rival": "C5-O"
+        }
+      ],
+      "varredura_qA": {
+        "q_A": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "regra": "fixed quota q_A for source A; source C gets floor((K - q_A*k_A)/k_C); no reallocation"
+      }
+    },
+    {
+      "id": "NUL1",
+      "bloco": "equivalencia",
+      "papel": "controle_equivalencia",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 1.2,
+          "d": 0.12,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 0.5,
+          "d": 0.23784749015162757,
+          "k": 55
+        }
+      },
+      "fluxo": {
+        "i_celula": 0,
+        "i_combo": 1,
+        "tag": 3
+      },
+      "fluxo_de": "KNP1",
+      "discrimina": "rho_A = rho_C: every policy within +-tol_X of REC; no refutable rival",
+      "comparacoes": [
+        {
+          "par": [
+            "RHO",
+            "REC"
+          ],
+          "tipo": "equivalencia",
+          "criterios": [
+            "C5-G"
+          ],
+          "rival": null,
+          "rival_preve": null,
+          "refuta_rival": null
+        },
+        {
+          "par": [
+            "EVT",
+            "REC"
+          ],
+          "tipo": "equivalencia",
+          "criterios": [
+            "C5-G"
+          ],
+          "rival": null,
+          "rival_preve": null,
+          "refuta_rival": null
+        },
+        {
+          "par": [
+            "TAX",
+            "REC"
+          ],
+          "tipo": "equivalencia",
+          "criterios": [
+            "C5-G"
+          ],
+          "rival": null,
+          "rival_preve": null,
+          "refuta_rival": null
+        },
+        {
+          "par": [
+            "RHO",
+            "EVT"
+          ],
+          "tipo": "equivalencia",
+          "criterios": [
+            "C5-G"
+          ],
+          "rival": null,
+          "rival_preve": null,
+          "refuta_rival": null
+        }
+      ]
+    },
+    {
+      "id": "DEC1",
+      "bloco": "fronteira",
+      "papel": "fronteira_viola_ii",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 1.2,
+          "d": 0.12,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 0.5,
+          "d": 0.17,
+          "k": 55
+        }
+      },
+      "fluxo": {
+        "i_celula": 0,
+        "i_combo": 1,
+        "tag": 3
+      },
+      "fluxo_de": "KNP1",
+      "tau": 60,
+      "politicas": [
+        "REC",
+        "RHO",
+        "RHOidade"
+      ],
+      "discrimina": "sources of KNP1 with age decay: H-ii predicts RHO > REC (the gain without decay); the theory with decay predicts REC > RHO",
+      "comparacoes": [
+        {
+          "par": [
+            "REC",
+            "RHO"
+          ],
+          "tipo": "estrita",
+          "criterios": [
+            "C5-D"
+          ],
+          "rival": "H-ii",
+          "rival_preve": "<0",
+          "refuta_rival": "C5-D"
+        },
+        {
+          "par": [
+            "RHOidade",
+            "RHO"
+          ],
+          "tipo": "estrita",
+          "criterios": [
+            "C5-D"
+          ],
+          "rival": null,
+          "rival_preve": null,
+          "refuta_rival": null
+        },
+        {
+          "par": [
+            "RHOidade",
+            "REC"
+          ],
+          "tipo": "report_only",
+          "criterios": [],
+          "rival": null,
+          "rival_preve": null,
+          "refuta_rival": null
+        }
+      ],
+      "varredura_tau": [
+        30,
+        45,
+        60,
+        90,
+        120,
+        180,
+        null
+      ]
+    }
+  ],
+  "consequencia": {
+    "celula": "KNP1",
+    "R": [
+      "A"
+    ],
+    "rival": "H-CONS",
+    "comparacoes": [
+      {
+        "par": "RHO(R union S) - RHO(R)",
+        "tipo": "equivalencia",
+        "rival_preve": "<0"
+      },
+      {
+        "par": "REC(R union S) - REC(R)",
+        "tipo": "estrita",
+        "rival_preve": null
+      }
+    ],
+    "criterio": "C5-C"
+  }
+}

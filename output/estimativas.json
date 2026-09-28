@@ -1,0 +1,67 @@
+{
+  "E1_txn_ctx_compacto": 146.28571428571428,
+  "E1_txn_ctx_texto": 37.236363636363635,
+  "E1_razao": 3.9285714285714284,
+  "E2_fwd_flops_por_usuario": 1557838430208.0,
+  "E2_usuarios_por_gpu_s": 92.5925925925926,
+  "E2_tokens_por_gpu_s": 189629.62962962964,
+  "E2_flops_s_por_gpu": 144244299093333.34,
+  "E2_utilizacao_a100": 0.46232147145299146,
+  "E2_utilizacao_l4_150": 0.47684065815977966,
+  "E2_utilizacao_l4_300": 0.23842032907988983,
+  "E2_gpu_horas_dia": 300,
+  "E3_tokens_finetune": 415744000000.0,
+  "E3_utilizacao_6N": 0.5452991452991454,
+  "E3_utilizacao_4N_lora": 0.36353276353276354,
+  "E4_flops_pretreino": 9.9e+20,
+  "E4_gpu_horas_h100": 695.1466127401416,
+  "E5_bytes_gradiente": 660000000.0,
+  "E5_trafego_por_gpu_ddp": 1299375000.0,
+  "E5_trafego_por_gpu_fsdp": 1949062500.0,
+  "E5_t_computo_passo_s": 0.328011324570273,
+  "E5_enlaces": {
+    "NVLink 3 (A100, intra-no)": {
+      "t_allreduce_ddp_ms": 4.33125,
+      "t_allreduce_fsdp_ms": 6.496875,
+      "razao_ddp_sobre_computo": 0.013204574584960938
+    },
+    "NVLink 4 (H100, intra-no)": {
+      "t_allreduce_ddp_ms": 2.8874999999999997,
+      "t_allreduce_fsdp_ms": 4.33125,
+      "razao_ddp_sobre_computo": 0.008803049723307291
+    },
+    "InfiniBand NDR 400 Gb/s": {
+      "t_allreduce_ddp_ms": 25.9875,
+      "t_allreduce_fsdp_ms": 38.98125,
+      "razao_ddp_sobre_computo": 0.07922744750976562
+    },
+    "Ethernet RoCE 200 Gb/s": {
+      "t_allreduce_ddp_ms": 51.975,
+      "t_allreduce_fsdp_ms": 77.9625,
+      "razao_ddp_sobre_computo": 0.15845489501953125
+    },
+    "Ethernet 100 Gb/s": {
+      "t_allreduce_ddp_ms": 103.95,
+      "t_allreduce_fsdp_ms": 155.925,
+      "razao_ddp_sobre_computo": 0.3169097900390625
+    },
+    "Ethernet 25 Gb/s": {
+      "t_allreduce_ddp_ms": 415.8,
+      "t_allreduce_fsdp_ms": 623.7,
+      "razao_ddp_sobre_computo": 1.26763916015625
+    }
+  },
+  "E6_bytes_tokens_dia": 819200000000.0,
+  "E6_vazao_media_gbps": 0.3640888888888889,
+  "E7_latencia_min_computo_ms": 4.993071891692308,
+  "E7_latencia_min_memoria_ms": 0.3236880823933301,
+  "E7_fracao_sla_pix": 0.0071329598452747256,
+  "E7_a100_pico_pre_filtro": 13.980601296738461,
+  "E7_a100_pico_pos_filtro": 0.09986143783384616,
+  "E7_fanout": {
+    "1": 0.010000000000000009,
+    "5": 0.04900995010000009,
+    "10": 0.09561792499119559,
+    "20": 0.18209306240276923
+  }
+}

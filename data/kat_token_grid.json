@@ -1,0 +1,196 @@
+{
+  "_fonte": "Token KAT grid, pre-registered in data/prereg/02-token-kat-addendum.md. Single source: read by the analytic table (code/token_kat_analytic_table.py) and by the literal token-budget simulation (code/token_kat.py, code/run_token_kat.py). Never edit it after its sha256 was recorded: the sha256 of this file is written into output/kat_token/resumo.json (grade_sha256) and into the first line of data/prereg/kat_token_analytic_table.txt.",
+  "_custos": "k in tokens per event: 14 = compact transaction of nuFormer (Appendix A, 'each transaction consumes 14 tokens on average'); 55 = plain-text transaction (Section 1, 'approximately 55 tokens per transaction'). Inputs E1 of configs/estimates_inputs.json. K = 2048 = nuFormer context length (Section 4.2).",
+  "K": 2048,
+  "pi": 0.2,
+  "N": 100000,
+  "bloco_usuarios": 10000,
+  "sementes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "tag_r3": 3,
+  "tol_base_r1": 0.0079,
+  "margem_minima_sobre_tol": 1.2,
+  "z_minimo_regime": 2.5,
+  "eventos_max_por_usuario": 600,
+  "celulas": [
+    {
+      "id": "S1a",
+      "bloco": "saturado",
+      "discrimina": "per-event rule (ignores k) predicts IMPROVES; per-token rule predicts WORSENS",
+      "regra_ingenua": "evento",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 1.2,
+          "d": 0.12,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 0.5,
+          "d": 0.17,
+          "k": 55
+        }
+      }
+    },
+    {
+      "id": "S1b",
+      "bloco": "saturado",
+      "discrimina": "same as S1a with λ_S tripled (Corollary 2: sign constant in λ_S)",
+      "regra_ingenua": "evento",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 1.2,
+          "d": 0.12,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 1.5,
+          "d": 0.17,
+          "k": 55
+        }
+      }
+    },
+    {
+      "id": "S2a",
+      "bloco": "saturado",
+      "discrimina": "per-event rule predicts WORSENS; per-token rule predicts IMPROVES",
+      "regra_ingenua": "evento",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 0.4,
+          "d": 0.23,
+          "k": 55
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 0.5,
+          "d": 0.16,
+          "k": 14
+        }
+      }
+    },
+    {
+      "id": "S2b",
+      "bloco": "saturado",
+      "discrimina": "same as S2a with λ_S tripled (Corollary 2: sign constant in λ_S)",
+      "regra_ingenua": "evento",
+      "T": 180,
+      "R": {
+        "A": {
+          "lam": 0.4,
+          "d": 0.23,
+          "k": 55
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 1.5,
+          "d": 0.16,
+          "k": 14
+        }
+      }
+    },
+    {
+      "id": "S3",
+      "bloco": "saturado",
+      "discrimina": "ρ̄ weighted by OCCUPANCY (λk) predicts IMPROVES; ρ̄ weighted by RATE (λ) predicts WORSENS",
+      "regra_ingenua": "taxa",
+      "T": 90,
+      "R": {
+        "A": {
+          "lam": 0.2,
+          "d": 0.3,
+          "k": 14
+        },
+        "B": {
+          "lam": 0.6,
+          "d": 0.05,
+          "k": 55
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 2.0,
+          "d": 0.27,
+          "k": 55
+        }
+      }
+    },
+    {
+      "id": "MIX1",
+      "bloco": "misto",
+      "discrimina": "θ·ρ̄ < ρ_S < ρ̄: IMPROVES; Corollary 1 applied outside the saturation of R predicts WORSENS",
+      "regra_ingenua": "cor1_fora_da_saturacao",
+      "T": 90,
+      "R": {
+        "A": {
+          "lam": 0.25,
+          "d": 0.3,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 0.6,
+          "d": 0.2,
+          "k": 55
+        }
+      }
+    },
+    {
+      "id": "MIX2",
+      "bloco": "misto",
+      "discrimina": "same (R, S) as MIX1, only λ_S changes: ρ_S < θ·ρ̄, WORSENS; 'a source with d_S > 0 never hurts' predicts IMPROVES",
+      "regra_ingenua": "monotonia",
+      "T": 90,
+      "R": {
+        "A": {
+          "lam": 0.25,
+          "d": 0.3,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 6.0,
+          "d": 0.2,
+          "k": 55
+        }
+      }
+    },
+    {
+      "id": "N1",
+      "bloco": "nao_saturado",
+      "discrimina": "ρ_S < ρ̄ with R ∪ S unsaturated: IMPROVES (Corollary 3); Corollary 1 applied without saturation predicts WORSENS",
+      "regra_ingenua": "cor1_fora_da_saturacao",
+      "T": 90,
+      "R": {
+        "A": {
+          "lam": 0.3,
+          "d": 0.25,
+          "k": 14
+        }
+      },
+      "S": {
+        "C": {
+          "lam": 0.2,
+          "d": 0.2,
+          "k": 55
+        }
+      }
+    }
+  ],
+  "_regras_ingenuas": "evento = Corollary 1 with k ignored (d_S² against the rate-weighted mean of d²); taxa = ρ̄ weighted by λ instead of λk; cor1_fora_da_saturacao = ρ_S against ρ̄ without checking whether R saturates; monotonia = 'a source with d_S > 0 never hurts'. Each cell declares the naive rule it refutes: the analytic table asserts that this rule predicts the sign OPPOSITE to the closed form."
+}

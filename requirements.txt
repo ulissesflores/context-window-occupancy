@@ -1,0 +1,6 @@
+# Runtime and test dependencies (minimum versions). Exact versions of the sealed run:
+# requirements.lock (and env.json, the genesis of the provenance chain).
+numpy>=2.4
+scipy>=1.17
+matplotlib>=3.10
+pytest>=9.0
